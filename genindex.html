@@ -1,0 +1,1536 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="#" /><link rel="search" title="Search" href="search.html" />
+
+    <link rel="shortcut icon" href="_static/favicon.ico"/><!-- Generated with Sphinx 7.0.1 and Furo 2023.05.20 --><title>Index - Open Data Val documentation</title>
+<link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=e6660623a769aa55fea372102b9bf3151b292993" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="index.html"><div class="brand">Open Data Val  documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="_static/logo-light-mode.png" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="_static/logo-dark-mode.png" alt="Dark Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">Open Data Val  documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul>
+<li class="toctree-l1"><a class="reference internal" href="license.html">license</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="modules.html">modules</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of modules</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="opendataval.html">opendataval package</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of opendataval package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="opendataval.dataloader.html">opendataval.dataloader package</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of opendataval.dataloader package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4 has-children"><a class="reference internal" href="opendataval.dataloader.datasets.html">opendataval.dataloader.datasets package</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of opendataval.dataloader.datasets package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/opendataval.dataloader.datasets.datasets.html">opendataval.dataloader.datasets.datasets</a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/opendataval.dataloader.datasets.imagesets.html">opendataval.dataloader.datasets.imagesets</a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/opendataval.dataloader.datasets.nlpsets.html">opendataval.dataloader.datasets.nlpsets</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataloader.Register.html">opendataval.dataloader.Register</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataloader.DataFetcher.html">opendataval.dataloader.DataFetcher</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="generated/opendataval.dataloader.datasets.html">opendataval.dataloader.datasets</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of opendataval.dataloader.datasets</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/generated/opendataval.dataloader.datasets.datasets.html">opendataval.dataloader.datasets.datasets</a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/generated/opendataval.dataloader.datasets.imagesets.html">opendataval.dataloader.datasets.imagesets</a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/generated/opendataval.dataloader.datasets.nlpsets.html">opendataval.dataloader.datasets.nlpsets</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataloader.cache.html">opendataval.dataloader.cache</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataloader.mix_labels.html">opendataval.dataloader.mix_labels</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataloader.one_hot_encode.html">opendataval.dataloader.one_hot_encode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataloader.CatDataset.html">opendataval.dataloader.CatDataset</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="opendataval.dataval.html">opendataval.dataval package</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle navigation of opendataval.dataval package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.ame.html">opendataval.dataval.ame package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.dvrl.html">opendataval.dataval.dvrl package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.influence.html">opendataval.dataval.influence package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.knnshap.html">opendataval.dataval.knnshap package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.margcontrib.html">opendataval.dataval.margcontrib package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.oob.html">opendataval.dataval.oob package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.random.html">opendataval.dataval.random package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.DataEvaluator.html">opendataval.dataval.DataEvaluator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.AME.html">opendataval.dataval.AME</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.DVRL.html">opendataval.dataval.DVRL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.InfluenceFunctionEval.html">opendataval.dataval.InfluenceFunctionEval</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.KNNShapley.html">opendataval.dataval.KNNShapley</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.DataOob.html">opendataval.dataval.DataOob</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.DataBanzhaf.html">opendataval.dataval.DataBanzhaf</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.BetaShapley.html">opendataval.dataval.BetaShapley</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.DataShapley.html">opendataval.dataval.DataShapley</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.LeaveOneOut.html">opendataval.dataval.LeaveOneOut</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.ShapEvaluator.html">opendataval.dataval.ShapEvaluator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.RandomEvaluator.html">opendataval.dataval.RandomEvaluator</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="opendataval.experiment.html">opendataval.experiment package</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle navigation of opendataval.experiment package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.experiment.ExperimentMediator.html">opendataval.experiment.ExperimentMediator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.experiment.exper_methods.html">opendataval.experiment.exper_methods</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="opendataval.model.html">opendataval.model package</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of opendataval.model package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.Model.html">opendataval.model.Model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.ModelFactory.html">opendataval.model.ModelFactory</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.TorchClassMixin.html">opendataval.model.TorchClassMixin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.TorchRegressMixin.html">opendataval.model.TorchRegressMixin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.TorchPredictMixin.html">opendataval.model.TorchPredictMixin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.ClassifierSkLearnWrapper.html">opendataval.model.ClassifierSkLearnWrapper</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.ClassifierUnweightedSkLearnWrapper.html">opendataval.model.ClassifierUnweightedSkLearnWrapper</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.RegressionSkLearnWrapper.html">opendataval.model.RegressionSkLearnWrapper</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="generated/opendataval.dataloader.html">opendataval.dataloader</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle navigation of opendataval.dataloader</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataloader.Register.html">opendataval.dataloader.Register</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataloader.DataFetcher.html">opendataval.dataloader.DataFetcher</a></li>
+<li class="toctree-l4 has-children"><a class="reference internal" href="generated/generated/opendataval.dataloader.datasets.html">opendataval.dataloader.datasets</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle navigation of opendataval.dataloader.datasets</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="generated/generated/generated/opendataval.dataloader.datasets.datasets.html">opendataval.dataloader.datasets.datasets</a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/generated/generated/opendataval.dataloader.datasets.imagesets.html">opendataval.dataloader.datasets.imagesets</a></li>
+<li class="toctree-l5"><a class="reference internal" href="generated/generated/generated/opendataval.dataloader.datasets.nlpsets.html">opendataval.dataloader.datasets.nlpsets</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataloader.cache.html">opendataval.dataloader.cache</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataloader.mix_labels.html">opendataval.dataloader.mix_labels</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataloader.one_hot_encode.html">opendataval.dataloader.one_hot_encode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataloader.CatDataset.html">opendataval.dataloader.CatDataset</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="generated/opendataval.dataval.html">opendataval.dataval</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle navigation of opendataval.dataval</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.DataEvaluator.html">opendataval.dataval.DataEvaluator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.AME.html">opendataval.dataval.AME</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.DVRL.html">opendataval.dataval.DVRL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.InfluenceFunctionEval.html">opendataval.dataval.InfluenceFunctionEval</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.KNNShapley.html">opendataval.dataval.KNNShapley</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.DataOob.html">opendataval.dataval.DataOob</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.DataBanzhaf.html">opendataval.dataval.DataBanzhaf</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.BetaShapley.html">opendataval.dataval.BetaShapley</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.DataShapley.html">opendataval.dataval.DataShapley</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.LeaveOneOut.html">opendataval.dataval.LeaveOneOut</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.ShapEvaluator.html">opendataval.dataval.ShapEvaluator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.RandomEvaluator.html">opendataval.dataval.RandomEvaluator</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="generated/opendataval.model.html">opendataval.model</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" role="switch" type="checkbox"/><label for="toctree-checkbox-12"><div class="visually-hidden">Toggle navigation of opendataval.model</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.model.Model.html">opendataval.model.Model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.model.ModelFactory.html">opendataval.model.ModelFactory</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.model.TorchClassMixin.html">opendataval.model.TorchClassMixin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.model.TorchRegressMixin.html">opendataval.model.TorchRegressMixin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.model.TorchPredictMixin.html">opendataval.model.TorchPredictMixin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.model.ClassifierSkLearnWrapper.html">opendataval.model.ClassifierSkLearnWrapper</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.model.ClassifierUnweightedSkLearnWrapper.html">opendataval.model.ClassifierUnweightedSkLearnWrapper</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.model.RegressionSkLearnWrapper.html">opendataval.model.RegressionSkLearnWrapper</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="generated/opendataval.experiment.html">opendataval.experiment</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" role="switch" type="checkbox"/><label for="toctree-checkbox-13"><div class="visually-hidden">Toggle navigation of opendataval.experiment</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.experiment.ExperimentMediator.html">opendataval.experiment.ExperimentMediator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.experiment.exper_methods.html">opendataval.experiment.exper_methods</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/opendataval.util.set_random_state.html">opendataval.util.set_random_state</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/opendataval.util.load_mediator_output.html">opendataval.util.load_mediator_output</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/opendataval.__version__.html">opendataval.__version__</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="leaderboards.html">leaderboards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="paper.html">paper</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          
+<section class="genindex-section">
+  <h1 id="index">Index</h1>
+  <div class="genindex-jumpbox"><a href="#_"><strong>_</strong></a> | <a href="#A"><strong>A</strong></a> | <a href="#B"><strong>B</strong></a> | <a href="#C"><strong>C</strong></a> | <a href="#D"><strong>D</strong></a> | <a href="#E"><strong>E</strong></a> | <a href="#F"><strong>F</strong></a> | <a href="#G"><strong>G</strong></a> | <a href="#I"><strong>I</strong></a> | <a href="#K"><strong>K</strong></a> | <a href="#L"><strong>L</strong></a> | <a href="#M"><strong>M</strong></a> | <a href="#N"><strong>N</strong></a> | <a href="#O"><strong>O</strong></a> | <a href="#P"><strong>P</strong></a> | <a href="#R"><strong>R</strong></a> | <a href="#S"><strong>S</strong></a> | <a href="#T"><strong>T</strong></a> | <a href="#V"><strong>V</strong></a> | <a href="#W"><strong>W</strong></a></div>
+</section>
+<section id="_" class="genindex-section">
+  <h2>_</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="generated/generated/opendataval.dataloader.CatDataset.html#opendataval.dataloader.CatDataset.__init__">__init__() (opendataval.dataloader.CatDataset method)</a>, <a href="generated/opendataval.dataloader.CatDataset.html#opendataval.dataloader.CatDataset.__init__">[1]</a>
+
+        <ul>
+          <li><a href="generated/generated/opendataval.dataloader.DataFetcher.html#opendataval.dataloader.DataFetcher.__init__">(opendataval.dataloader.DataFetcher method)</a>, <a href="generated/opendataval.dataloader.DataFetcher.html#opendataval.dataloader.DataFetcher.__init__">[1]</a>
+</li>
+          <li><a href="generated/generated/opendataval.dataloader.Register.html#opendataval.dataloader.Register.__init__">(opendataval.dataloader.Register method)</a>, <a href="generated/opendataval.dataloader.Register.html#opendataval.dataloader.Register.__init__">[1]</a>
+</li>
+          <li><a href="generated/generated/opendataval.dataval.AME.html#opendataval.dataval.AME.__init__">(opendataval.dataval.AME method)</a>, <a href="generated/opendataval.dataval.AME.html#opendataval.dataval.AME.__init__">[1]</a>
+</li>
+          <li><a href="generated/generated/opendataval.dataval.BetaShapley.html#opendataval.dataval.BetaShapley.__init__">(opendataval.dataval.BetaShapley method)</a>, <a href="generated/opendataval.dataval.BetaShapley.html#opendataval.dataval.BetaShapley.__init__">[1]</a>
+</li>
+          <li><a href="generated/generated/opendataval.dataval.DataBanzhaf.html#opendataval.dataval.DataBanzhaf.__init__">(opendataval.dataval.DataBanzhaf method)</a>, <a href="generated/opendataval.dataval.DataBanzhaf.html#opendataval.dataval.DataBanzhaf.__init__">[1]</a>
+</li>
+          <li><a href="generated/generated/opendataval.dataval.DataEvaluator.html#opendataval.dataval.DataEvaluator.__init__">(opendataval.dataval.DataEvaluator method)</a>, <a href="generated/opendataval.dataval.DataEvaluator.html#opendataval.dataval.DataEvaluator.__init__">[1]</a>
+</li>
+          <li><a href="generated/generated/opendataval.dataval.DataOob.html#opendataval.dataval.DataOob.__init__">(opendataval.dataval.DataOob method)</a>, <a href="generated/opendataval.dataval.DataOob.html#opendataval.dataval.DataOob.__init__">[1]</a>
+</li>
+          <li><a href="generated/generated/opendataval.dataval.DataShapley.html#opendataval.dataval.DataShapley.__init__">(opendataval.dataval.DataShapley method)</a>, <a href="generated/opendataval.dataval.DataShapley.html#opendataval.dataval.DataShapley.__init__">[1]</a>
+</li>
+          <li><a href="generated/generated/opendataval.dataval.DVRL.html#opendataval.dataval.DVRL.__init__">(opendataval.dataval.DVRL method)</a>, <a href="generated/opendataval.dataval.DVRL.html#opendataval.dataval.DVRL.__init__">[1]</a>
+</li>
+          <li><a href="generated/generated/opendataval.dataval.InfluenceFunctionEval.html#opendataval.dataval.InfluenceFunctionEval.__init__">(opendataval.dataval.InfluenceFunctionEval method)</a>, <a href="generated/opendataval.dataval.InfluenceFunctionEval.html#opendataval.dataval.InfluenceFunctionEval.__init__">[1]</a>
+</li>
+          <li><a href="generated/generated/opendataval.dataval.KNNShapley.html#opendataval.dataval.KNNShapley.__init__">(opendataval.dataval.KNNShapley method)</a>, <a href="generated/opendataval.dataval.KNNShapley.html#opendataval.dataval.KNNShapley.__init__">[1]</a>
+</li>
+          <li><a href="generated/generated/opendataval.dataval.LeaveOneOut.html#opendataval.dataval.LeaveOneOut.__init__">(opendataval.dataval.LeaveOneOut method)</a>, <a href="generated/opendataval.dataval.LeaveOneOut.html#opendataval.dataval.LeaveOneOut.__init__">[1]</a>
+</li>
+          <li><a href="generated/generated/opendataval.dataval.RandomEvaluator.html#opendataval.dataval.RandomEvaluator.__init__">(opendataval.dataval.RandomEvaluator method)</a>, <a href="generated/opendataval.dataval.RandomEvaluator.html#opendataval.dataval.RandomEvaluator.__init__">[1]</a>
+</li>
+          <li><a href="generated/generated/opendataval.dataval.ShapEvaluator.html#opendataval.dataval.ShapEvaluator.__init__">(opendataval.dataval.ShapEvaluator method)</a>, <a href="generated/opendataval.dataval.ShapEvaluator.html#opendataval.dataval.ShapEvaluator.__init__">[1]</a>
+</li>
+          <li><a href="generated/generated/opendataval.experiment.ExperimentMediator.html#opendataval.experiment.ExperimentMediator.__init__">(opendataval.experiment.ExperimentMediator method)</a>, <a href="generated/opendataval.experiment.ExperimentMediator.html#opendataval.experiment.ExperimentMediator.__init__">[1]</a>
+</li>
+          <li><a href="generated/generated/opendataval.model.ClassifierSkLearnWrapper.html#opendataval.model.ClassifierSkLearnWrapper.__init__">(opendataval.model.ClassifierSkLearnWrapper method)</a>, <a href="generated/opendataval.model.ClassifierSkLearnWrapper.html#opendataval.model.ClassifierSkLearnWrapper.__init__">[1]</a>
+</li>
+          <li><a href="generated/generated/opendataval.model.ClassifierUnweightedSkLearnWrapper.html#opendataval.model.ClassifierUnweightedSkLearnWrapper.__init__">(opendataval.model.ClassifierUnweightedSkLearnWrapper method)</a>, <a href="generated/opendataval.model.ClassifierUnweightedSkLearnWrapper.html#opendataval.model.ClassifierUnweightedSkLearnWrapper.__init__">[1]</a>
+</li>
+          <li><a href="generated/generated/opendataval.model.Model.html#opendataval.model.Model.__init__">(opendataval.model.Model method)</a>, <a href="generated/opendataval.model.Model.html#opendataval.model.Model.__init__">[1]</a>
+</li>
+          <li><a href="generated/generated/opendataval.model.RegressionSkLearnWrapper.html#opendataval.model.RegressionSkLearnWrapper.__init__">(opendataval.model.RegressionSkLearnWrapper method)</a>, <a href="generated/opendataval.model.RegressionSkLearnWrapper.html#opendataval.model.RegressionSkLearnWrapper.__init__">[1]</a>
+</li>
+          <li><a href="generated/generated/opendataval.model.TorchClassMixin.html#opendataval.model.TorchClassMixin.__init__">(opendataval.model.TorchClassMixin method)</a>, <a href="generated/opendataval.model.TorchClassMixin.html#opendataval.model.TorchClassMixin.__init__">[1]</a>
+</li>
+          <li><a href="generated/generated/opendataval.model.TorchPredictMixin.html#opendataval.model.TorchPredictMixin.__init__">(opendataval.model.TorchPredictMixin method)</a>, <a href="generated/opendataval.model.TorchPredictMixin.html#opendataval.model.TorchPredictMixin.__init__">[1]</a>
+</li>
+          <li><a href="generated/generated/opendataval.model.TorchRegressMixin.html#opendataval.model.TorchRegressMixin.__init__">(opendataval.model.TorchRegressMixin method)</a>, <a href="generated/opendataval.model.TorchRegressMixin.html#opendataval.model.TorchRegressMixin.__init__">[1]</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="generated/opendataval.__version__.html#opendataval.__version__">__version__ (in module opendataval)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="A" class="genindex-section">
+  <h2>A</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="opendataval.dataloader.html#opendataval.dataloader.register.Register.add_covar_transform">add_covar_transform() (opendataval.dataloader.register.Register method)</a>
+</li>
+        <li><a href="opendataval.dataloader.html#opendataval.dataloader.noisify.NoiseFunc.ADD_GAUSS_NOISE">ADD_GAUSS_NOISE (opendataval.dataloader.noisify.NoiseFunc attribute)</a>
+</li>
+        <li><a href="opendataval.dataloader.html#opendataval.dataloader.noisify.add_gauss_noise">add_gauss_noise() (in module opendataval.dataloader.noisify)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="opendataval.dataval.oob.html#opendataval.dataval.oob.oob.GroupingIndex.add_indices">add_indices() (opendataval.dataval.oob.oob.GroupingIndex method)</a>
+</li>
+        <li><a href="opendataval.dataloader.html#opendataval.dataloader.register.Register.add_label_transform">add_label_transform() (opendataval.dataloader.register.Register method)</a>
+</li>
+        <li><a href="generated/generated/opendataval.dataval.AME.html#opendataval.dataval.AME">AME (class in opendataval.dataval)</a>, <a href="generated/opendataval.dataval.AME.html#opendataval.dataval.AME">[1]</a>
+
+        <ul>
+          <li><a href="opendataval.dataval.ame.html#opendataval.dataval.ame.ame.AME">(class in opendataval.dataval.ame.ame)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="B" class="genindex-section">
+  <h2>B</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="opendataval.dataval.ame.html#opendataval.dataval.ame.ame.BaggingEvaluator">BaggingEvaluator (class in opendataval.dataval.ame.ame)</a>
+</li>
+        <li><a href="opendataval.dataloader.datasets.html#opendataval.dataloader.datasets.nlpsets.bbc_embedding">bbc_embedding() (in module opendataval.dataloader.datasets.nlpsets)</a>
+</li>
+        <li><a href="opendataval.model.html#opendataval.model.bert.BertClassifier">BertClassifier (class in opendataval.model.bert)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="opendataval.dataloader.datasets.html#opendataval.dataloader.datasets.nlpsets.BertEmbeddings">BertEmbeddings() (in module opendataval.dataloader.datasets.nlpsets)</a>
+</li>
+        <li><a href="generated/generated/opendataval.dataval.BetaShapley.html#opendataval.dataval.BetaShapley">BetaShapley (class in opendataval.dataval)</a>, <a href="generated/opendataval.dataval.BetaShapley.html#opendataval.dataval.BetaShapley">[1]</a>
+
+        <ul>
+          <li><a href="opendataval.dataval.margcontrib.html#opendataval.dataval.margcontrib.betashap.BetaShapley">(class in opendataval.dataval.margcontrib.betashap)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="C" class="genindex-section">
+  <h2>C</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="opendataval.dataval.margcontrib.html#opendataval.dataval.margcontrib.shap.ShapEvaluator.CACHE">CACHE (opendataval.dataval.margcontrib.shap.ShapEvaluator attribute)</a>
+</li>
+        <li><a href="generated/generated/opendataval.dataloader.cache.html#opendataval.dataloader.cache">cache() (in module opendataval.dataloader)</a>, <a href="generated/opendataval.dataloader.cache.html#opendataval.dataloader.cache">[1]</a>
+
+        <ul>
+          <li><a href="opendataval.dataloader.html#opendataval.dataloader.register.cache">(in module opendataval.dataloader.register)</a>
+</li>
+        </ul></li>
+        <li><a href="opendataval.dataloader.html#opendataval.dataloader.register.Register.CACHE_DIR">CACHE_DIR (opendataval.dataloader.register.Register attribute)</a>
+</li>
+        <li><a href="generated/generated/opendataval.dataloader.CatDataset.html#opendataval.dataloader.CatDataset">CatDataset (class in opendataval.dataloader)</a>, <a href="generated/opendataval.dataloader.CatDataset.html#opendataval.dataloader.CatDataset">[1]</a>
+
+        <ul>
+          <li><a href="opendataval.dataloader.html#opendataval.dataloader.util.CatDataset">(class in opendataval.dataloader.util)</a>
+</li>
+        </ul></li>
+        <li><a href="opendataval.dataloader.datasets.html#opendataval.dataloader.datasets.cleanlab.cifar10">cifar10 (in module opendataval.dataloader.datasets.cleanlab)</a>
+
+        <ul>
+          <li><a href="opendataval.dataloader.datasets.html#opendataval.dataloader.datasets.imagesets.cifar10">(in module opendataval.dataloader.datasets.imagesets)</a>
+</li>
+        </ul></li>
+        <li><a href="opendataval.dataloader.datasets.html#opendataval.dataloader.datasets.cleanlab.cifar100">cifar100 (in module opendataval.dataloader.datasets.cleanlab)</a>
+
+        <ul>
+          <li><a href="opendataval.dataloader.datasets.html#opendataval.dataloader.datasets.imagesets.cifar100">(in module opendataval.dataloader.datasets.imagesets)</a>
+</li>
+        </ul></li>
+        <li><a href="opendataval.dataloader.datasets.html#opendataval.dataloader.datasets.cleanlab.cifar100_embed">cifar100_embed() (in module opendataval.dataloader.datasets.cleanlab)</a>
+</li>
+        <li><a href="opendataval.dataloader.datasets.html#opendataval.dataloader.datasets.cleanlab.cifar10_embed">cifar10_embed() (in module opendataval.dataloader.datasets.cleanlab)</a>
+
+        <ul>
+          <li><a href="opendataval.dataloader.datasets.html#opendataval.dataloader.datasets.imagesets.cifar10_embed">(in module opendataval.dataloader.datasets.imagesets)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="opendataval.model.html#opendataval.model.mlp.ClassifierMLP">ClassifierMLP (class in opendataval.model.mlp)</a>
+</li>
+        <li><a href="generated/generated/opendataval.model.ClassifierSkLearnWrapper.html#opendataval.model.ClassifierSkLearnWrapper">ClassifierSkLearnWrapper (class in opendataval.model)</a>, <a href="generated/opendataval.model.ClassifierSkLearnWrapper.html#opendataval.model.ClassifierSkLearnWrapper">[1]</a>
+
+        <ul>
+          <li><a href="opendataval.model.html#opendataval.model.api.ClassifierSkLearnWrapper">(class in opendataval.model.api)</a>
+</li>
+        </ul></li>
+        <li><a href="generated/generated/opendataval.model.ClassifierUnweightedSkLearnWrapper.html#opendataval.model.ClassifierUnweightedSkLearnWrapper">ClassifierUnweightedSkLearnWrapper (class in opendataval.model)</a>, <a href="generated/opendataval.model.ClassifierUnweightedSkLearnWrapper.html#opendataval.model.ClassifierUnweightedSkLearnWrapper">[1]</a>
+
+        <ul>
+          <li><a href="opendataval.model.html#opendataval.model.api.ClassifierUnweightedSkLearnWrapper">(class in opendataval.model.api)</a>
+</li>
+        </ul></li>
+        <li><a href="opendataval.dataloader.datasets.html#opendataval.dataloader.datasets.cleanlab.CleanLabImagenet">CleanLabImagenet() (in module opendataval.dataloader.datasets.cleanlab)</a>
+</li>
+        <li><a href="opendataval.model.html#opendataval.model.api.Model.clone">clone() (opendataval.model.api.Model method)</a>
+</li>
+        <li><a href="opendataval.experiment.html#opendataval.experiment.api.ExperimentMediator.compute_data_values">compute_data_values() (opendataval.experiment.api.ExperimentMediator method)</a>
+</li>
+        <li><a href="opendataval.dataval.margcontrib.html#opendataval.dataval.margcontrib.banzhaf.DataBanzhafMargContrib.compute_weight">compute_weight() (opendataval.dataval.margcontrib.banzhaf.DataBanzhafMargContrib method)</a>
+
+        <ul>
+          <li><a href="opendataval.dataval.margcontrib.html#opendataval.dataval.margcontrib.betashap.BetaShapley.compute_weight">(opendataval.dataval.margcontrib.betashap.BetaShapley method)</a>
+</li>
+          <li><a href="opendataval.dataval.margcontrib.html#opendataval.dataval.margcontrib.datashap.DataShapley.compute_weight">(opendataval.dataval.margcontrib.datashap.DataShapley method)</a>
+</li>
+          <li><a href="opendataval.dataval.margcontrib.html#opendataval.dataval.margcontrib.shap.ShapEvaluator.compute_weight">(opendataval.dataval.margcontrib.shap.ShapEvaluator method)</a>
+</li>
+        </ul></li>
+        <li><a href="opendataval.dataloader.html#opendataval.dataloader.fetcher.DataFetcher.covar_dim">covar_dim (opendataval.dataloader.fetcher.DataFetcher property)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="D" class="genindex-section">
+  <h2>D</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="opendataval.dataval.html#opendataval.dataval.api.DataEvaluator.data_values">data_values (opendataval.dataval.api.DataEvaluator property)</a>
+</li>
+        <li><a href="generated/generated/opendataval.dataval.DataBanzhaf.html#opendataval.dataval.DataBanzhaf">DataBanzhaf (class in opendataval.dataval)</a>, <a href="generated/opendataval.dataval.DataBanzhaf.html#opendataval.dataval.DataBanzhaf">[1]</a>
+
+        <ul>
+          <li><a href="opendataval.dataval.margcontrib.html#opendataval.dataval.margcontrib.banzhaf.DataBanzhaf">(class in opendataval.dataval.margcontrib.banzhaf)</a>
+</li>
+        </ul></li>
+        <li><a href="opendataval.dataval.margcontrib.html#opendataval.dataval.margcontrib.banzhaf.DataBanzhafMargContrib">DataBanzhafMargContrib (class in opendataval.dataval.margcontrib.banzhaf)</a>
+</li>
+        <li><a href="generated/generated/opendataval.dataval.DataEvaluator.html#opendataval.dataval.DataEvaluator">DataEvaluator (class in opendataval.dataval)</a>, <a href="generated/opendataval.dataval.DataEvaluator.html#opendataval.dataval.DataEvaluator">[1]</a>
+
+        <ul>
+          <li><a href="opendataval.dataval.html#opendataval.dataval.api.DataEvaluator">(class in opendataval.dataval.api)</a>
+</li>
+        </ul></li>
+        <li><a href="generated/generated/opendataval.dataloader.DataFetcher.html#opendataval.dataloader.DataFetcher">DataFetcher (class in opendataval.dataloader)</a>, <a href="generated/opendataval.dataloader.DataFetcher.html#opendataval.dataloader.DataFetcher">[1]</a>
+
+        <ul>
+          <li><a href="opendataval.dataloader.html#opendataval.dataloader.fetcher.DataFetcher">(class in opendataval.dataloader.fetcher)</a>
+</li>
+        </ul></li>
+        <li><a href="generated/generated/opendataval.dataval.DataOob.html#opendataval.dataval.DataOob">DataOob (class in opendataval.dataval)</a>, <a href="generated/opendataval.dataval.DataOob.html#opendataval.dataval.DataOob">[1]</a>
+
+        <ul>
+          <li><a href="opendataval.dataval.oob.html#opendataval.dataval.oob.oob.DataOob">(class in opendataval.dataval.oob.oob)</a>
+</li>
+        </ul></li>
+        <li><a href="opendataval.dataloader.html#opendataval.dataloader.fetcher.DataFetcher.datapoints">datapoints (opendataval.dataloader.fetcher.DataFetcher property)</a>
+</li>
+        <li><a href="opendataval.dataloader.html#opendataval.dataloader.register.Register.Datasets">Datasets (opendataval.dataloader.register.Register attribute)</a>
+</li>
+        <li><a href="opendataval.dataloader.html#opendataval.dataloader.fetcher.DataFetcher.datasets_available">datasets_available() (opendataval.dataloader.fetcher.DataFetcher static method)</a>
+</li>
+        <li><a href="generated/generated/opendataval.dataval.DataShapley.html#opendataval.dataval.DataShapley">DataShapley (class in opendataval.dataval)</a>, <a href="generated/opendataval.dataval.DataShapley.html#opendataval.dataval.DataShapley">[1]</a>
+
+        <ul>
+          <li><a href="opendataval.dataval.margcontrib.html#opendataval.dataval.margcontrib.datashap.DataShapley">(class in opendataval.dataval.margcontrib.datashap)</a>
+</li>
+        </ul></li>
+        <li><a href="opendataval.dataval.dvrl.html#opendataval.dataval.dvrl.dvrl.DataValueEstimatorRL">DataValueEstimatorRL (class in opendataval.dataval.dvrl.dvrl)</a>
+</li>
+        <li><a href="opendataval.model.html#opendataval.model.api.TorchClassMixin.device">device (opendataval.model.api.TorchClassMixin property)</a>
+
+        <ul>
+          <li><a href="opendataval.model.html#opendataval.model.api.TorchPredictMixin.device">(opendataval.model.api.TorchPredictMixin property)</a>
+</li>
+          <li><a href="opendataval.model.html#opendataval.model.api.TorchRegressMixin.device">(opendataval.model.api.TorchRegressMixin property)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="opendataval.experiment.html#opendataval.experiment.exper_methods.discover_corrupted_sample">discover_corrupted_sample() (in module opendataval.experiment.exper_methods)</a>
+</li>
+        <li><a href="opendataval.dataloader.datasets.html#opendataval.dataloader.datasets.datasets.download_2dplanes">download_2dplanes() (in module opendataval.dataloader.datasets.datasets)</a>
+</li>
+        <li><a href="opendataval.dataloader.datasets.html#opendataval.dataloader.datasets.datasets.download_adult">download_adult() (in module opendataval.dataloader.datasets.datasets)</a>
+</li>
+        <li><a href="opendataval.dataloader.datasets.html#opendataval.dataloader.datasets.nlpsets.download_bbc">download_bbc() (in module opendataval.dataloader.datasets.nlpsets)</a>
+</li>
+        <li><a href="opendataval.dataloader.datasets.html#opendataval.dataloader.datasets.datasets.download_breast_cancer">download_breast_cancer() (in module opendataval.dataloader.datasets.datasets)</a>
+</li>
+        <li><a href="opendataval.dataloader.datasets.html#opendataval.dataloader.datasets.datasets.download_creditcard">download_creditcard() (in module opendataval.dataloader.datasets.datasets)</a>
+</li>
+        <li><a href="opendataval.dataloader.datasets.html#opendataval.dataloader.datasets.datasets.download_diabetes">download_diabetes() (in module opendataval.dataloader.datasets.datasets)</a>
+</li>
+        <li><a href="opendataval.dataloader.datasets.html#opendataval.dataloader.datasets.datasets.download_digits">download_digits() (in module opendataval.dataloader.datasets.datasets)</a>
+</li>
+        <li><a href="opendataval.dataloader.datasets.html#opendataval.dataloader.datasets.datasets.download_election">download_election() (in module opendataval.dataloader.datasets.datasets)</a>
+</li>
+        <li><a href="opendataval.dataloader.datasets.html#opendataval.dataloader.datasets.datasets.download_electricity">download_electricity() (in module opendataval.dataloader.datasets.datasets)</a>
+</li>
+        <li><a href="opendataval.dataloader.datasets.html#opendataval.dataloader.datasets.datasets.download_fried">download_fried() (in module opendataval.dataloader.datasets.datasets)</a>
+</li>
+        <li><a href="opendataval.dataloader.datasets.html#opendataval.dataloader.datasets.nlpsets.download_imdb">download_imdb() (in module opendataval.dataloader.datasets.nlpsets)</a>
+</li>
+        <li><a href="opendataval.dataloader.datasets.html#opendataval.dataloader.datasets.datasets.download_iris">download_iris() (in module opendataval.dataloader.datasets.datasets)</a>
+</li>
+        <li><a href="opendataval.dataloader.datasets.html#opendataval.dataloader.datasets.datasets.download_linnerud">download_linnerud() (in module opendataval.dataloader.datasets.datasets)</a>
+</li>
+        <li><a href="opendataval.dataloader.datasets.html#opendataval.dataloader.datasets.datasets.download_MiniBooNE">download_MiniBooNE() (in module opendataval.dataloader.datasets.datasets)</a>
+</li>
+        <li><a href="opendataval.dataloader.datasets.html#opendataval.dataloader.datasets.datasets.download_nomao">download_nomao() (in module opendataval.dataloader.datasets.datasets)</a>
+</li>
+        <li><a href="opendataval.dataloader.datasets.html#opendataval.dataloader.datasets.datasets.download_pol">download_pol() (in module opendataval.dataloader.datasets.datasets)</a>
+</li>
+        <li><a href="opendataval.dataval.dvrl.html#opendataval.dataval.dvrl.dvrl.DveLoss">DveLoss (class in opendataval.dataval.dvrl.dvrl)</a>
+</li>
+        <li><a href="generated/generated/opendataval.dataval.DVRL.html#opendataval.dataval.DVRL">DVRL (class in opendataval.dataval)</a>, <a href="generated/opendataval.dataval.DVRL.html#opendataval.dataval.DVRL">[1]</a>
+
+        <ul>
+          <li><a href="opendataval.dataval.dvrl.html#opendataval.dataval.dvrl.dvrl.DVRL">(class in opendataval.dataval.dvrl.dvrl)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="E" class="genindex-section">
+  <h2>E</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="opendataval.dataval.html#opendataval.dataval.api.ModelLessMixin.embeddings">embeddings() (opendataval.dataval.api.ModelLessMixin method)</a>
+</li>
+        <li><a href="opendataval.dataval.html#opendataval.dataval.api.DataEvaluator.evaluate">evaluate() (opendataval.dataval.api.DataEvaluator method)</a>
+
+        <ul>
+          <li><a href="opendataval.experiment.html#opendataval.experiment.api.ExperimentMediator.evaluate">(opendataval.experiment.api.ExperimentMediator method)</a>
+</li>
+        </ul></li>
+        <li><a href="opendataval.dataval.ame.html#opendataval.dataval.ame.ame.AME.evaluate_data_values">evaluate_data_values() (opendataval.dataval.ame.ame.AME method)</a>
+
+        <ul>
+          <li><a href="opendataval.dataval.ame.html#opendataval.dataval.ame.ame.BaggingEvaluator.evaluate_data_values">(opendataval.dataval.ame.ame.BaggingEvaluator method)</a>
+</li>
+          <li><a href="opendataval.dataval.html#opendataval.dataval.api.DataEvaluator.evaluate_data_values">(opendataval.dataval.api.DataEvaluator method)</a>
+</li>
+          <li><a href="opendataval.dataval.dvrl.html#opendataval.dataval.dvrl.dvrl.DVRL.evaluate_data_values">(opendataval.dataval.dvrl.dvrl.DVRL method)</a>
+</li>
+          <li><a href="opendataval.dataval.influence.html#opendataval.dataval.influence.influence.InfluenceFunctionEval.evaluate_data_values">(opendataval.dataval.influence.influence.InfluenceFunctionEval method)</a>
+</li>
+          <li><a href="opendataval.dataval.knnshap.html#opendataval.dataval.knnshap.knnshap.KNNShapley.evaluate_data_values">(opendataval.dataval.knnshap.knnshap.KNNShapley method)</a>
+</li>
+          <li><a href="opendataval.dataval.margcontrib.html#opendataval.dataval.margcontrib.banzhaf.DataBanzhaf.evaluate_data_values">(opendataval.dataval.margcontrib.banzhaf.DataBanzhaf method)</a>
+</li>
+          <li><a href="opendataval.dataval.margcontrib.html#opendataval.dataval.margcontrib.banzhaf.DataBanzhafMargContrib.evaluate_data_values">(opendataval.dataval.margcontrib.banzhaf.DataBanzhafMargContrib method)</a>
+</li>
+          <li><a href="opendataval.dataval.margcontrib.html#opendataval.dataval.margcontrib.betashap.BetaShapley.evaluate_data_values">(opendataval.dataval.margcontrib.betashap.BetaShapley method)</a>
+</li>
+          <li><a href="opendataval.dataval.margcontrib.html#opendataval.dataval.margcontrib.datashap.DataShapley.evaluate_data_values">(opendataval.dataval.margcontrib.datashap.DataShapley method)</a>
+</li>
+          <li><a href="opendataval.dataval.margcontrib.html#opendataval.dataval.margcontrib.loo.LeaveOneOut.evaluate_data_values">(opendataval.dataval.margcontrib.loo.LeaveOneOut method)</a>
+</li>
+          <li><a href="opendataval.dataval.margcontrib.html#opendataval.dataval.margcontrib.shap.ShapEvaluator.evaluate_data_values">(opendataval.dataval.margcontrib.shap.ShapEvaluator method)</a>
+</li>
+          <li><a href="opendataval.dataval.oob.html#opendataval.dataval.oob.oob.DataOob.evaluate_data_values">(opendataval.dataval.oob.oob.DataOob method)</a>
+</li>
+          <li><a href="opendataval.dataval.random.html#opendataval.dataval.random.random.RandomEvaluator.evaluate_data_values">(opendataval.dataval.random.random.RandomEvaluator method)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="opendataval.dataval.html#opendataval.dataval.api.DataEvaluator.Evaluators">Evaluators (opendataval.dataval.api.DataEvaluator attribute)</a>
+</li>
+        <li><a href="generated/generated/opendataval.experiment.ExperimentMediator.html#opendataval.experiment.ExperimentMediator">ExperimentMediator (class in opendataval.experiment)</a>, <a href="generated/opendataval.experiment.ExperimentMediator.html#opendataval.experiment.ExperimentMediator">[1]</a>
+
+        <ul>
+          <li><a href="opendataval.experiment.html#opendataval.experiment.api.ExperimentMediator">(class in opendataval.experiment.api)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="F" class="genindex-section">
+  <h2>F</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="opendataval.dataloader.datasets.html#opendataval.dataloader.datasets.imagesets.fashion">fashion (in module opendataval.dataloader.datasets.imagesets)</a>
+</li>
+        <li><a href="opendataval.model.html#opendataval.model.api.ClassifierSkLearnWrapper.fit">fit() (opendataval.model.api.ClassifierSkLearnWrapper method)</a>
+
+        <ul>
+          <li><a href="opendataval.model.html#opendataval.model.api.ClassifierUnweightedSkLearnWrapper.fit">(opendataval.model.api.ClassifierUnweightedSkLearnWrapper method)</a>
+</li>
+          <li><a href="opendataval.model.html#opendataval.model.api.Model.fit">(opendataval.model.api.Model method)</a>
+</li>
+          <li><a href="opendataval.model.html#opendataval.model.api.RegressionSkLearnWrapper.fit">(opendataval.model.api.RegressionSkLearnWrapper method)</a>
+</li>
+          <li><a href="opendataval.model.html#opendataval.model.api.TorchClassMixin.fit">(opendataval.model.api.TorchClassMixin method)</a>
+</li>
+          <li><a href="opendataval.model.html#opendataval.model.api.TorchRegressMixin.fit">(opendataval.model.api.TorchRegressMixin method)</a>
+</li>
+          <li><a href="opendataval.model.html#opendataval.model.bert.BertClassifier.fit">(opendataval.model.bert.BertClassifier method)</a>
+</li>
+        </ul></li>
+        <li><a href="opendataval.dataval.dvrl.html#opendataval.dataval.dvrl.dvrl.DataValueEstimatorRL.forward">forward() (opendataval.dataval.dvrl.dvrl.DataValueEstimatorRL method)</a>
+
+        <ul>
+          <li><a href="opendataval.dataval.dvrl.html#opendataval.dataval.dvrl.dvrl.DveLoss.forward">(opendataval.dataval.dvrl.dvrl.DveLoss method)</a>
+</li>
+          <li><a href="opendataval.model.html#opendataval.model.bert.BertClassifier.forward">(opendataval.model.bert.BertClassifier method)</a>
+</li>
+          <li><a href="opendataval.model.html#opendataval.model.lenet.LeNet.forward">(opendataval.model.lenet.LeNet method)</a>
+</li>
+          <li><a href="opendataval.model.html#opendataval.model.logistic_regression.LogisticRegression.forward">(opendataval.model.logistic_regression.LogisticRegression method)</a>
+</li>
+          <li><a href="opendataval.model.html#opendataval.model.mlp.ClassifierMLP.forward">(opendataval.model.mlp.ClassifierMLP method)</a>
+</li>
+          <li><a href="opendataval.model.html#opendataval.model.mlp.RegressionMLP.forward">(opendataval.model.mlp.RegressionMLP method)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="opendataval.dataloader.html#opendataval.dataloader.register.Register.from_covar_func">from_covar_func() (opendataval.dataloader.register.Register method)</a>
+</li>
+        <li><a href="opendataval.dataloader.html#opendataval.dataloader.register.Register.from_covar_label_func">from_covar_label_func() (opendataval.dataloader.register.Register method)</a>
+</li>
+        <li><a href="opendataval.dataloader.html#opendataval.dataloader.register.Register.from_csv">from_csv() (opendataval.dataloader.register.Register method)</a>
+</li>
+        <li><a href="opendataval.dataloader.html#opendataval.dataloader.fetcher.DataFetcher.from_data">from_data() (opendataval.dataloader.fetcher.DataFetcher class method)</a>
+
+        <ul>
+          <li><a href="opendataval.dataloader.html#opendataval.dataloader.register.Register.from_data">(opendataval.dataloader.register.Register method)</a>
+</li>
+        </ul></li>
+        <li><a href="opendataval.dataloader.html#opendataval.dataloader.fetcher.DataFetcher.from_data_splits">from_data_splits() (opendataval.dataloader.fetcher.DataFetcher class method)</a>
+</li>
+        <li><a href="opendataval.dataloader.html#opendataval.dataloader.register.Register.from_label_func">from_label_func() (opendataval.dataloader.register.Register method)</a>
+</li>
+        <li><a href="opendataval.dataloader.html#opendataval.dataloader.register.Register.from_numpy">from_numpy() (opendataval.dataloader.register.Register method)</a>
+</li>
+        <li><a href="opendataval.dataloader.html#opendataval.dataloader.register.Register.from_pandas">from_pandas() (opendataval.dataloader.register.Register method)</a>
+</li>
+        <li><a href="opendataval.html#opendataval.util.FuncEnum">FuncEnum (class in opendataval.util)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="G" class="genindex-section">
+  <h2>G</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="opendataval.dataloader.datasets.html#opendataval.dataloader.datasets.datasets.gaussian_classifier">gaussian_classifier() (in module opendataval.dataloader.datasets.datasets)</a>
+</li>
+        <li><a href="opendataval.dataval.ame.html#opendataval.dataval.ame.ame.BaggingEvaluator.get_subset_perf">get_subset_perf() (opendataval.dataval.ame.ame.BaggingEvaluator method)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="opendataval.dataval.margcontrib.html#opendataval.dataval.margcontrib.shap.ShapEvaluator.GR_MAX">GR_MAX (opendataval.dataval.margcontrib.shap.ShapEvaluator attribute)</a>
+</li>
+        <li><a href="opendataval.dataval.oob.html#opendataval.dataval.oob.oob.GroupingIndex">GroupingIndex (class in opendataval.dataval.oob.oob)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="I" class="genindex-section">
+  <h2>I</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="opendataval.dataloader.datasets.html#opendataval.dataloader.datasets.cleanlab.imagenet">imagenet (in module opendataval.dataloader.datasets.cleanlab)</a>
+</li>
+        <li><a href="opendataval.dataloader.datasets.html#opendataval.dataloader.datasets.cleanlab.imagenet_embed">imagenet_embed() (in module opendataval.dataloader.datasets.cleanlab)</a>
+</li>
+        <li><a href="opendataval.dataloader.datasets.html#opendataval.dataloader.datasets.nlpsets.imdb_embedding">imdb_embedding() (in module opendataval.dataloader.datasets.nlpsets)</a>
+</li>
+        <li><a href="opendataval.experiment.html#opendataval.experiment.exper_methods.increasing_bin_removal">increasing_bin_removal() (in module opendataval.experiment.exper_methods)</a>
+</li>
+        <li><a href="opendataval.dataloader.html#opendataval.dataloader.util.IndexTransformDataset">IndexTransformDataset (class in opendataval.dataloader.util)</a>
+</li>
+        <li><a href="generated/generated/opendataval.dataval.InfluenceFunctionEval.html#opendataval.dataval.InfluenceFunctionEval">InfluenceFunctionEval (class in opendataval.dataval)</a>, <a href="generated/opendataval.dataval.InfluenceFunctionEval.html#opendataval.dataval.InfluenceFunctionEval">[1]</a>
+
+        <ul>
+          <li><a href="opendataval.dataval.influence.html#opendataval.dataval.influence.influence.InfluenceFunctionEval">(class in opendataval.dataval.influence.influence)</a>
+</li>
+        </ul></li>
+        <li><a href="opendataval.dataval.ame.html#opendataval.dataval.ame.ame.BaggingEvaluator.input_data">input_data() (opendataval.dataval.ame.ame.BaggingEvaluator method)</a>
+
+        <ul>
+          <li><a href="opendataval.dataval.html#opendataval.dataval.api.DataEvaluator.input_data">(opendataval.dataval.api.DataEvaluator method)</a>
+</li>
+          <li><a href="opendataval.dataval.dvrl.html#opendataval.dataval.dvrl.dvrl.DVRL.input_data">(opendataval.dataval.dvrl.dvrl.DVRL method)</a>
+</li>
+          <li><a href="opendataval.dataval.influence.html#opendataval.dataval.influence.influence.InfluenceFunctionEval.input_data">(opendataval.dataval.influence.influence.InfluenceFunctionEval method)</a>
+</li>
+          <li><a href="opendataval.dataval.margcontrib.html#opendataval.dataval.margcontrib.banzhaf.DataBanzhaf.input_data">(opendataval.dataval.margcontrib.banzhaf.DataBanzhaf method)</a>
+</li>
+          <li><a href="opendataval.dataval.margcontrib.html#opendataval.dataval.margcontrib.loo.LeaveOneOut.input_data">(opendataval.dataval.margcontrib.loo.LeaveOneOut method)</a>
+</li>
+          <li><a href="opendataval.dataval.margcontrib.html#opendataval.dataval.margcontrib.shap.ShapEvaluator.input_data">(opendataval.dataval.margcontrib.shap.ShapEvaluator method)</a>
+</li>
+          <li><a href="opendataval.dataval.oob.html#opendataval.dataval.oob.oob.DataOob.input_data">(opendataval.dataval.oob.oob.DataOob method)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="opendataval.dataval.html#opendataval.dataval.api.DataEvaluator.input_fetcher">input_fetcher() (opendataval.dataval.api.DataEvaluator method)</a>
+</li>
+        <li><a href="opendataval.dataval.html#opendataval.dataval.api.DataEvaluator.input_metric">input_metric() (opendataval.dataval.api.DataEvaluator method)</a>
+</li>
+        <li><a href="opendataval.dataval.html#opendataval.dataval.api.DataEvaluator.input_model">input_model() (opendataval.dataval.api.DataEvaluator method)</a>
+</li>
+        <li><a href="opendataval.dataval.html#opendataval.dataval.api.DataEvaluator.input_model_metric">input_model_metric() (opendataval.dataval.api.DataEvaluator method)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="K" class="genindex-section">
+  <h2>K</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="generated/generated/opendataval.dataval.KNNShapley.html#opendataval.dataval.KNNShapley">KNNShapley (class in opendataval.dataval)</a>, <a href="generated/opendataval.dataval.KNNShapley.html#opendataval.dataval.KNNShapley">[1]</a>
+
+        <ul>
+          <li><a href="opendataval.dataval.knnshap.html#opendataval.dataval.knnshap.knnshap.KNNShapley">(class in opendataval.dataval.knnshap.knnshap)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="L" class="genindex-section">
+  <h2>L</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="opendataval.dataloader.html#opendataval.dataloader.fetcher.DataFetcher.label_dim">label_dim (opendataval.dataloader.fetcher.DataFetcher property)</a>
+</li>
+        <li><a href="generated/generated/opendataval.dataval.LeaveOneOut.html#opendataval.dataval.LeaveOneOut">LeaveOneOut (class in opendataval.dataval)</a>, <a href="generated/opendataval.dataval.LeaveOneOut.html#opendataval.dataval.LeaveOneOut">[1]</a>
+
+        <ul>
+          <li><a href="opendataval.dataval.margcontrib.html#opendataval.dataval.margcontrib.loo.LeaveOneOut">(class in opendataval.dataval.margcontrib.loo)</a>
+</li>
+        </ul></li>
+        <li><a href="opendataval.model.html#opendataval.model.lenet.LeNet">LeNet (class in opendataval.model.lenet)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="opendataval.dataloader.html#opendataval.dataloader.util.ListDataset">ListDataset (class in opendataval.dataloader.util)</a>
+</li>
+        <li><a href="opendataval.dataloader.html#opendataval.dataloader.register.Register.load_data">load_data() (opendataval.dataloader.register.Register method)</a>
+</li>
+        <li><a href="generated/opendataval.util.load_mediator_output.html#opendataval.util.load_mediator_output">load_mediator_output() (in module opendataval.util)</a>, <a href="opendataval.html#opendataval.util.load_mediator_output">[1]</a>
+</li>
+        <li><a href="opendataval.dataloader.datasets.html#opendataval.dataloader.datasets.datasets.load_openml">load_openml() (in module opendataval.dataloader.datasets.datasets)</a>
+</li>
+        <li><a href="opendataval.model.html#opendataval.model.logistic_regression.LogisticRegression">LogisticRegression (class in opendataval.model.logistic_regression)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="M" class="genindex-section">
+  <h2>M</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="opendataval.dataval.knnshap.html#opendataval.dataval.knnshap.knnshap.KNNShapley.match">match() (opendataval.dataval.knnshap.knnshap.KNNShapley method)</a>
+</li>
+        <li><a href="opendataval.dataloader.datasets.html#opendataval.dataloader.datasets.nlpsets.MAX_DATASET_SIZE">MAX_DATASET_SIZE (in module opendataval.dataloader.datasets.nlpsets)</a>
+</li>
+        <li><a href="opendataval.html#opendataval.util.MeanStdTime">MeanStdTime (class in opendataval.util)</a>
+</li>
+        <li><a href="opendataval.dataloader.html#opendataval.dataloader.noisify.NoiseFunc.MIX_LABELS">MIX_LABELS (opendataval.dataloader.noisify.NoiseFunc attribute)</a>
+</li>
+        <li><a href="generated/generated/opendataval.dataloader.mix_labels.html#opendataval.dataloader.mix_labels">mix_labels() (in module opendataval.dataloader)</a>, <a href="generated/opendataval.dataloader.mix_labels.html#opendataval.dataloader.mix_labels">[1]</a>
+
+        <ul>
+          <li><a href="opendataval.dataloader.html#opendataval.dataloader.noisify.mix_labels">(in module opendataval.dataloader.noisify)</a>
+</li>
+        </ul></li>
+        <li><a href="generated/generated/opendataval.model.Model.html#opendataval.model.Model">Model (class in opendataval.model)</a>, <a href="generated/opendataval.model.Model.html#opendataval.model.Model">[1]</a>
+
+        <ul>
+          <li><a href="opendataval.model.html#opendataval.model.api.Model">(class in opendataval.model.api)</a>
+</li>
+        </ul></li>
+        <li><a href="opendataval.experiment.html#opendataval.experiment.api.ExperimentMediator.model_factory_setup">model_factory_setup() (opendataval.experiment.api.ExperimentMediator class method)</a>
+</li>
+        <li><a href="generated/generated/opendataval.model.ModelFactory.html#opendataval.model.ModelFactory">ModelFactory() (in module opendataval.model)</a>, <a href="generated/opendataval.model.ModelFactory.html#opendataval.model.ModelFactory">[1]</a>, <a href="opendataval.model.html#opendataval.model.ModelFactory">[2]</a>
+</li>
+        <li><a href="opendataval.dataval.html#opendataval.dataval.api.ModelLessMixin">ModelLessMixin (class in opendataval.dataval.api)</a>
+</li>
+        <li><a href="opendataval.model.html#opendataval.model.api.Model.Models">Models (opendataval.model.api.Model attribute)</a>
+</li>
+        <li>
+    module
+
+        <ul>
+          <li><a href="opendataval.html#module-opendataval">opendataval</a>
+</li>
+          <li><a href="generated/opendataval.dataloader.html#module-opendataval.dataloader">opendataval.dataloader</a>, <a href="opendataval.dataloader.html#module-opendataval.dataloader">[1]</a>
+</li>
+          <li><a href="generated/generated/opendataval.dataloader.datasets.html#module-opendataval.dataloader.datasets">opendataval.dataloader.datasets</a>, <a href="generated/opendataval.dataloader.datasets.html#module-opendataval.dataloader.datasets">[1]</a>, <a href="opendataval.dataloader.datasets.html#module-opendataval.dataloader.datasets">[2]</a>
+</li>
+          <li><a href="opendataval.dataloader.datasets.html#module-opendataval.dataloader.datasets.cleanlab">opendataval.dataloader.datasets.cleanlab</a>
+</li>
+          <li><a href="opendataval.dataloader.datasets.html#module-opendataval.dataloader.datasets.contest">opendataval.dataloader.datasets.contest</a>
+</li>
+          <li><a href="generated/generated/generated/opendataval.dataloader.datasets.datasets.html#module-opendataval.dataloader.datasets.datasets">opendataval.dataloader.datasets.datasets</a>, <a href="generated/generated/opendataval.dataloader.datasets.datasets.html#module-opendataval.dataloader.datasets.datasets">[1]</a>, <a href="generated/opendataval.dataloader.datasets.datasets.html#module-opendataval.dataloader.datasets.datasets">[2]</a>, <a href="opendataval.dataloader.datasets.html#module-opendataval.dataloader.datasets.datasets">[3]</a>
+</li>
+          <li><a href="generated/generated/generated/opendataval.dataloader.datasets.imagesets.html#module-opendataval.dataloader.datasets.imagesets">opendataval.dataloader.datasets.imagesets</a>, <a href="generated/generated/opendataval.dataloader.datasets.imagesets.html#module-opendataval.dataloader.datasets.imagesets">[1]</a>, <a href="generated/opendataval.dataloader.datasets.imagesets.html#module-opendataval.dataloader.datasets.imagesets">[2]</a>, <a href="opendataval.dataloader.datasets.html#module-opendataval.dataloader.datasets.imagesets">[3]</a>
+</li>
+          <li><a href="generated/generated/generated/opendataval.dataloader.datasets.nlpsets.html#module-opendataval.dataloader.datasets.nlpsets">opendataval.dataloader.datasets.nlpsets</a>, <a href="generated/generated/opendataval.dataloader.datasets.nlpsets.html#module-opendataval.dataloader.datasets.nlpsets">[1]</a>, <a href="generated/opendataval.dataloader.datasets.nlpsets.html#module-opendataval.dataloader.datasets.nlpsets">[2]</a>, <a href="opendataval.dataloader.datasets.html#module-opendataval.dataloader.datasets.nlpsets">[3]</a>
+</li>
+          <li><a href="opendataval.dataloader.html#module-opendataval.dataloader.fetcher">opendataval.dataloader.fetcher</a>
+</li>
+          <li><a href="opendataval.dataloader.html#module-opendataval.dataloader.noisify">opendataval.dataloader.noisify</a>
+</li>
+          <li><a href="opendataval.dataloader.html#module-opendataval.dataloader.register">opendataval.dataloader.register</a>
+</li>
+          <li><a href="opendataval.dataloader.html#module-opendataval.dataloader.util">opendataval.dataloader.util</a>
+</li>
+          <li><a href="generated/opendataval.dataval.html#module-opendataval.dataval">opendataval.dataval</a>, <a href="opendataval.dataval.html#module-opendataval.dataval">[1]</a>
+</li>
+          <li><a href="opendataval.dataval.ame.html#module-opendataval.dataval.ame">opendataval.dataval.ame</a>
+</li>
+          <li><a href="opendataval.dataval.ame.html#module-opendataval.dataval.ame.ame">opendataval.dataval.ame.ame</a>
+</li>
+          <li><a href="opendataval.dataval.html#module-opendataval.dataval.api">opendataval.dataval.api</a>
+</li>
+          <li><a href="opendataval.dataval.dvrl.html#module-opendataval.dataval.dvrl">opendataval.dataval.dvrl</a>
+</li>
+          <li><a href="opendataval.dataval.dvrl.html#module-opendataval.dataval.dvrl.dvrl">opendataval.dataval.dvrl.dvrl</a>
+</li>
+          <li><a href="opendataval.dataval.influence.html#module-opendataval.dataval.influence">opendataval.dataval.influence</a>
+</li>
+          <li><a href="opendataval.dataval.influence.html#module-opendataval.dataval.influence.influence">opendataval.dataval.influence.influence</a>
+</li>
+          <li><a href="opendataval.dataval.knnshap.html#module-opendataval.dataval.knnshap">opendataval.dataval.knnshap</a>
+</li>
+          <li><a href="opendataval.dataval.knnshap.html#module-opendataval.dataval.knnshap.knnshap">opendataval.dataval.knnshap.knnshap</a>
+</li>
+          <li><a href="opendataval.dataval.margcontrib.html#module-opendataval.dataval.margcontrib">opendataval.dataval.margcontrib</a>
+</li>
+          <li><a href="opendataval.dataval.margcontrib.html#module-opendataval.dataval.margcontrib.banzhaf">opendataval.dataval.margcontrib.banzhaf</a>
+</li>
+          <li><a href="opendataval.dataval.margcontrib.html#module-opendataval.dataval.margcontrib.betashap">opendataval.dataval.margcontrib.betashap</a>
+</li>
+          <li><a href="opendataval.dataval.margcontrib.html#module-opendataval.dataval.margcontrib.datashap">opendataval.dataval.margcontrib.datashap</a>
+</li>
+          <li><a href="opendataval.dataval.margcontrib.html#module-opendataval.dataval.margcontrib.loo">opendataval.dataval.margcontrib.loo</a>
+</li>
+          <li><a href="opendataval.dataval.margcontrib.html#module-opendataval.dataval.margcontrib.shap">opendataval.dataval.margcontrib.shap</a>
+</li>
+          <li><a href="opendataval.dataval.oob.html#module-opendataval.dataval.oob">opendataval.dataval.oob</a>
+</li>
+          <li><a href="opendataval.dataval.oob.html#module-opendataval.dataval.oob.oob">opendataval.dataval.oob.oob</a>
+</li>
+          <li><a href="opendataval.dataval.random.html#module-opendataval.dataval.random">opendataval.dataval.random</a>
+</li>
+          <li><a href="opendataval.dataval.random.html#module-opendataval.dataval.random.random">opendataval.dataval.random.random</a>
+</li>
+          <li><a href="generated/opendataval.experiment.html#module-opendataval.experiment">opendataval.experiment</a>, <a href="opendataval.experiment.html#module-opendataval.experiment">[1]</a>
+</li>
+          <li><a href="opendataval.experiment.html#module-opendataval.experiment.api">opendataval.experiment.api</a>
+</li>
+          <li><a href="generated/generated/opendataval.experiment.exper_methods.html#module-opendataval.experiment.exper_methods">opendataval.experiment.exper_methods</a>, <a href="generated/opendataval.experiment.exper_methods.html#module-opendataval.experiment.exper_methods">[1]</a>, <a href="opendataval.experiment.html#module-opendataval.experiment.exper_methods">[2]</a>
+</li>
+          <li><a href="generated/opendataval.model.html#module-opendataval.model">opendataval.model</a>, <a href="opendataval.model.html#module-opendataval.model">[1]</a>
+</li>
+          <li><a href="opendataval.model.html#module-opendataval.model.api">opendataval.model.api</a>
+</li>
+          <li><a href="opendataval.model.html#module-opendataval.model.bert">opendataval.model.bert</a>
+</li>
+          <li><a href="opendataval.model.html#module-opendataval.model.lenet">opendataval.model.lenet</a>
+</li>
+          <li><a href="opendataval.model.html#module-opendataval.model.logistic_regression">opendataval.model.logistic_regression</a>
+</li>
+          <li><a href="opendataval.model.html#module-opendataval.model.mlp">opendataval.model.mlp</a>
+</li>
+          <li><a href="opendataval.html#module-opendataval.presets">opendataval.presets</a>
+</li>
+          <li><a href="opendataval.html#module-opendataval.util">opendataval.util</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="N" class="genindex-section">
+  <h2>N</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="opendataval.dataloader.html#opendataval.dataloader.noisify.NoiseFunc">NoiseFunc (class in opendataval.dataloader.noisify)</a>
+</li>
+        <li><a href="opendataval.dataloader.html#opendataval.dataloader.fetcher.DataFetcher.noisify">noisify() (opendataval.dataloader.fetcher.DataFetcher method)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="opendataval.experiment.html#opendataval.experiment.exper_methods.noisy_detection">noisy_detection() (in module opendataval.experiment.exper_methods)</a>
+</li>
+        <li><a href="opendataval.dataloader.html#opendataval.dataloader.fetcher.DataFetcher.num_points">num_points (opendataval.dataloader.fetcher.DataFetcher property)</a>
+</li>
+        <li><a href="opendataval.dataloader.datasets.html#opendataval.dataloader.datasets.imagesets.numbers">numbers (in module opendataval.dataloader.datasets.imagesets)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="O" class="genindex-section">
+  <h2>O</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="generated/generated/opendataval.dataloader.one_hot_encode.html#opendataval.dataloader.one_hot_encode">one_hot_encode() (in module opendataval.dataloader)</a>, <a href="generated/opendataval.dataloader.one_hot_encode.html#opendataval.dataloader.one_hot_encode">[1]</a>
+
+        <ul>
+          <li><a href="opendataval.dataloader.html#opendataval.dataloader.register.one_hot_encode">(in module opendataval.dataloader.register)</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval
+
+        <ul>
+          <li><a href="opendataval.html#module-opendataval">module</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.dataloader
+
+        <ul>
+          <li><a href="generated/opendataval.dataloader.html#module-opendataval.dataloader">module</a>, <a href="opendataval.dataloader.html#module-opendataval.dataloader">[1]</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.dataloader.datasets
+
+        <ul>
+          <li><a href="generated/generated/opendataval.dataloader.datasets.html#module-opendataval.dataloader.datasets">module</a>, <a href="generated/opendataval.dataloader.datasets.html#module-opendataval.dataloader.datasets">[1]</a>, <a href="opendataval.dataloader.datasets.html#module-opendataval.dataloader.datasets">[2]</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.dataloader.datasets.cleanlab
+
+        <ul>
+          <li><a href="opendataval.dataloader.datasets.html#module-opendataval.dataloader.datasets.cleanlab">module</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.dataloader.datasets.contest
+
+        <ul>
+          <li><a href="opendataval.dataloader.datasets.html#module-opendataval.dataloader.datasets.contest">module</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.dataloader.datasets.datasets
+
+        <ul>
+          <li><a href="generated/generated/generated/opendataval.dataloader.datasets.datasets.html#module-opendataval.dataloader.datasets.datasets">module</a>, <a href="generated/generated/opendataval.dataloader.datasets.datasets.html#module-opendataval.dataloader.datasets.datasets">[1]</a>, <a href="generated/opendataval.dataloader.datasets.datasets.html#module-opendataval.dataloader.datasets.datasets">[2]</a>, <a href="opendataval.dataloader.datasets.html#module-opendataval.dataloader.datasets.datasets">[3]</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.dataloader.datasets.imagesets
+
+        <ul>
+          <li><a href="generated/generated/generated/opendataval.dataloader.datasets.imagesets.html#module-opendataval.dataloader.datasets.imagesets">module</a>, <a href="generated/generated/opendataval.dataloader.datasets.imagesets.html#module-opendataval.dataloader.datasets.imagesets">[1]</a>, <a href="generated/opendataval.dataloader.datasets.imagesets.html#module-opendataval.dataloader.datasets.imagesets">[2]</a>, <a href="opendataval.dataloader.datasets.html#module-opendataval.dataloader.datasets.imagesets">[3]</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.dataloader.datasets.nlpsets
+
+        <ul>
+          <li><a href="generated/generated/generated/opendataval.dataloader.datasets.nlpsets.html#module-opendataval.dataloader.datasets.nlpsets">module</a>, <a href="generated/generated/opendataval.dataloader.datasets.nlpsets.html#module-opendataval.dataloader.datasets.nlpsets">[1]</a>, <a href="generated/opendataval.dataloader.datasets.nlpsets.html#module-opendataval.dataloader.datasets.nlpsets">[2]</a>, <a href="opendataval.dataloader.datasets.html#module-opendataval.dataloader.datasets.nlpsets">[3]</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.dataloader.fetcher
+
+        <ul>
+          <li><a href="opendataval.dataloader.html#module-opendataval.dataloader.fetcher">module</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.dataloader.noisify
+
+        <ul>
+          <li><a href="opendataval.dataloader.html#module-opendataval.dataloader.noisify">module</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.dataloader.register
+
+        <ul>
+          <li><a href="opendataval.dataloader.html#module-opendataval.dataloader.register">module</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.dataloader.util
+
+        <ul>
+          <li><a href="opendataval.dataloader.html#module-opendataval.dataloader.util">module</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.dataval
+
+        <ul>
+          <li><a href="generated/opendataval.dataval.html#module-opendataval.dataval">module</a>, <a href="opendataval.dataval.html#module-opendataval.dataval">[1]</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.dataval.ame
+
+        <ul>
+          <li><a href="opendataval.dataval.ame.html#module-opendataval.dataval.ame">module</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.dataval.ame.ame
+
+        <ul>
+          <li><a href="opendataval.dataval.ame.html#module-opendataval.dataval.ame.ame">module</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.dataval.api
+
+        <ul>
+          <li><a href="opendataval.dataval.html#module-opendataval.dataval.api">module</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.dataval.dvrl
+
+        <ul>
+          <li><a href="opendataval.dataval.dvrl.html#module-opendataval.dataval.dvrl">module</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.dataval.dvrl.dvrl
+
+        <ul>
+          <li><a href="opendataval.dataval.dvrl.html#module-opendataval.dataval.dvrl.dvrl">module</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.dataval.influence
+
+        <ul>
+          <li><a href="opendataval.dataval.influence.html#module-opendataval.dataval.influence">module</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.dataval.influence.influence
+
+        <ul>
+          <li><a href="opendataval.dataval.influence.html#module-opendataval.dataval.influence.influence">module</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.dataval.knnshap
+
+        <ul>
+          <li><a href="opendataval.dataval.knnshap.html#module-opendataval.dataval.knnshap">module</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li>
+    opendataval.dataval.knnshap.knnshap
+
+        <ul>
+          <li><a href="opendataval.dataval.knnshap.html#module-opendataval.dataval.knnshap.knnshap">module</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.dataval.margcontrib
+
+        <ul>
+          <li><a href="opendataval.dataval.margcontrib.html#module-opendataval.dataval.margcontrib">module</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.dataval.margcontrib.banzhaf
+
+        <ul>
+          <li><a href="opendataval.dataval.margcontrib.html#module-opendataval.dataval.margcontrib.banzhaf">module</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.dataval.margcontrib.betashap
+
+        <ul>
+          <li><a href="opendataval.dataval.margcontrib.html#module-opendataval.dataval.margcontrib.betashap">module</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.dataval.margcontrib.datashap
+
+        <ul>
+          <li><a href="opendataval.dataval.margcontrib.html#module-opendataval.dataval.margcontrib.datashap">module</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.dataval.margcontrib.loo
+
+        <ul>
+          <li><a href="opendataval.dataval.margcontrib.html#module-opendataval.dataval.margcontrib.loo">module</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.dataval.margcontrib.shap
+
+        <ul>
+          <li><a href="opendataval.dataval.margcontrib.html#module-opendataval.dataval.margcontrib.shap">module</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.dataval.oob
+
+        <ul>
+          <li><a href="opendataval.dataval.oob.html#module-opendataval.dataval.oob">module</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.dataval.oob.oob
+
+        <ul>
+          <li><a href="opendataval.dataval.oob.html#module-opendataval.dataval.oob.oob">module</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.dataval.random
+
+        <ul>
+          <li><a href="opendataval.dataval.random.html#module-opendataval.dataval.random">module</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.dataval.random.random
+
+        <ul>
+          <li><a href="opendataval.dataval.random.html#module-opendataval.dataval.random.random">module</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.experiment
+
+        <ul>
+          <li><a href="generated/opendataval.experiment.html#module-opendataval.experiment">module</a>, <a href="opendataval.experiment.html#module-opendataval.experiment">[1]</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.experiment.api
+
+        <ul>
+          <li><a href="opendataval.experiment.html#module-opendataval.experiment.api">module</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.experiment.exper_methods
+
+        <ul>
+          <li><a href="generated/generated/opendataval.experiment.exper_methods.html#module-opendataval.experiment.exper_methods">module</a>, <a href="generated/opendataval.experiment.exper_methods.html#module-opendataval.experiment.exper_methods">[1]</a>, <a href="opendataval.experiment.html#module-opendataval.experiment.exper_methods">[2]</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.model
+
+        <ul>
+          <li><a href="generated/opendataval.model.html#module-opendataval.model">module</a>, <a href="opendataval.model.html#module-opendataval.model">[1]</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.model.api
+
+        <ul>
+          <li><a href="opendataval.model.html#module-opendataval.model.api">module</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.model.bert
+
+        <ul>
+          <li><a href="opendataval.model.html#module-opendataval.model.bert">module</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.model.lenet
+
+        <ul>
+          <li><a href="opendataval.model.html#module-opendataval.model.lenet">module</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.model.logistic_regression
+
+        <ul>
+          <li><a href="opendataval.model.html#module-opendataval.model.logistic_regression">module</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.model.mlp
+
+        <ul>
+          <li><a href="opendataval.model.html#module-opendataval.model.mlp">module</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.presets
+
+        <ul>
+          <li><a href="opendataval.html#module-opendataval.presets">module</a>
+</li>
+        </ul></li>
+        <li>
+    opendataval.util
+
+        <ul>
+          <li><a href="opendataval.html#module-opendataval.util">module</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="P" class="genindex-section">
+  <h2>P</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="opendataval.html#opendataval.util.ParamSweep">ParamSweep (class in opendataval.util)</a>
+</li>
+        <li><a href="opendataval.experiment.html#opendataval.experiment.api.ExperimentMediator.plot">plot() (opendataval.experiment.api.ExperimentMediator method)</a>
+</li>
+        <li><a href="opendataval.model.html#opendataval.model.api.ClassifierSkLearnWrapper.predict">predict() (opendataval.model.api.ClassifierSkLearnWrapper method)</a>
+
+        <ul>
+          <li><a href="opendataval.model.html#opendataval.model.api.Model.predict">(opendataval.model.api.Model method)</a>
+</li>
+          <li><a href="opendataval.model.html#opendataval.model.api.RegressionSkLearnWrapper.predict">(opendataval.model.api.RegressionSkLearnWrapper method)</a>
+</li>
+          <li><a href="opendataval.model.html#opendataval.model.api.TorchPredictMixin.predict">(opendataval.model.api.TorchPredictMixin method)</a>
+</li>
+          <li><a href="opendataval.model.html#opendataval.model.bert.BertClassifier.predict">(opendataval.model.bert.BertClassifier method)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="R" class="genindex-section">
+  <h2>R</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="generated/generated/opendataval.dataval.RandomEvaluator.html#opendataval.dataval.RandomEvaluator">RandomEvaluator (class in opendataval.dataval)</a>, <a href="generated/opendataval.dataval.RandomEvaluator.html#opendataval.dataval.RandomEvaluator">[1]</a>
+
+        <ul>
+          <li><a href="opendataval.dataval.random.html#opendataval.dataval.random.random.RandomEvaluator">(class in opendataval.dataval.random.random)</a>
+</li>
+        </ul></li>
+        <li><a href="generated/generated/opendataval.dataloader.Register.html#opendataval.dataloader.Register">Register (class in opendataval.dataloader)</a>, <a href="generated/opendataval.dataloader.Register.html#opendataval.dataloader.Register">[1]</a>
+
+        <ul>
+          <li><a href="opendataval.dataloader.html#opendataval.dataloader.register.Register">(class in opendataval.dataloader.register)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="opendataval.model.html#opendataval.model.mlp.RegressionMLP">RegressionMLP (class in opendataval.model.mlp)</a>
+</li>
+        <li><a href="generated/generated/opendataval.model.RegressionSkLearnWrapper.html#opendataval.model.RegressionSkLearnWrapper">RegressionSkLearnWrapper (class in opendataval.model)</a>, <a href="generated/opendataval.model.RegressionSkLearnWrapper.html#opendataval.model.RegressionSkLearnWrapper">[1]</a>
+
+        <ul>
+          <li><a href="opendataval.model.html#opendataval.model.api.RegressionSkLearnWrapper">(class in opendataval.model.api)</a>
+</li>
+        </ul></li>
+        <li><a href="opendataval.experiment.html#opendataval.experiment.exper_methods.remove_high_low">remove_high_low() (in module opendataval.experiment.exper_methods)</a>
+</li>
+        <li><a href="opendataval.dataloader.datasets.html#opendataval.dataloader.datasets.imagesets.ResnetEmbeding">ResnetEmbeding() (in module opendataval.dataloader.datasets.imagesets)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="S" class="genindex-section">
+  <h2>S</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="opendataval.experiment.html#opendataval.experiment.exper_methods.save_dataval">save_dataval() (in module opendataval.experiment.exper_methods)</a>
+</li>
+        <li><a href="opendataval.experiment.html#opendataval.experiment.api.ExperimentMediator.save_output">save_output() (opendataval.experiment.api.ExperimentMediator method)</a>
+</li>
+        <li><a href="opendataval.experiment.html#opendataval.experiment.api.ExperimentMediator.set_output_directory">set_output_directory() (opendataval.experiment.api.ExperimentMediator method)</a>
+</li>
+        <li><a href="generated/opendataval.util.set_random_state.html#opendataval.util.set_random_state">set_random_state() (in module opendataval.util)</a>, <a href="opendataval.html#opendataval.util.set_random_state">[1]</a>
+</li>
+        <li><a href="opendataval.dataloader.html#opendataval.dataloader.fetcher.DataFetcher.setup">setup() (opendataval.dataloader.fetcher.DataFetcher class method)</a>
+
+        <ul>
+          <li><a href="opendataval.dataval.html#opendataval.dataval.api.DataEvaluator.setup">(opendataval.dataval.api.DataEvaluator method)</a>
+</li>
+          <li><a href="opendataval.experiment.html#opendataval.experiment.api.ExperimentMediator.setup">(opendataval.experiment.api.ExperimentMediator class method)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="generated/generated/opendataval.dataval.ShapEvaluator.html#opendataval.dataval.ShapEvaluator">ShapEvaluator (class in opendataval.dataval)</a>, <a href="generated/opendataval.dataval.ShapEvaluator.html#opendataval.dataval.ShapEvaluator">[1]</a>
+
+        <ul>
+          <li><a href="opendataval.dataval.margcontrib.html#opendataval.dataval.margcontrib.shap.ShapEvaluator">(class in opendataval.dataval.margcontrib.shap)</a>
+</li>
+        </ul></li>
+        <li><a href="opendataval.dataloader.datasets.html#opendataval.dataloader.datasets.imagesets.show_image">show_image() (in module opendataval.dataloader.datasets.imagesets)</a>
+</li>
+        <li><a href="opendataval.dataloader.html#opendataval.dataloader.fetcher.DataFetcher.split_dataset_by_count">split_dataset_by_count() (opendataval.dataloader.fetcher.DataFetcher method)</a>
+</li>
+        <li><a href="opendataval.dataloader.html#opendataval.dataloader.fetcher.DataFetcher.split_dataset_by_indices">split_dataset_by_indices() (opendataval.dataloader.fetcher.DataFetcher method)</a>
+</li>
+        <li><a href="opendataval.dataloader.html#opendataval.dataloader.fetcher.DataFetcher.split_dataset_by_prop">split_dataset_by_prop() (opendataval.dataloader.fetcher.DataFetcher method)</a>
+</li>
+        <li><a href="opendataval.html#opendataval.util.StrEnum">StrEnum (class in opendataval.util)</a>
+</li>
+        <li><a href="opendataval.html#opendataval.util.ParamSweep.sweep">sweep() (opendataval.util.ParamSweep method)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="T" class="genindex-section">
+  <h2>T</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="opendataval.model.html#opendataval.model.api.to_numpy">to_numpy() (in module opendataval.model.api)</a>
+</li>
+        <li><a href="opendataval.model.html#opendataval.model.bert.BertClassifier.tokenize">tokenize() (opendataval.model.bert.BertClassifier method)</a>
+</li>
+        <li><a href="generated/generated/opendataval.model.TorchClassMixin.html#opendataval.model.TorchClassMixin">TorchClassMixin (class in opendataval.model)</a>, <a href="generated/opendataval.model.TorchClassMixin.html#opendataval.model.TorchClassMixin">[1]</a>
+
+        <ul>
+          <li><a href="opendataval.model.html#opendataval.model.api.TorchClassMixin">(class in opendataval.model.api)</a>
+</li>
+        </ul></li>
+        <li><a href="generated/generated/opendataval.model.TorchPredictMixin.html#opendataval.model.TorchPredictMixin">TorchPredictMixin (class in opendataval.model)</a>, <a href="generated/opendataval.model.TorchPredictMixin.html#opendataval.model.TorchPredictMixin">[1]</a>
+
+        <ul>
+          <li><a href="opendataval.model.html#opendataval.model.api.TorchPredictMixin">(class in opendataval.model.api)</a>
+</li>
+        </ul></li>
+        <li><a href="generated/generated/opendataval.model.TorchRegressMixin.html#opendataval.model.TorchRegressMixin">TorchRegressMixin (class in opendataval.model)</a>, <a href="generated/opendataval.model.TorchRegressMixin.html#opendataval.model.TorchRegressMixin">[1]</a>
+
+        <ul>
+          <li><a href="opendataval.model.html#opendataval.model.api.TorchRegressMixin">(class in opendataval.model.api)</a>
+</li>
+        </ul></li>
+        <li><a href="opendataval.dataval.html#opendataval.dataval.api.DataEvaluator.train">train() (opendataval.dataval.api.DataEvaluator method)</a>
+</li>
+        <li><a href="opendataval.dataval.ame.html#opendataval.dataval.ame.ame.AME.train_data_values">train_data_values() (opendataval.dataval.ame.ame.AME method)</a>
+
+        <ul>
+          <li><a href="opendataval.dataval.ame.html#opendataval.dataval.ame.ame.BaggingEvaluator.train_data_values">(opendataval.dataval.ame.ame.BaggingEvaluator method)</a>
+</li>
+          <li><a href="opendataval.dataval.html#opendataval.dataval.api.DataEvaluator.train_data_values">(opendataval.dataval.api.DataEvaluator method)</a>
+</li>
+          <li><a href="opendataval.dataval.dvrl.html#opendataval.dataval.dvrl.dvrl.DVRL.train_data_values">(opendataval.dataval.dvrl.dvrl.DVRL method)</a>
+</li>
+          <li><a href="opendataval.dataval.influence.html#opendataval.dataval.influence.influence.InfluenceFunctionEval.train_data_values">(opendataval.dataval.influence.influence.InfluenceFunctionEval method)</a>
+</li>
+          <li><a href="opendataval.dataval.knnshap.html#opendataval.dataval.knnshap.knnshap.KNNShapley.train_data_values">(opendataval.dataval.knnshap.knnshap.KNNShapley method)</a>
+</li>
+          <li><a href="opendataval.dataval.margcontrib.html#opendataval.dataval.margcontrib.banzhaf.DataBanzhaf.train_data_values">(opendataval.dataval.margcontrib.banzhaf.DataBanzhaf method)</a>
+</li>
+          <li><a href="opendataval.dataval.margcontrib.html#opendataval.dataval.margcontrib.loo.LeaveOneOut.train_data_values">(opendataval.dataval.margcontrib.loo.LeaveOneOut method)</a>
+</li>
+          <li><a href="opendataval.dataval.margcontrib.html#opendataval.dataval.margcontrib.shap.ShapEvaluator.train_data_values">(opendataval.dataval.margcontrib.shap.ShapEvaluator method)</a>
+</li>
+          <li><a href="opendataval.dataval.oob.html#opendataval.dataval.oob.oob.DataOob.train_data_values">(opendataval.dataval.oob.oob.DataOob method)</a>
+</li>
+          <li><a href="opendataval.dataval.random.html#opendataval.dataval.random.random.RandomEvaluator.train_data_values">(opendataval.dataval.random.random.RandomEvaluator method)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="opendataval.model.html#opendataval.model.api.TorchClassMixin.training">training (opendataval.model.api.TorchClassMixin attribute)</a>
+
+        <ul>
+          <li><a href="opendataval.model.html#opendataval.model.api.TorchPredictMixin.training">(opendataval.model.api.TorchPredictMixin attribute)</a>
+</li>
+          <li><a href="opendataval.model.html#opendataval.model.api.TorchRegressMixin.training">(opendataval.model.api.TorchRegressMixin attribute)</a>
+</li>
+        </ul></li>
+        <li><a href="opendataval.dataloader.html#opendataval.dataloader.util.IndexTransformDataset.transform">transform (opendataval.dataloader.util.IndexTransformDataset property)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="V" class="genindex-section">
+  <h2>V</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="opendataval.dataloader.datasets.html#opendataval.dataloader.datasets.imagesets.VisionAdapter">VisionAdapter (class in opendataval.dataloader.datasets.imagesets)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="W" class="genindex-section">
+  <h2>W</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="opendataval.html#opendataval.util.FuncEnum.wrap">wrap() (opendataval.util.FuncEnum static method)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="opendataval.html#opendataval.util.wrapper">wrapper (class in opendataval.util)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          
+          
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2023, OpenDataVal
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer no-toc">
+      
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/scripts/furo.js"></script>
+    </body>
+</html>
