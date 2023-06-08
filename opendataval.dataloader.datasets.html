@@ -275,7 +275,6 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="leaderboards.html">leaderboards</a></li>
-<li class="toctree-l1"><a class="reference internal" href="paper.html">paper</a></li>
 </ul>
 
 </div>
@@ -407,8 +406,25 @@ Jun. 2009, doi: <a class="reference external" href="https://doi.org/10.1109/cvpr
 </dd></dl>
 
 </section>
-<section id="module-opendataval.dataloader.datasets.contest">
-<span id="opendataval-dataloader-datasets-contest-module"></span><h2>opendataval.dataloader.datasets.contest module<a class="headerlink" href="#module-opendataval.dataloader.datasets.contest" title="Permalink to this heading">#</a></h2>
+<section id="opendataval-dataloader-datasets-challenge-module">
+<h2>opendataval.dataloader.datasets.challenge module<a class="headerlink" href="#opendataval-dataloader-datasets-challenge-module" title="Permalink to this heading">#</a></h2>
+<span class="target" id="module-opendataval.dataloader.datasets.challenge"></span><dl class="py data">
+<dt class="sig sig-object py" id="opendataval.dataloader.datasets.challenge.CHALLENGE_URL">
+<span class="sig-prename descclassname"><span class="pre">opendataval.dataloader.datasets.challenge.</span></span><span class="sig-name descname"><span class="pre">CHALLENGE_URL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'https://opendataval.yongchanstat.com/challenge'</span></em><a class="headerlink" href="#opendataval.dataloader.datasets.challenge.CHALLENGE_URL" title="Permalink to this definition">#</a></dt>
+<dd><p>Backend URL for opendataval to get signed URLs to the challenge data set.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="opendataval.dataloader.datasets.challenge.download_paths">
+<span class="sig-prename descclassname"><span class="pre">opendataval.dataloader.datasets.challenge.</span></span><span class="sig-name descname"><span class="pre">download_paths</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signed_urls</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cache_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force_download</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataloader.datasets.challenge.download_paths" title="Permalink to this definition">#</a></dt>
+<dd><p>Downloads the the data from the cloud bucket via singed URLs.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="opendataval.dataloader.datasets.challenge.iris_challenge">
+<span class="sig-prename descclassname"><span class="pre">opendataval.dataloader.datasets.challenge.</span></span><span class="sig-name descname"><span class="pre">iris_challenge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cache_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force_download</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataloader.datasets.challenge.iris_challenge" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
 </section>
 <section id="module-opendataval.dataloader.datasets.datasets">
 <span id="opendataval-dataloader-datasets-datasets-module"></span><h2>opendataval.dataloader.datasets.datasets module<a class="headerlink" href="#module-opendataval.dataloader.datasets.datasets" title="Permalink to this heading">#</a></h2>
@@ -829,7 +845,12 @@ registering the data set to load the data set as needed.
 <li><a class="reference internal" href="#opendataval.dataloader.datasets.cleanlab.imagenet_embed"><code class="docutils literal notranslate"><span class="pre">imagenet_embed()</span></code></a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#module-opendataval.dataloader.datasets.contest">opendataval.dataloader.datasets.contest module</a></li>
+<li><a class="reference internal" href="#opendataval-dataloader-datasets-challenge-module">opendataval.dataloader.datasets.challenge module</a><ul>
+<li><a class="reference internal" href="#opendataval.dataloader.datasets.challenge.CHALLENGE_URL"><code class="docutils literal notranslate"><span class="pre">CHALLENGE_URL</span></code></a></li>
+<li><a class="reference internal" href="#opendataval.dataloader.datasets.challenge.download_paths"><code class="docutils literal notranslate"><span class="pre">download_paths()</span></code></a></li>
+<li><a class="reference internal" href="#opendataval.dataloader.datasets.challenge.iris_challenge"><code class="docutils literal notranslate"><span class="pre">iris_challenge()</span></code></a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#module-opendataval.dataloader.datasets.datasets">opendataval.dataloader.datasets.datasets module</a><ul>
 <li><a class="reference internal" href="#opendataval.dataloader.datasets.datasets.download_2dplanes"><code class="docutils literal notranslate"><span class="pre">download_2dplanes()</span></code></a></li>
 <li><a class="reference internal" href="#opendataval.dataloader.datasets.datasets.download_MiniBooNE"><code class="docutils literal notranslate"><span class="pre">download_MiniBooNE()</span></code></a></li>
