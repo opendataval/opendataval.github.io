@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
-<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="OpenDataVal license" href="license.html" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="opendataval" href="modules.html" />
 
     <link rel="shortcut icon" href="_static/favicon.ico"/><!-- Generated with Sphinx 7.0.1 and Furo 2023.05.20 -->
-        <title>Open Data Val documentation</title>
+        <title>OpenDataVal documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=e6660623a769aa55fea372102b9bf3151b292993" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
@@ -123,7 +123,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="#"><div class="brand">Open Data Val  documentation</div></a>
+      <a href="#"><div class="brand">OpenDataVal  documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -150,7 +150,7 @@
     <img class="sidebar-logo only-dark" src="_static/logo-dark-mode.png" alt="Dark Logo"/>
   </div>
   
-  <span class="sidebar-brand-text">Open Data Val  documentation</span>
+  <span class="sidebar-brand-text">OpenDataVal  documentation</span>
   
 </a><form class="sidebar-search-container" method="get" action="search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -159,7 +159,6 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <ul>
-<li class="toctree-l1"><a class="reference internal" href="license.html">license</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="modules.html">modules</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of modules</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2 has-children"><a class="reference internal" href="opendataval.html">opendataval package</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of opendataval package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3 has-children"><a class="reference internal" href="opendataval.dataloader.html">opendataval.dataloader package</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of opendataval.dataloader package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -275,6 +274,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="leaderboards.html">leaderboards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">license</a></li>
 </ul>
 
 </div>
@@ -309,25 +309,27 @@
           </label>
         </div>
         <article role="main">
-          <section id="open-data-valuation-documentation">
-<h1>Open Data Valuation documentation<a class="headerlink" href="#open-data-valuation-documentation" title="Permalink to this heading">#</a></h1>
+          <section id="opendataval-documentation">
+<h1>OpenDataVal Documentation<a class="headerlink" href="#opendataval-documentation" title="Permalink to this heading">#</a></h1>
 <div class="toctree-wrapper compound">
 </div>
-<p><strong>Version</strong>: 0.0.1</p>
+<p><strong>Version</strong>: 1.0.0</p>
 <p><strong>Useful links</strong>:
-<a class="reference external" href="https://github.com/opendataval/opendataval/#hourglass_flowing_sand-installation">Installation</a> |
-<a class="reference external" href="https://github.com/opendataval/opendataval/">Source Repository</a> |
-<a class="reference external" href="https://github.com/opendataval/opendataval/issues">Issue Tracker</a> |
-<a class="reference external" href="https://github.com/opendataval/opendataval/issues">Releases</a></p>
-<p><strong>opendataval</strong> is an open-source initiative that with a diverse array of datasets/models
+<a class="reference external" href="https://github.com/kevinfjiang/opendataval/#hourglass_flowing_sand-installation">Installation</a> |
+<a class="reference external" href="https://github.com/kevinfjiang/opendataval/">Source Repository</a> |
+<a class="reference external" href="https://github.com/kevinfjiang/opendataval/issues">Issue Tracker</a> |
+<a class="reference external" href="https://github.com/kevinfjiang/opendataval/issues">Releases</a></p>
+<p><strong>OpenDataVal</strong> is an open-source initiative that with a diverse array of datasets/models
 (image, NLP, and tabular), data valuation algorithims, and evaluation tasks using just a
 few lines of code.</p>
+<section id="abstract">
+<h2>Abstract<a class="headerlink" href="#abstract" title="Permalink to this heading">#</a></h2>
+<p>Assessing the quality and impact of individual data points is critical for improving model performance and mitigating undesirable biases within the training dataset. Several data valuation algorithms have been proposed to quantify data quality, however, there lacks a systemic and standardized benchmarking system for data valuation. In this paper, we introduce <strong>OpenDataVal</strong>, an easy-to-use and unified benchmark framework that empowers researchers and practitioners to apply and compare various data valuation algorithms. <strong>OpenDataVal</strong> provides an integrated environment that includes (i) a diverse collection of image, natural language, and tabular datasets, (ii) implementations of nine different state-of-the-art data valuation algorithms, and (iii) a prediction model API that can import any models in scikit-learn. Furthermore, we propose four downstream machine learning tasks for evaluating the quality of data values. We perform benchmarking analysis using <strong>OpenDataVal</strong>, quantifying and comparing the efficacy of state-of-the-art data valuation approaches. We find that no single algorithm performs uniformly best across all tasks, and an appropriate algorithm should be employed for a user’s downstream task. <strong>OpenDataVal</strong> is publicly available at <a class="reference external" href="https://opendataval.github.io">https://opendataval.github.io</a> with comprehensive documentation. Furthermore, we provide a leaderboard where researchers can evaluate the effectiveness of their own data valuation algorithms.</p>
+</section>
 <section id="indices-and-tables">
 <h2>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
-<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
-<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
 </ul>
 </section>
 </section>
@@ -337,12 +339,12 @@ few lines of code.</p>
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="license.html">
+          <a class="next-page" href="modules.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">OpenDataVal license</div>
+                <div class="title">opendataval</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -377,7 +379,8 @@ few lines of code.</p>
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">Open Data Valuation documentation</a><ul>
+<li><a class="reference internal" href="#">OpenDataVal Documentation</a><ul>
+<li><a class="reference internal" href="#abstract">Abstract</a></li>
 <li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
 </ul>
 </li>
