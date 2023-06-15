@@ -766,7 +766,7 @@ be unique. If there are any duplicates, warns user.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="opendataval.dataloader.register.Register.from_csv">
-<span class="sig-name descname"><span class="pre">from_csv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_columns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataloader.register.Register.from_csv" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">from_csv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_columns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataloader.register.Register.from_csv" title="Permalink to this definition">#</a></dt>
 <dd><p>Register data set from csv file.</p>
 </dd></dl>
 
@@ -825,7 +825,7 @@ transformations, and returns the covariates and labels.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="opendataval.dataloader.register.cache">
 <span class="sig-prename descclassname"><span class="pre">opendataval.dataloader.register.</span></span><span class="sig-name descname"><span class="pre">cache</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cache_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force_download</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Path</span></span></span><a class="headerlink" href="#opendataval.dataloader.register.cache" title="Permalink to this definition">#</a></dt>
-<dd><p>Download a file if it it is not present and returns the file_path.</p>
+<dd><p>Download a file if it it is not present and returns the filepath.</p>
 <section id="id20">
 <h3>Parameters<a class="headerlink" href="#id20" title="Permalink to this heading">#</a></h3>
 <dl class="simple">
@@ -846,14 +846,21 @@ transformations, and returns the covariates and labels.</p>
 </dd>
 </dl>
 </section>
+<section id="id22">
+<h3>Raises<a class="headerlink" href="#id22" title="Permalink to this heading">#</a></h3>
+<dl class="simple">
+<dt>HTTPError</dt><dd><p>HTTP error occurred during downloading the dataset.</p>
+</dd>
+</dl>
+</section>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="opendataval.dataloader.register.one_hot_encode">
 <span class="sig-prename descclassname"><span class="pre">opendataval.dataloader.register.</span></span><span class="sig-name descname"><span class="pre">one_hot_encode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="headerlink" href="#opendataval.dataloader.register.one_hot_encode" title="Permalink to this definition">#</a></dt>
 <dd><p>One hot encodes a numpy array.</p>
-<section id="id22">
-<h3>Raises<a class="headerlink" href="#id22" title="Permalink to this heading">#</a></h3>
+<section id="id23">
+<h3>Raises<a class="headerlink" href="#id23" title="Permalink to this heading">#</a></h3>
 <dl class="simple">
 <dt>ValueError</dt><dd><p>When the input array is not of shape (N,), (N,1), (N,1,1)…</p>
 </dd>
@@ -869,15 +876,15 @@ transformations, and returns the covariates and labels.</p>
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">opendataval.dataloader.util.</span></span><span class="sig-name descname"><span class="pre">CatDataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">datasets</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">torch.utils.data.dataset.Dataset</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataloader.util.CatDataset" title="Permalink to this definition">#</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Dataset</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dataset</span></code>, …]]</p>
 <p>Data set wrapping indexable Datasets.</p>
-<section id="id23">
-<h3>Parameters<a class="headerlink" href="#id23" title="Permalink to this heading">#</a></h3>
+<section id="id24">
+<h3>Parameters<a class="headerlink" href="#id24" title="Permalink to this heading">#</a></h3>
 <dl class="simple">
 <dt>datasets<span class="classifier">tuple[Dataset]</span></dt><dd><p>Tuple of data sets we would like to concat together, must be same length</p>
 </dd>
 </dl>
 </section>
-<section id="id24">
-<h3>Raises<a class="headerlink" href="#id24" title="Permalink to this heading">#</a></h3>
+<section id="id25">
+<h3>Raises<a class="headerlink" href="#id25" title="Permalink to this heading">#</a></h3>
 <dl class="simple">
 <dt>ValueError</dt><dd><p>If all input data sets are not the same length</p>
 </dd>
@@ -893,8 +900,8 @@ transformations, and returns the covariates and labels.</p>
 <p>Primarily useful when adding noise to specific subset of indices. If a transform
 is defined, it will apply the transformation but also pass in the indices
 (what is passed into __getitem__) as well.</p>
-<section id="id25">
-<h3>Parameters<a class="headerlink" href="#id25" title="Permalink to this heading">#</a></h3>
+<section id="id26">
+<h3>Parameters<a class="headerlink" href="#id26" title="Permalink to this heading">#</a></h3>
 <dl class="simple">
 <dt>dataset<span class="classifier">Dataset[T_co]</span></dt><dd><p>Data set with transform to be applied</p>
 </dd>
@@ -920,8 +927,8 @@ the specific transform per index, by default None which is no transform.</p>
 want to get around the type checks of Datasets. This is intended to be used
 with NLP data sets as the the axis 1 dimension is variable and BERT tokenizers take
 inputs as only lists.</p>
-<section id="id26">
-<h3>Parameters<a class="headerlink" href="#id26" title="Permalink to this heading">#</a></h3>
+<section id="id27">
+<h3>Parameters<a class="headerlink" href="#id27" title="Permalink to this heading">#</a></h3>
 <dl class="simple">
 <dt>input_list<span class="classifier">Sequence[T_co]</span></dt><dd><p>Input sequence to be used as data set.</p>
 </dd>
@@ -964,7 +971,7 @@ for the covariates and labels of a data set</p>
 <table class="autosummary longtable docutils align-default">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="generated/opendataval.dataloader.cache.html#opendataval.dataloader.cache" title="opendataval.dataloader.cache"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cache</span></code></a>(url, cache_dir[, file_name, ...])</p></td>
-<td><p>Download a file if it it is not present and returns the file_path.</p></td>
+<td><p>Download a file if it it is not present and returns the filepath.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="generated/opendataval.dataloader.mix_labels.html#opendataval.dataloader.mix_labels" title="opendataval.dataloader.mix_labels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mix_labels</span></code></a>(fetcher[, noise_rate])</p></td>
 <td><p>Mixes y_train labels of a DataFetcher, adding noise to data.</p></td>

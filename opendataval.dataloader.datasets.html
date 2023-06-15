@@ -411,13 +411,19 @@ Jun. 2009, doi: <a class="reference external" href="https://doi.org/10.1109/cvpr
 <span class="target" id="module-opendataval.dataloader.datasets.challenge"></span><dl class="py data">
 <dt class="sig sig-object py" id="opendataval.dataloader.datasets.challenge.CHALLENGE_URL">
 <span class="sig-prename descclassname"><span class="pre">opendataval.dataloader.datasets.challenge.</span></span><span class="sig-name descname"><span class="pre">CHALLENGE_URL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'https://opendataval.yongchanstat.com/challenge'</span></em><a class="headerlink" href="#opendataval.dataloader.datasets.challenge.CHALLENGE_URL" title="Permalink to this definition">#</a></dt>
-<dd><p>Backend URL for opendataval to get signed URLs to the challenge data set.</p>
+<dd><p>Backend URL for opendataval to get drive ids to the challenge data set.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="opendataval.dataloader.datasets.challenge.download_paths">
-<span class="sig-prename descclassname"><span class="pre">opendataval.dataloader.datasets.challenge.</span></span><span class="sig-name descname"><span class="pre">download_paths</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signed_urls</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cache_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force_download</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataloader.datasets.challenge.download_paths" title="Permalink to this definition">#</a></dt>
-<dd><p>Downloads the the data from the cloud bucket via singed URLs.</p>
+<dt class="sig sig-object py" id="opendataval.dataloader.datasets.challenge.basename">
+<span class="sig-prename descclassname"><span class="pre">opendataval.dataloader.datasets.challenge.</span></span><span class="sig-name descname"><span class="pre">basename</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataloader.datasets.challenge.basename" title="Permalink to this definition">#</a></dt>
+<dd><p>Get basename of file.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="opendataval.dataloader.datasets.challenge.download_drive">
+<span class="sig-prename descclassname"><span class="pre">opendataval.dataloader.datasets.challenge.</span></span><span class="sig-name descname"><span class="pre">download_drive</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drive_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cache_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force_download</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataloader.datasets.challenge.download_drive" title="Permalink to this definition">#</a></dt>
+<dd><p>Downloads file from google drive with set retry attempts.</p>
 </dd></dl>
 
 <dl class="py function">
@@ -847,7 +853,8 @@ registering the data set to load the data set as needed.
 </li>
 <li><a class="reference internal" href="#opendataval-dataloader-datasets-challenge-module">opendataval.dataloader.datasets.challenge module</a><ul>
 <li><a class="reference internal" href="#opendataval.dataloader.datasets.challenge.CHALLENGE_URL"><code class="docutils literal notranslate"><span class="pre">CHALLENGE_URL</span></code></a></li>
-<li><a class="reference internal" href="#opendataval.dataloader.datasets.challenge.download_paths"><code class="docutils literal notranslate"><span class="pre">download_paths()</span></code></a></li>
+<li><a class="reference internal" href="#opendataval.dataloader.datasets.challenge.basename"><code class="docutils literal notranslate"><span class="pre">basename()</span></code></a></li>
+<li><a class="reference internal" href="#opendataval.dataloader.datasets.challenge.download_drive"><code class="docutils literal notranslate"><span class="pre">download_drive()</span></code></a></li>
 <li><a class="reference internal" href="#opendataval.dataloader.datasets.challenge.iris_challenge"><code class="docutils literal notranslate"><span class="pre">iris_challenge()</span></code></a></li>
 </ul>
 </li>
