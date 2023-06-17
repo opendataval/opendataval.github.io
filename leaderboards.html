@@ -311,11 +311,8 @@
         <article role="main">
           <section id="opendataval-leaderboards">
 <h1>OpenDataVal Leaderboards<a class="headerlink" href="#opendataval-leaderboards" title="Permalink to this heading">#</a></h1>
-<p>Save and upload the data values for a Challenge task <a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLSfDzkI-gRKRCvNEmY-VdRh2mZJ5ls8w1baLd-autGbQ7A61bA/viewform?usp=sf_link">here</a>.
-The status of a submission can be checked at the following URL <code class="docutils literal notranslate"><span class="pre">https://opendataval.yongchanstat.com/status/{challenge_name}?name={name}</span></code>.
-A status of <code class="docutils literal notranslate"><span class="pre">None</span></code> means something went wrong and feel free to resubmit the google form. Otherwise, we’ll be validating the results shortly.</p>
-<p>After running your experiment and computing the data values, run the following function to receive a csv file.
-Upload the csv file to the above google form to appear to compare your DataEvaluator and to appear on the leaderboards.
+<p>Save and upload the data values for a Challenge task <a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLSfDzkI-gRKRCvNEmY-VdRh2mZJ5ls8w1baLd-autGbQ7A61bA/viewform?usp=sf_link">here</a>. After running your experiment and computing the data values, run the following function to receive a csv file.
+Upload the csv file to the above Google Form to appear to compare your DataEvaluator and to appear on the leaderboards.
 All datasets that begin with the prefix <code class="docutils literal notranslate"><span class="pre">'challenge-*'</span></code> are valid challenges that can be submitted.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">opendataval.experiment</span> <span class="kn">import</span> <span class="n">save_dataval</span>
 <span class="kn">from</span> <span class="nn">opendataval.dataloader</span> <span class="kn">import</span> <span class="n">DataFetcher</span>
