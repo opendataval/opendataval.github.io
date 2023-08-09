@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
-<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="opendataval.dataval.KNNShapley" href="opendataval.dataval.KNNShapley.html" /><link rel="prev" title="opendataval.dataval.DVRL" href="opendataval.dataval.DVRL.html" />
+<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="opendataval.dataval.LeaveOneOut" href="opendataval.dataval.LeaveOneOut.html" /><link rel="prev" title="opendataval.dataval.DataShapley" href="opendataval.dataval.DataShapley.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.1.2 and Furo 2023.07.26 -->
-        <title>opendataval.dataval.InfluenceFunctionEval - OpenDataVal documentation</title>
+        <title>opendataval.dataval.LavaEvaluator - OpenDataVal documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=36a5483c" />
@@ -243,13 +243,13 @@
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.DataEvaluator.html">opendataval.dataval.DataEvaluator</a></li>
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.AME.html">opendataval.dataval.AME</a></li>
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.DVRL.html">opendataval.dataval.DVRL</a></li>
-<li class="toctree-l4 current current-page"><a class="current reference internal" href="#">opendataval.dataval.InfluenceFunctionEval</a></li>
+<li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.InfluenceFunctionEval.html">opendataval.dataval.InfluenceFunctionEval</a></li>
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.KNNShapley.html">opendataval.dataval.KNNShapley</a></li>
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.DataOob.html">opendataval.dataval.DataOob</a></li>
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.DataBanzhaf.html">opendataval.dataval.DataBanzhaf</a></li>
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.BetaShapley.html">opendataval.dataval.BetaShapley</a></li>
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.DataShapley.html">opendataval.dataval.DataShapley</a></li>
-<li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.LavaEvaluator.html">opendataval.dataval.LavaEvaluator</a></li>
+<li class="toctree-l4 current current-page"><a class="current reference internal" href="#">opendataval.dataval.LavaEvaluator</a></li>
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.LeaveOneOut.html">opendataval.dataval.LeaveOneOut</a></li>
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.ShapEvaluator.html">opendataval.dataval.ShapEvaluator</a></li>
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.RandomEvaluator.html">opendataval.dataval.RandomEvaluator</a></li>
@@ -315,77 +315,81 @@
           </label>
         </div>
         <article role="main">
-          <section id="opendataval-dataval-influencefunctioneval">
-<h1>opendataval.dataval.InfluenceFunctionEval<a class="headerlink" href="#opendataval-dataval-influencefunctioneval" title="Permalink to this heading">#</a></h1>
+          <section id="opendataval-dataval-lavaevaluator">
+<h1>opendataval.dataval.LavaEvaluator<a class="headerlink" href="#opendataval-dataval-lavaevaluator" title="Permalink to this heading">#</a></h1>
 <dl class="py class">
-<dt class="sig sig-object py" id="opendataval.dataval.InfluenceFunctionEval">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">opendataval.dataval.</span></span><span class="sig-name descname"><span class="pre">InfluenceFunctionEval</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataval.InfluenceFunctionEval" title="Permalink to this definition">#</a></dt>
-<dd><p>Influence Function Data Evaluation implementation.</p>
-<p>Compute influence of each training example on the accuracy at each test example
-through closely-related subsampled influence.</p>
+<dt class="sig sig-object py" id="opendataval.dataval.LavaEvaluator">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">opendataval.dataval.</span></span><span class="sig-name descname"><span class="pre">LavaEvaluator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataval.LavaEvaluator" title="Permalink to this definition">#</a></dt>
+<dd><p>Data valuation using LAVA implementation.</p>
 <section id="references">
 <h2>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
 <aside class="footnote-list brackets">
 <aside class="footnote brackets" id="id1" role="note">
 <span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
-<p>V. Feldman and C. Zhang,
-What Neural Networks Memorize and Why: Discovering the Long Tail via
-Influence Estimation,
-arXiv.org, 2020. Available: <a class="reference external" href="https://arxiv.org/abs/2008.03703">https://arxiv.org/abs/2008.03703</a>.</p>
+<p>H. A. Just, F. Kang, T. Wang, Y. Zeng, M. Ko, M. Jin, and R. Jia,
+LAVA: Data Valuation without Pre-Specified Learning Algorithms,
+2023. Available: <a class="reference external" href="https://openreview.net/forum?id=JJuP86nBl4q">https://openreview.net/forum?id=JJuP86nBl4q</a></p>
 </aside>
 </aside>
 </section>
 <section id="parameters">
 <h2>Parameters<a class="headerlink" href="#parameters" title="Permalink to this heading">#</a></h2>
 <dl class="simple">
-<dt>samples<span class="classifier">int, optional</span></dt><dd><p>Number of models to fit to take to find data values, by default 1000</p>
+<dt>device<span class="classifier">torch.device, optional</span></dt><dd><p>Tensor device for acceleration, by default torch.device(“cpu”)</p>
 </dd>
-<dt>proportion<span class="classifier">float, optional</span></dt><dd><p>Proportion of data points to be in each sample, cardinality of each subset is
-<span class="math notranslate nohighlight">\((p)(num_points)\)</span>, by default 0.7 as specified by V. Feldman and C. Zhang</p>
+<dt>random_state: RandomState, optional</dt><dd><p>Random initial state, by default None</p>
 </dd>
-<dt>random_state<span class="classifier">RandomState, optional</span></dt><dd><p>Random initial state, by default None</p>
+</dl>
+</section>
+<section id="mixins">
+<h2>Mixins<a class="headerlink" href="#mixins" title="Permalink to this heading">#</a></h2>
+<dl class="simple">
+<dt>ModelLessMixin</dt><dd><p>Mixin for a data evaluator that doesn’t require a model or evaluation metric.</p>
 </dd>
 </dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="opendataval.dataval.InfluenceFunctionEval.__init__">
-<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_models</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">proportion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.7</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">RandomState</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataval.InfluenceFunctionEval.__init__" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="opendataval.dataval.LavaEvaluator.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">device</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">device(type='cpu')</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">embedding_model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../../opendataval.model.html#opendataval.model.api.Model" title="opendataval.model.api.Model"><span class="pre">Model</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">RandomState</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataval.LavaEvaluator.__init__" title="Permalink to this definition">#</a></dt>
 <dd></dd></dl>
 
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="../opendataval.dataval.InfluenceFunctionEval.html#opendataval.dataval.InfluenceFunctionEval.__init__" title="opendataval.dataval.InfluenceFunctionEval.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>([num_models, proportion, random_state])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../opendataval.dataval.LavaEvaluator.html#opendataval.dataval.LavaEvaluator.__init__" title="opendataval.dataval.LavaEvaluator.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>([device, embedding_model, random_state])</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">evaluate</span></code>(y, y_hat)</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">embeddings</span></code>(*tensors)</p></td>
+<td><p>Returns Embeddings for the input tensors</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">evaluate</span></code>(y, y_hat)</p></td>
 <td><p>Evaluate performance of the specified metric between label and predictions.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">evaluate_data_values</span></code>()</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">evaluate_data_values</span></code>()</p></td>
 <td><p>Return data values for each training data point.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">input_data</span></code>(x_train, y_train, x_valid, y_valid)</p></td>
-<td><p>Store and transform input data for Influence Function Data Valuation.</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">input_data</span></code>(x_train, y_train, x_valid, y_valid)</p></td>
+<td><p>Store and transform input data for DataEvaluator.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">input_fetcher</span></code>(fetcher)</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">input_fetcher</span></code>(fetcher)</p></td>
 <td><p>Input data from a DataFetcher object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">input_metric</span></code>(metric)</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">input_metric</span></code>(metric)</p></td>
 <td><p>Input the evaluation metric.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">input_model</span></code>(pred_model)</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">input_model</span></code>(pred_model)</p></td>
 <td><p>Input the prediction model and the evaluation metric.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">input_model_metric</span></code>(pred_model, metric)</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">input_model_metric</span></code>(pred_model, metric)</p></td>
 <td><p>Input the prediction model and the evaluation metric.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setup</span></code>(fetcher, pred_model[, metric])</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setup</span></code>(fetcher, pred_model[, metric])</p></td>
 <td><p>Iputs model, metric and data into Data Evaluator.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">train</span></code>(fetcher, pred_model[, metric])</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">train</span></code>(fetcher, pred_model[, metric])</p></td>
 <td><p>Store and transform data, then train model to predict data values.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">train_data_values</span></code>(*args, **kwargs)</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">train_data_values</span></code>(*args, **kwargs)</p></td>
 <td><p>Trains model to predict data values.</p></td>
 </tr>
 </tbody>
@@ -414,23 +418,23 @@ arXiv.org, 2020. Available: <a class="reference external" href="https://arxiv.or
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="opendataval.dataval.KNNShapley.html">
+          <a class="next-page" href="opendataval.dataval.LeaveOneOut.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">opendataval.dataval.KNNShapley</div>
+                <div class="title">opendataval.dataval.LeaveOneOut</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="opendataval.dataval.DVRL.html">
+          <a class="prev-page" href="opendataval.dataval.DataShapley.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">opendataval.dataval.DVRL</div>
+                <div class="title">opendataval.dataval.DataShapley</div>
                 
               </div>
             </a>
@@ -464,9 +468,9 @@ arXiv.org, 2020. Available: <a class="reference external" href="https://arxiv.or
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">opendataval.dataval.InfluenceFunctionEval</a><ul>
-<li><a class="reference internal" href="#opendataval.dataval.InfluenceFunctionEval"><code class="docutils literal notranslate"><span class="pre">InfluenceFunctionEval</span></code></a><ul>
-<li><a class="reference internal" href="#opendataval.dataval.InfluenceFunctionEval.__init__"><code class="docutils literal notranslate"><span class="pre">InfluenceFunctionEval.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#">opendataval.dataval.LavaEvaluator</a><ul>
+<li><a class="reference internal" href="#opendataval.dataval.LavaEvaluator"><code class="docutils literal notranslate"><span class="pre">LavaEvaluator</span></code></a><ul>
+<li><a class="reference internal" href="#opendataval.dataval.LavaEvaluator.__init__"><code class="docutils literal notranslate"><span class="pre">LavaEvaluator.__init__()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -484,6 +488,5 @@ arXiv.org, 2020. Available: <a class="reference external" href="https://arxiv.or
     <script src="../../_static/doctools.js?v=888ff710"></script>
     <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../../_static/scripts/furo.js?v=32e29ea5"></script>
-    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     </body>
 </html>
