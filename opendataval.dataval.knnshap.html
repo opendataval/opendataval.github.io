@@ -1,11 +1,11 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" data-content_root="./">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="opendataval.dataval.lava package" href="opendataval.dataval.lava.html" /><link rel="prev" title="opendataval.dataval.influence package" href="opendataval.dataval.influence.html" />
 
-    <link rel="shortcut icon" href="_static/favicon.ico"/><!-- Generated with Sphinx 7.1.2 and Furo 2023.07.26 -->
+    <link rel="shortcut icon" href="_static/favicon.ico"/><!-- Generated with Sphinx 7.2.4 and Furo 2023.08.19 -->
         <title>opendataval.dataval.knnshap package - OpenDataVal documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=135e06be" />
@@ -184,6 +184,7 @@
 </li>
 <li class="toctree-l3 current has-children"><a class="reference internal" href="opendataval.dataval.html">opendataval.dataval package</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle navigation of opendataval.dataval package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.ame.html">opendataval.dataval.ame package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.csshap.html">opendataval.dataval.csshap package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.dvrl.html">opendataval.dataval.dvrl package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.influence.html">opendataval.dataval.influence package</a></li>
 <li class="toctree-l4 current current-page"><a class="current reference internal" href="#">opendataval.dataval.knnshap package</a></li>
@@ -193,9 +194,12 @@
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.random.html">opendataval.dataval.random package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.volume.html">opendataval.dataval.volume package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.DataEvaluator.html">opendataval.dataval.DataEvaluator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.ModelMixin.html">opendataval.dataval.ModelMixin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.ModelLessMixin.html">opendataval.dataval.ModelLessMixin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.AME.html">opendataval.dataval.AME</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.DVRL.html">opendataval.dataval.DVRL</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.InfluenceFunctionEval.html">opendataval.dataval.InfluenceFunctionEval</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.InfluenceFunction.html">opendataval.dataval.InfluenceFunction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.InfluenceSubsample.html">opendataval.dataval.InfluenceSubsample</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.KNNShapley.html">opendataval.dataval.KNNShapley</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.DataOob.html">opendataval.dataval.DataOob</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.DataBanzhaf.html">opendataval.dataval.DataBanzhaf</a></li>
@@ -206,6 +210,9 @@
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.ShapEvaluator.html">opendataval.dataval.ShapEvaluator</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.RandomEvaluator.html">opendataval.dataval.RandomEvaluator</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.RobustVolumeShapley.html">opendataval.dataval.RobustVolumeShapley</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.Sampler.html">opendataval.dataval.Sampler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.TMCSampler.html">opendataval.dataval.TMCSampler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.GrTMCSampler.html">opendataval.dataval.GrTMCSampler</a></li>
 </ul>
 </li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="opendataval.experiment.html">opendataval.experiment package</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle navigation of opendataval.experiment package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -215,10 +222,12 @@
 </li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="opendataval.model.html">opendataval.model package</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of opendataval.model package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.Model.html">opendataval.model.Model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.GradientModel.html">opendataval.model.GradientModel</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.ModelFactory.html">opendataval.model.ModelFactory</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.TorchClassMixin.html">opendataval.model.TorchClassMixin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.TorchRegressMixin.html">opendataval.model.TorchRegressMixin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.TorchPredictMixin.html">opendataval.model.TorchPredictMixin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.TorchGradMixin.html">opendataval.model.TorchGradMixin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.ClassifierSkLearnWrapper.html">opendataval.model.ClassifierSkLearnWrapper</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.ClassifierUnweightedSkLearnWrapper.html">opendataval.model.ClassifierUnweightedSkLearnWrapper</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.RegressionSkLearnWrapper.html">opendataval.model.RegressionSkLearnWrapper</a></li>
@@ -241,9 +250,12 @@
 </li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="generated/opendataval.dataval.html">opendataval.dataval</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle navigation of opendataval.dataval</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.DataEvaluator.html">opendataval.dataval.DataEvaluator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.ModelMixin.html">opendataval.dataval.ModelMixin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.ModelLessMixin.html">opendataval.dataval.ModelLessMixin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.AME.html">opendataval.dataval.AME</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.DVRL.html">opendataval.dataval.DVRL</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.InfluenceFunctionEval.html">opendataval.dataval.InfluenceFunctionEval</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.InfluenceFunction.html">opendataval.dataval.InfluenceFunction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.InfluenceSubsample.html">opendataval.dataval.InfluenceSubsample</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.KNNShapley.html">opendataval.dataval.KNNShapley</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.DataOob.html">opendataval.dataval.DataOob</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.DataBanzhaf.html">opendataval.dataval.DataBanzhaf</a></li>
@@ -254,14 +266,19 @@
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.ShapEvaluator.html">opendataval.dataval.ShapEvaluator</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.RandomEvaluator.html">opendataval.dataval.RandomEvaluator</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.RobustVolumeShapley.html">opendataval.dataval.RobustVolumeShapley</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.Sampler.html">opendataval.dataval.Sampler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.TMCSampler.html">opendataval.dataval.TMCSampler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.GrTMCSampler.html">opendataval.dataval.GrTMCSampler</a></li>
 </ul>
 </li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="generated/opendataval.model.html">opendataval.model</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" role="switch" type="checkbox"/><label for="toctree-checkbox-12"><div class="visually-hidden">Toggle navigation of opendataval.model</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.model.Model.html">opendataval.model.Model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.model.GradientModel.html">opendataval.model.GradientModel</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.model.ModelFactory.html">opendataval.model.ModelFactory</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.model.TorchClassMixin.html">opendataval.model.TorchClassMixin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.model.TorchRegressMixin.html">opendataval.model.TorchRegressMixin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.model.TorchPredictMixin.html">opendataval.model.TorchPredictMixin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.model.TorchGradMixin.html">opendataval.model.TorchGradMixin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.model.ClassifierSkLearnWrapper.html">opendataval.model.ClassifierSkLearnWrapper</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.model.ClassifierUnweightedSkLearnWrapper.html">opendataval.model.ClassifierUnweightedSkLearnWrapper</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.model.RegressionSkLearnWrapper.html">opendataval.model.RegressionSkLearnWrapper</a></li>
@@ -316,22 +333,22 @@
         </div>
         <article role="main">
           <section id="opendataval-dataval-knnshap-package">
-<h1>opendataval.dataval.knnshap package<a class="headerlink" href="#opendataval-dataval-knnshap-package" title="Permalink to this heading">#</a></h1>
+<h1>opendataval.dataval.knnshap package<a class="headerlink" href="#opendataval-dataval-knnshap-package" title="Link to this heading">#</a></h1>
 <section id="submodules">
-<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading">#</a></h2>
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">#</a></h2>
 </section>
 <section id="module-opendataval.dataval.knnshap.knnshap">
-<span id="opendataval-dataval-knnshap-knnshap-module"></span><h2>opendataval.dataval.knnshap.knnshap module<a class="headerlink" href="#module-opendataval.dataval.knnshap.knnshap" title="Permalink to this heading">#</a></h2>
+<span id="opendataval-dataval-knnshap-knnshap-module"></span><h2>opendataval.dataval.knnshap.knnshap module<a class="headerlink" href="#module-opendataval.dataval.knnshap.knnshap" title="Link to this heading">#</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="opendataval.dataval.knnshap.knnshap.KNNShapley">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">opendataval.dataval.knnshap.knnshap.</span></span><span class="sig-name descname"><span class="pre">KNNShapley</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataval.knnshap.knnshap.KNNShapley" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">opendataval.dataval.knnshap.knnshap.</span></span><span class="sig-name descname"><span class="pre">KNNShapley</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataval.knnshap.knnshap.KNNShapley" title="Link to this definition">#</a></dt>
 <dd><p>Bases: <a class="reference internal" href="opendataval.dataval.html#opendataval.dataval.api.DataEvaluator" title="opendataval.dataval.api.DataEvaluator"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataEvaluator</span></code></a>, <a class="reference internal" href="opendataval.dataval.html#opendataval.dataval.api.ModelLessMixin" title="opendataval.dataval.api.ModelLessMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">ModelLessMixin</span></code></a></p>
 <p>Data valuation using KNNShapley implementation.</p>
 <p>KNN Shapley is a model-less mixin. This means we cannot specify an underlying
 prediction model for the DataEvaluator. However, we can specify a pretrained
 embedding model.</p>
 <section id="references">
-<h3>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h3>
+<h3>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h3>
 <aside class="footnote-list brackets">
 <aside class="footnote brackets" id="id1" role="note">
 <span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
@@ -342,7 +359,7 @@ arXiv.org, 2019. Available: <a class="reference external" href="https://arxiv.or
 </aside>
 </section>
 <section id="parameters">
-<h3>Parameters<a class="headerlink" href="#parameters" title="Permalink to this heading">#</a></h3>
+<h3>Parameters<a class="headerlink" href="#parameters" title="Link to this heading">#</a></h3>
 <dl class="simple">
 <dt>k_neighbors<span class="classifier">int, optional</span></dt><dd><p>Number of neighbors to group the data points, by default 10</p>
 </dd>
@@ -355,11 +372,11 @@ arXiv.org, 2019. Available: <a class="reference external" href="https://arxiv.or
 </dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="opendataval.dataval.knnshap.knnshap.KNNShapley.evaluate_data_values">
-<span class="sig-name descname"><span class="pre">evaluate_data_values</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="headerlink" href="#opendataval.dataval.knnshap.knnshap.KNNShapley.evaluate_data_values" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">evaluate_data_values</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="headerlink" href="#opendataval.dataval.knnshap.knnshap.KNNShapley.evaluate_data_values" title="Link to this definition">#</a></dt>
 <dd><p>Return data values for each training data point.</p>
 <p>Compute data values using KNN Shapley data valuation</p>
 <section id="returns">
-<h4>Returns<a class="headerlink" href="#returns" title="Permalink to this heading">#</a></h4>
+<h4>Returns<a class="headerlink" href="#returns" title="Link to this heading">#</a></h4>
 <dl class="simple">
 <dt>np.ndarray</dt><dd><p>Predicted data values/selection for training input data point</p>
 </dd>
@@ -369,18 +386,18 @@ arXiv.org, 2019. Available: <a class="reference external" href="https://arxiv.or
 
 <dl class="py method">
 <dt class="sig sig-object py" id="opendataval.dataval.knnshap.knnshap.KNNShapley.match">
-<span class="sig-name descname"><span class="pre">match</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tensor</span></span></span><a class="headerlink" href="#opendataval.dataval.knnshap.knnshap.KNNShapley.match" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">match</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tensor</span></span></span><a class="headerlink" href="#opendataval.dataval.knnshap.knnshap.KNNShapley.match" title="Link to this definition">#</a></dt>
 <dd><p><span class="math notranslate nohighlight">\(1.\)</span> for all matching rows and <span class="math notranslate nohighlight">\(0.\)</span> otherwise.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="opendataval.dataval.knnshap.knnshap.KNNShapley.train_data_values">
-<span class="sig-name descname"><span class="pre">train_data_values</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataval.knnshap.knnshap.KNNShapley.train_data_values" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">train_data_values</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataval.knnshap.knnshap.KNNShapley.train_data_values" title="Link to this definition">#</a></dt>
 <dd><p>Trains model to predict data values.</p>
 <p>Computes KNN shapley data values, as implemented by the following. Ignores all
 positional and key word arguments.</p>
 <section id="id2">
-<h4>References<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h4>
+<h4>References<a class="headerlink" href="#id2" title="Link to this heading">#</a></h4>
 <aside class="footnote-list brackets">
 <aside class="footnote brackets" id="id3" role="note">
 <span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
@@ -396,7 +413,7 @@ positional and key word arguments.</p>
 
 </section>
 <section id="module-opendataval.dataval.knnshap">
-<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-opendataval.dataval.knnshap" title="Permalink to this heading">#</a></h2>
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-opendataval.dataval.knnshap" title="Link to this heading">#</a></h2>
 </section>
 </section>
 
@@ -478,9 +495,9 @@ positional and key word arguments.</p>
       
     </aside>
   </div>
-</div><script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=16ad857a"></script>
+</div><script src="_static/documentation_options.js?v=7f41d439"></script>
     <script src="_static/doctools.js?v=888ff710"></script>
-    <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/scripts/furo.js?v=32e29ea5"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     </body>

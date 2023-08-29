@@ -1,12 +1,12 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" data-content_root="../">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
-<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="opendataval.dataval.KNNShapley" href="opendataval.dataval.KNNShapley.html" /><link rel="prev" title="opendataval.dataval.DVRL" href="opendataval.dataval.DVRL.html" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="opendataval.model.ClassifierSkLearnWrapper" href="opendataval.model.ClassifierSkLearnWrapper.html" /><link rel="prev" title="opendataval.model.TorchPredictMixin" href="opendataval.model.TorchPredictMixin.html" />
 
-    <link rel="shortcut icon" href="../_static/favicon.ico"/><!-- Generated with Sphinx 7.1.2 and Furo 2023.07.26 -->
-        <title>opendataval.dataval.InfluenceFunctionEval - OpenDataVal documentation</title>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.4 and Furo 2023.08.19 -->
+        <title>opendataval.model.TorchGradMixin - OpenDataVal documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=36a5483c" />
@@ -182,8 +182,9 @@
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataloader.CatDataset.html">opendataval.dataloader.CatDataset</a></li>
 </ul>
 </li>
-<li class="toctree-l3 current has-children"><a class="reference internal" href="../opendataval.dataval.html">opendataval.dataval package</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle navigation of opendataval.dataval package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3 has-children"><a class="reference internal" href="../opendataval.dataval.html">opendataval.dataval package</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle navigation of opendataval.dataval package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../opendataval.dataval.ame.html">opendataval.dataval.ame package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../opendataval.dataval.csshap.html">opendataval.dataval.csshap package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../opendataval.dataval.dvrl.html">opendataval.dataval.dvrl package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../opendataval.dataval.influence.html">opendataval.dataval.influence package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../opendataval.dataval.knnshap.html">opendataval.dataval.knnshap package</a></li>
@@ -193,9 +194,12 @@
 <li class="toctree-l4"><a class="reference internal" href="../opendataval.dataval.random.html">opendataval.dataval.random package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../opendataval.dataval.volume.html">opendataval.dataval.volume package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.DataEvaluator.html">opendataval.dataval.DataEvaluator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.ModelMixin.html">opendataval.dataval.ModelMixin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.ModelLessMixin.html">opendataval.dataval.ModelLessMixin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.AME.html">opendataval.dataval.AME</a></li>
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.DVRL.html">opendataval.dataval.DVRL</a></li>
-<li class="toctree-l4 current current-page"><a class="current reference internal" href="#">opendataval.dataval.InfluenceFunctionEval</a></li>
+<li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.InfluenceFunction.html">opendataval.dataval.InfluenceFunction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.InfluenceSubsample.html">opendataval.dataval.InfluenceSubsample</a></li>
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.KNNShapley.html">opendataval.dataval.KNNShapley</a></li>
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.DataOob.html">opendataval.dataval.DataOob</a></li>
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.DataBanzhaf.html">opendataval.dataval.DataBanzhaf</a></li>
@@ -206,6 +210,9 @@
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.ShapEvaluator.html">opendataval.dataval.ShapEvaluator</a></li>
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.RandomEvaluator.html">opendataval.dataval.RandomEvaluator</a></li>
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.RobustVolumeShapley.html">opendataval.dataval.RobustVolumeShapley</a></li>
+<li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.Sampler.html">opendataval.dataval.Sampler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.TMCSampler.html">opendataval.dataval.TMCSampler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.GrTMCSampler.html">opendataval.dataval.GrTMCSampler</a></li>
 </ul>
 </li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../opendataval.experiment.html">opendataval.experiment package</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle navigation of opendataval.experiment package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -213,12 +220,14 @@
 <li class="toctree-l4"><a class="reference internal" href="opendataval.experiment.exper_methods.html">opendataval.experiment.exper_methods</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../opendataval.model.html">opendataval.model package</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of opendataval.model package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 current has-children"><a class="reference internal" href="../opendataval.model.html">opendataval.model package</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of opendataval.model package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="opendataval.model.Model.html">opendataval.model.Model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="opendataval.model.GradientModel.html">opendataval.model.GradientModel</a></li>
 <li class="toctree-l4"><a class="reference internal" href="opendataval.model.ModelFactory.html">opendataval.model.ModelFactory</a></li>
 <li class="toctree-l4"><a class="reference internal" href="opendataval.model.TorchClassMixin.html">opendataval.model.TorchClassMixin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="opendataval.model.TorchRegressMixin.html">opendataval.model.TorchRegressMixin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="opendataval.model.TorchPredictMixin.html">opendataval.model.TorchPredictMixin</a></li>
+<li class="toctree-l4 current current-page"><a class="current reference internal" href="#">opendataval.model.TorchGradMixin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="opendataval.model.ClassifierSkLearnWrapper.html">opendataval.model.ClassifierSkLearnWrapper</a></li>
 <li class="toctree-l4"><a class="reference internal" href="opendataval.model.ClassifierUnweightedSkLearnWrapper.html">opendataval.model.ClassifierUnweightedSkLearnWrapper</a></li>
 <li class="toctree-l4"><a class="reference internal" href="opendataval.model.RegressionSkLearnWrapper.html">opendataval.model.RegressionSkLearnWrapper</a></li>
@@ -241,9 +250,12 @@
 </li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="opendataval.dataval.html">opendataval.dataval</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle navigation of opendataval.dataval</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.DataEvaluator.html">opendataval.dataval.DataEvaluator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.ModelMixin.html">opendataval.dataval.ModelMixin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.ModelLessMixin.html">opendataval.dataval.ModelLessMixin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.AME.html">opendataval.dataval.AME</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.DVRL.html">opendataval.dataval.DVRL</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.InfluenceFunctionEval.html">opendataval.dataval.InfluenceFunctionEval</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.InfluenceFunction.html">opendataval.dataval.InfluenceFunction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.InfluenceSubsample.html">opendataval.dataval.InfluenceSubsample</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.KNNShapley.html">opendataval.dataval.KNNShapley</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.DataOob.html">opendataval.dataval.DataOob</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.DataBanzhaf.html">opendataval.dataval.DataBanzhaf</a></li>
@@ -254,14 +266,19 @@
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.ShapEvaluator.html">opendataval.dataval.ShapEvaluator</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.RandomEvaluator.html">opendataval.dataval.RandomEvaluator</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.RobustVolumeShapley.html">opendataval.dataval.RobustVolumeShapley</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.Sampler.html">opendataval.dataval.Sampler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.TMCSampler.html">opendataval.dataval.TMCSampler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.GrTMCSampler.html">opendataval.dataval.GrTMCSampler</a></li>
 </ul>
 </li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="opendataval.model.html">opendataval.model</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" role="switch" type="checkbox"/><label for="toctree-checkbox-12"><div class="visually-hidden">Toggle navigation of opendataval.model</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.Model.html">opendataval.model.Model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.GradientModel.html">opendataval.model.GradientModel</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.ModelFactory.html">opendataval.model.ModelFactory</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.TorchClassMixin.html">opendataval.model.TorchClassMixin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.TorchRegressMixin.html">opendataval.model.TorchRegressMixin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.TorchPredictMixin.html">opendataval.model.TorchPredictMixin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.TorchGradMixin.html">opendataval.model.TorchGradMixin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.ClassifierSkLearnWrapper.html">opendataval.model.ClassifierSkLearnWrapper</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.ClassifierUnweightedSkLearnWrapper.html">opendataval.model.ClassifierUnweightedSkLearnWrapper</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.RegressionSkLearnWrapper.html">opendataval.model.RegressionSkLearnWrapper</a></li>
@@ -315,78 +332,171 @@
           </label>
         </div>
         <article role="main">
-          <section id="opendataval-dataval-influencefunctioneval">
-<h1>opendataval.dataval.InfluenceFunctionEval<a class="headerlink" href="#opendataval-dataval-influencefunctioneval" title="Permalink to this heading">#</a></h1>
+          <section id="opendataval-model-torchgradmixin">
+<h1>opendataval.model.TorchGradMixin<a class="headerlink" href="#opendataval-model-torchgradmixin" title="Link to this heading">#</a></h1>
 <dl class="py class">
-<dt class="sig sig-object py" id="opendataval.dataval.InfluenceFunctionEval">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">opendataval.dataval.</span></span><span class="sig-name descname"><span class="pre">InfluenceFunctionEval</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataval.InfluenceFunctionEval" title="Permalink to this definition">#</a></dt>
-<dd><p>Influence Function Data Evaluation implementation.</p>
-<p>Compute influence of each training example on the accuracy at each test example
-through closely-related subsampled influence.</p>
-<section id="references">
-<h2>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
-<aside class="footnote-list brackets">
-<aside class="footnote brackets" id="id1" role="note">
-<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
-<p>V. Feldman and C. Zhang,
-What Neural Networks Memorize and Why: Discovering the Long Tail via
-Influence Estimation,
-arXiv.org, 2020. Available: <a class="reference external" href="https://arxiv.org/abs/2008.03703">https://arxiv.org/abs/2008.03703</a>.</p>
-</aside>
-</aside>
-</section>
-<section id="parameters">
-<h2>Parameters<a class="headerlink" href="#parameters" title="Permalink to this heading">#</a></h2>
-<dl class="simple">
-<dt>samples<span class="classifier">int, optional</span></dt><dd><p>Number of models to fit to take to find data values, by default 1000</p>
-</dd>
-<dt>proportion<span class="classifier">float, optional</span></dt><dd><p>Proportion of data points to be in each sample, cardinality of each subset is
-<span class="math notranslate nohighlight">\((p)(num_points)\)</span>, by default 0.7 as specified by V. Feldman and C. Zhang</p>
-</dd>
-<dt>random_state<span class="classifier">RandomState, optional</span></dt><dd><p>Random initial state, by default None</p>
-</dd>
-</dl>
+<dt class="sig sig-object py" id="opendataval.model.TorchGradMixin">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">opendataval.model.</span></span><span class="sig-name descname"><span class="pre">TorchGradMixin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.model.TorchGradMixin" title="Link to this definition">#</a></dt>
+<dd><p>Gradient Mixin for Torch Neural Networks.</p>
 <dl class="py method">
-<dt class="sig sig-object py" id="opendataval.dataval.InfluenceFunctionEval.__init__">
-<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_models</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">proportion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.7</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">RandomState</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataval.InfluenceFunctionEval.__init__" title="Permalink to this definition">#</a></dt>
-<dd></dd></dl>
+<dt class="sig sig-object py" id="opendataval.model.TorchGradMixin.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#opendataval.model.TorchGradMixin.__init__" title="Link to this definition">#</a></dt>
+<dd><p>Initializes internal Module state, shared by both nn.Module and ScriptModule.</p>
+</dd></dl>
 
 <p class="rubric">Methods</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#opendataval.dataval.InfluenceFunctionEval.__init__" title="opendataval.dataval.InfluenceFunctionEval.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>([num_models, proportion, random_state])</p></td>
-<td><p></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#opendataval.model.TorchGradMixin.__init__" title="opendataval.model.TorchGradMixin.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(*args, **kwargs)</p></td>
+<td><p>Initializes internal Module state, shared by both nn.Module and ScriptModule.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">evaluate</span></code>(y, y_hat)</p></td>
-<td><p>Evaluate performance of the specified metric between label and predictions.</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_module</span></code>(name, module)</p></td>
+<td><p>Adds a child module to the current module.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">evaluate_data_values</span></code>()</p></td>
-<td><p>Return data values for each training data point.</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">apply</span></code>(fn)</p></td>
+<td><p>Applies <code class="docutils literal notranslate"><span class="pre">fn</span></code> recursively to every submodule (as returned by <code class="docutils literal notranslate"><span class="pre">.children()</span></code>) as well as self.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">input_data</span></code>(x_train, y_train, x_valid, y_valid)</p></td>
-<td><p>Store and transform input data for Influence Function Data Valuation.</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">bfloat16</span></code>()</p></td>
+<td><p>Casts all floating point parameters and buffers to <code class="docutils literal notranslate"><span class="pre">bfloat16</span></code> datatype.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">input_fetcher</span></code>(fetcher)</p></td>
-<td><p>Input data from a DataFetcher object.</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">buffers</span></code>([recurse])</p></td>
+<td><p>Returns an iterator over module buffers.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">input_metric</span></code>(metric)</p></td>
-<td><p>Input the evaluation metric.</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">children</span></code>()</p></td>
+<td><p>Returns an iterator over immediate children modules.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">input_model</span></code>(pred_model)</p></td>
-<td><p>Input the prediction model and the evaluation metric.</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">clone</span></code>()</p></td>
+<td><p>Clone Model object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">input_model_metric</span></code>(pred_model, metric)</p></td>
-<td><p>Input the prediction model and the evaluation metric.</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">cpu</span></code>()</p></td>
+<td><p>Moves all model parameters and buffers to the CPU.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setup</span></code>(fetcher, pred_model[, metric])</p></td>
-<td><p>Iputs model, metric and data into Data Evaluator.</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">cuda</span></code>([device])</p></td>
+<td><p>Moves all model parameters and buffers to the GPU.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">train</span></code>(fetcher, pred_model[, metric])</p></td>
-<td><p>Store and transform data, then train model to predict data values.</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">double</span></code>()</p></td>
+<td><p>Casts all floating point parameters and buffers to <code class="docutils literal notranslate"><span class="pre">double</span></code> datatype.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">train_data_values</span></code>(*args, **kwargs)</p></td>
-<td><p>Trains model to predict data values.</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">eval</span></code>()</p></td>
+<td><p>Sets the module in evaluation mode.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">extra_repr</span></code>()</p></td>
+<td><p>Set the extra representation of the module</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit</span></code>(x_train, y_train, *args[, sample_weights])</p></td>
+<td><p>Fits the model on the training data.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code>()</p></td>
+<td><p>Casts all floating point parameters and buffers to <code class="docutils literal notranslate"><span class="pre">float</span></code> datatype.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">forward</span></code>(*input)</p></td>
+<td><p>Defines the computation performed at every call.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_buffer</span></code>(target)</p></td>
+<td><p>Returns the buffer given by <code class="docutils literal notranslate"><span class="pre">target</span></code> if it exists, otherwise throws an error.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_extra_state</span></code>()</p></td>
+<td><p>Returns any extra state to include in the module's state_dict.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_parameter</span></code>(target)</p></td>
+<td><p>Returns the parameter given by <code class="docutils literal notranslate"><span class="pre">target</span></code> if it exists, otherwise throws an error.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_submodule</span></code>(target)</p></td>
+<td><p>Returns the submodule given by <code class="docutils literal notranslate"><span class="pre">target</span></code> if it exists, otherwise throws an error.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">grad</span></code>(x_data, y_data)</p></td>
+<td><p>Given input data, yields the computed gradients for a torch model</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">half</span></code>()</p></td>
+<td><p>Casts all floating point parameters and buffers to <code class="docutils literal notranslate"><span class="pre">half</span></code> datatype.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ipu</span></code>([device])</p></td>
+<td><p>Moves all model parameters and buffers to the IPU.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">load_state_dict</span></code>(state_dict[, strict])</p></td>
+<td><p>Copies parameters and buffers from <code class="xref py py-attr docutils literal notranslate"><span class="pre">state_dict</span></code> into this module and its descendants.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">modules</span></code>()</p></td>
+<td><p>Returns an iterator over all modules in the network.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">named_buffers</span></code>([prefix, recurse, ...])</p></td>
+<td><p>Returns an iterator over module buffers, yielding both the name of the buffer as well as the buffer itself.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">named_children</span></code>()</p></td>
+<td><p>Returns an iterator over immediate children modules, yielding both the name of the module as well as the module itself.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">named_modules</span></code>([memo, prefix, remove_duplicate])</p></td>
+<td><p>Returns an iterator over all modules in the network, yielding both the name of the module as well as the module itself.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">named_parameters</span></code>([prefix, recurse, ...])</p></td>
+<td><p>Returns an iterator over module parameters, yielding both the name of the parameter as well as the parameter itself.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">parameters</span></code>([recurse])</p></td>
+<td><p>Returns an iterator over module parameters.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">predict</span></code>(x, *args, **kwargs)</p></td>
+<td><p>Predict the label from the input covariates data.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">register_backward_hook</span></code>(hook)</p></td>
+<td><p>Registers a backward hook on the module.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">register_buffer</span></code>(name, tensor[, persistent])</p></td>
+<td><p>Adds a buffer to the module.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">register_forward_hook</span></code>(hook, *[, prepend, ...])</p></td>
+<td><p>Registers a forward hook on the module.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">register_forward_pre_hook</span></code>(hook, *[, ...])</p></td>
+<td><p>Registers a forward pre-hook on the module.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">register_full_backward_hook</span></code>(hook[, prepend])</p></td>
+<td><p>Registers a backward hook on the module.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">register_full_backward_pre_hook</span></code>(hook[, prepend])</p></td>
+<td><p>Registers a backward pre-hook on the module.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">register_load_state_dict_post_hook</span></code>(hook)</p></td>
+<td><p>Registers a post hook to be run after module's <code class="docutils literal notranslate"><span class="pre">load_state_dict</span></code> is called.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">register_module</span></code>(name, module)</p></td>
+<td><p>Alias for <code class="xref py py-func docutils literal notranslate"><span class="pre">add_module()</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">register_parameter</span></code>(name, param)</p></td>
+<td><p>Adds a parameter to the module.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">register_state_dict_pre_hook</span></code>(hook)</p></td>
+<td><p>These hooks will be called with arguments: <code class="docutils literal notranslate"><span class="pre">self</span></code>, <code class="docutils literal notranslate"><span class="pre">prefix</span></code>, and <code class="docutils literal notranslate"><span class="pre">keep_vars</span></code> before calling <code class="docutils literal notranslate"><span class="pre">state_dict</span></code> on <code class="docutils literal notranslate"><span class="pre">self</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">requires_grad_</span></code>([requires_grad])</p></td>
+<td><p>Change if autograd should record operations on parameters in this module.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_extra_state</span></code>(state)</p></td>
+<td><p>This function is called from <code class="xref py py-func docutils literal notranslate"><span class="pre">load_state_dict()</span></code> to handle any extra state found within the <cite>state_dict</cite>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">share_memory</span></code>()</p></td>
+<td><p>See <code class="xref py py-meth docutils literal notranslate"><span class="pre">torch.Tensor.share_memory_()</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">state_dict</span></code>(*args[, destination, prefix, ...])</p></td>
+<td><p>Returns a dictionary containing references to the whole state of the module.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">to</span></code>(*args, **kwargs)</p></td>
+<td><p>Moves and/or casts the parameters and buffers.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_empty</span></code>(*, device)</p></td>
+<td><p>Moves the parameters and buffers to the specified device without copying storage.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">train</span></code>([mode])</p></td>
+<td><p>Sets the module in training mode.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">type</span></code>(dst_type)</p></td>
+<td><p>Casts all parameters and buffers to <code class="xref py py-attr docutils literal notranslate"><span class="pre">dst_type</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">xpu</span></code>([device])</p></td>
+<td><p>Moves all model parameters and buffers to the XPU.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">zero_grad</span></code>([set_to_none])</p></td>
+<td><p>Sets gradients of all model parameters to zero.</p></td>
 </tr>
 </tbody>
 </table>
@@ -395,16 +505,27 @@ arXiv.org, 2020. Available: <a class="reference external" href="https://arxiv.or
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Evaluators</span></code></p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Models</span></code></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">data_values</span></code></p></td>
-<td><p>Cached data values.</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">T_destination</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">call_super_init</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">device</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">dump_patches</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">training</span></code></p></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
 </div>
-</section>
 </dd></dl>
 
 </section>
@@ -414,23 +535,23 @@ arXiv.org, 2020. Available: <a class="reference external" href="https://arxiv.or
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="opendataval.dataval.KNNShapley.html">
+          <a class="next-page" href="opendataval.model.ClassifierSkLearnWrapper.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">opendataval.dataval.KNNShapley</div>
+                <div class="title">opendataval.model.ClassifierSkLearnWrapper</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="opendataval.dataval.DVRL.html">
+          <a class="prev-page" href="opendataval.model.TorchPredictMixin.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">opendataval.dataval.DVRL</div>
+                <div class="title">opendataval.model.TorchPredictMixin</div>
                 
               </div>
             </a>
@@ -464,9 +585,9 @@ arXiv.org, 2020. Available: <a class="reference external" href="https://arxiv.or
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">opendataval.dataval.InfluenceFunctionEval</a><ul>
-<li><a class="reference internal" href="#opendataval.dataval.InfluenceFunctionEval"><code class="docutils literal notranslate"><span class="pre">InfluenceFunctionEval</span></code></a><ul>
-<li><a class="reference internal" href="#opendataval.dataval.InfluenceFunctionEval.__init__"><code class="docutils literal notranslate"><span class="pre">InfluenceFunctionEval.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#">opendataval.model.TorchGradMixin</a><ul>
+<li><a class="reference internal" href="#opendataval.model.TorchGradMixin"><code class="docutils literal notranslate"><span class="pre">TorchGradMixin</span></code></a><ul>
+<li><a class="reference internal" href="#opendataval.model.TorchGradMixin.__init__"><code class="docutils literal notranslate"><span class="pre">TorchGradMixin.__init__()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -480,10 +601,9 @@ arXiv.org, 2020. Available: <a class="reference external" href="https://arxiv.or
       
     </aside>
   </div>
-</div><script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=16ad857a"></script>
+</div><script src="../_static/documentation_options.js?v=7f41d439"></script>
     <script src="../_static/doctools.js?v=888ff710"></script>
-    <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/scripts/furo.js?v=32e29ea5"></script>
-    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     </body>
 </html>

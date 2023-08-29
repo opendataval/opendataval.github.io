@@ -1,11 +1,11 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" data-content_root="./">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="opendataval.dataval.knnshap package" href="opendataval.dataval.knnshap.html" /><link rel="prev" title="opendataval.dataval.dvrl package" href="opendataval.dataval.dvrl.html" />
 
-    <link rel="shortcut icon" href="_static/favicon.ico"/><!-- Generated with Sphinx 7.1.2 and Furo 2023.07.26 -->
+    <link rel="shortcut icon" href="_static/favicon.ico"/><!-- Generated with Sphinx 7.2.4 and Furo 2023.08.19 -->
         <title>opendataval.dataval.influence package - OpenDataVal documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=135e06be" />
@@ -184,6 +184,7 @@
 </li>
 <li class="toctree-l3 current has-children"><a class="reference internal" href="opendataval.dataval.html">opendataval.dataval package</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle navigation of opendataval.dataval package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.ame.html">opendataval.dataval.ame package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.csshap.html">opendataval.dataval.csshap package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.dvrl.html">opendataval.dataval.dvrl package</a></li>
 <li class="toctree-l4 current current-page"><a class="current reference internal" href="#">opendataval.dataval.influence package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.knnshap.html">opendataval.dataval.knnshap package</a></li>
@@ -193,9 +194,12 @@
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.random.html">opendataval.dataval.random package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.volume.html">opendataval.dataval.volume package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.DataEvaluator.html">opendataval.dataval.DataEvaluator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.ModelMixin.html">opendataval.dataval.ModelMixin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.ModelLessMixin.html">opendataval.dataval.ModelLessMixin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.AME.html">opendataval.dataval.AME</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.DVRL.html">opendataval.dataval.DVRL</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.InfluenceFunctionEval.html">opendataval.dataval.InfluenceFunctionEval</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.InfluenceFunction.html">opendataval.dataval.InfluenceFunction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.InfluenceSubsample.html">opendataval.dataval.InfluenceSubsample</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.KNNShapley.html">opendataval.dataval.KNNShapley</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.DataOob.html">opendataval.dataval.DataOob</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.DataBanzhaf.html">opendataval.dataval.DataBanzhaf</a></li>
@@ -206,6 +210,9 @@
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.ShapEvaluator.html">opendataval.dataval.ShapEvaluator</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.RandomEvaluator.html">opendataval.dataval.RandomEvaluator</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.RobustVolumeShapley.html">opendataval.dataval.RobustVolumeShapley</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.Sampler.html">opendataval.dataval.Sampler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.TMCSampler.html">opendataval.dataval.TMCSampler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.GrTMCSampler.html">opendataval.dataval.GrTMCSampler</a></li>
 </ul>
 </li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="opendataval.experiment.html">opendataval.experiment package</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle navigation of opendataval.experiment package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -215,10 +222,12 @@
 </li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="opendataval.model.html">opendataval.model package</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of opendataval.model package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.Model.html">opendataval.model.Model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.GradientModel.html">opendataval.model.GradientModel</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.ModelFactory.html">opendataval.model.ModelFactory</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.TorchClassMixin.html">opendataval.model.TorchClassMixin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.TorchRegressMixin.html">opendataval.model.TorchRegressMixin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.TorchPredictMixin.html">opendataval.model.TorchPredictMixin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.TorchGradMixin.html">opendataval.model.TorchGradMixin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.ClassifierSkLearnWrapper.html">opendataval.model.ClassifierSkLearnWrapper</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.ClassifierUnweightedSkLearnWrapper.html">opendataval.model.ClassifierUnweightedSkLearnWrapper</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.model.RegressionSkLearnWrapper.html">opendataval.model.RegressionSkLearnWrapper</a></li>
@@ -241,9 +250,12 @@
 </li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="generated/opendataval.dataval.html">opendataval.dataval</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle navigation of opendataval.dataval</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.DataEvaluator.html">opendataval.dataval.DataEvaluator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.ModelMixin.html">opendataval.dataval.ModelMixin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.ModelLessMixin.html">opendataval.dataval.ModelLessMixin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.AME.html">opendataval.dataval.AME</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.DVRL.html">opendataval.dataval.DVRL</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.InfluenceFunctionEval.html">opendataval.dataval.InfluenceFunctionEval</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.InfluenceFunction.html">opendataval.dataval.InfluenceFunction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.InfluenceSubsample.html">opendataval.dataval.InfluenceSubsample</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.KNNShapley.html">opendataval.dataval.KNNShapley</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.DataOob.html">opendataval.dataval.DataOob</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.DataBanzhaf.html">opendataval.dataval.DataBanzhaf</a></li>
@@ -254,14 +266,19 @@
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.ShapEvaluator.html">opendataval.dataval.ShapEvaluator</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.RandomEvaluator.html">opendataval.dataval.RandomEvaluator</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.RobustVolumeShapley.html">opendataval.dataval.RobustVolumeShapley</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.Sampler.html">opendataval.dataval.Sampler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.TMCSampler.html">opendataval.dataval.TMCSampler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.GrTMCSampler.html">opendataval.dataval.GrTMCSampler</a></li>
 </ul>
 </li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="generated/opendataval.model.html">opendataval.model</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" role="switch" type="checkbox"/><label for="toctree-checkbox-12"><div class="visually-hidden">Toggle navigation of opendataval.model</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.model.Model.html">opendataval.model.Model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.model.GradientModel.html">opendataval.model.GradientModel</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.model.ModelFactory.html">opendataval.model.ModelFactory</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.model.TorchClassMixin.html">opendataval.model.TorchClassMixin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.model.TorchRegressMixin.html">opendataval.model.TorchRegressMixin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.model.TorchPredictMixin.html">opendataval.model.TorchPredictMixin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.model.TorchGradMixin.html">opendataval.model.TorchGradMixin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.model.ClassifierSkLearnWrapper.html">opendataval.model.ClassifierSkLearnWrapper</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.model.ClassifierUnweightedSkLearnWrapper.html">opendataval.model.ClassifierUnweightedSkLearnWrapper</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.model.RegressionSkLearnWrapper.html">opendataval.model.RegressionSkLearnWrapper</a></li>
@@ -316,64 +333,58 @@
         </div>
         <article role="main">
           <section id="opendataval-dataval-influence-package">
-<h1>opendataval.dataval.influence package<a class="headerlink" href="#opendataval-dataval-influence-package" title="Permalink to this heading">#</a></h1>
+<h1>opendataval.dataval.influence package<a class="headerlink" href="#opendataval-dataval-influence-package" title="Link to this heading">#</a></h1>
 <section id="submodules">
-<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading">#</a></h2>
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">#</a></h2>
 </section>
 <section id="module-opendataval.dataval.influence.influence">
-<span id="opendataval-dataval-influence-influence-module"></span><h2>opendataval.dataval.influence.influence module<a class="headerlink" href="#module-opendataval.dataval.influence.influence" title="Permalink to this heading">#</a></h2>
+<span id="opendataval-dataval-influence-influence-module"></span><h2>opendataval.dataval.influence.influence module<a class="headerlink" href="#module-opendataval.dataval.influence.influence" title="Link to this heading">#</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="opendataval.dataval.influence.influence.InfluenceFunctionEval">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">opendataval.dataval.influence.influence.</span></span><span class="sig-name descname"><span class="pre">InfluenceFunctionEval</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataval.influence.influence.InfluenceFunctionEval" title="Permalink to this definition">#</a></dt>
-<dd><p>Bases: <a class="reference internal" href="opendataval.dataval.html#opendataval.dataval.api.DataEvaluator" title="opendataval.dataval.api.DataEvaluator"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataEvaluator</span></code></a></p>
-<p>Influence Function Data Evaluation implementation.</p>
-<p>Compute influence of each training example on the accuracy at each test example
-through closely-related subsampled influence.</p>
+<dt class="sig sig-object py" id="opendataval.dataval.influence.influence.InfluenceFunction">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">opendataval.dataval.influence.influence.</span></span><span class="sig-name descname"><span class="pre">InfluenceFunction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataval.influence.influence.InfluenceFunction" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="opendataval.dataval.html#opendataval.dataval.api.DataEvaluator" title="opendataval.dataval.api.DataEvaluator"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataEvaluator</span></code></a>, <a class="reference internal" href="opendataval.dataval.html#opendataval.dataval.api.ModelMixin" title="opendataval.dataval.api.ModelMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">ModelMixin</span></code></a></p>
+<p>Influence Function Data evaluation implementation.</p>
+<p>TODO it may be useful to compute gradients of the validation dataset in batches
+to save time/space.
+TODO H^{-1} implementation, Current implementation is for first-order gradients</p>
 <section id="references">
-<h3>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h3>
+<h3>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h3>
 <aside class="footnote-list brackets">
 <aside class="footnote brackets" id="id1" role="note">
 <span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
-<p>V. Feldman and C. Zhang,
-What Neural Networks Memorize and Why: Discovering the Long Tail via
-Influence Estimation,
-arXiv.org, 2020. Available: <a class="reference external" href="https://arxiv.org/abs/2008.03703">https://arxiv.org/abs/2008.03703</a>.</p>
+<p>P. W. Koh and P. Liang,
+Understanding Black-box Predictions via Influence Functions,
+arXiv.org, 2017. <a class="reference external" href="https://arxiv.org/abs/1703.04730">https://arxiv.org/abs/1703.04730</a>.</p>
 </aside>
 </aside>
 </section>
 <section id="parameters">
-<h3>Parameters<a class="headerlink" href="#parameters" title="Permalink to this heading">#</a></h3>
+<h3>Parameters<a class="headerlink" href="#parameters" title="Link to this heading">#</a></h3>
 <dl class="simple">
-<dt>samples<span class="classifier">int, optional</span></dt><dd><p>Number of models to fit to take to find data values, by default 1000</p>
+<dt>grad_args<span class="classifier">tuple, optional</span></dt><dd><p>Positional arguments passed to the model.grad function</p>
 </dd>
-<dt>proportion<span class="classifier">float, optional</span></dt><dd><p>Proportion of data points to be in each sample, cardinality of each subset is
-<span class="math notranslate nohighlight">\((p)(num_points)\)</span>, by default 0.7 as specified by V. Feldman and C. Zhang</p>
-</dd>
-<dt>random_state<span class="classifier">RandomState, optional</span></dt><dd><p>Random initial state, by default None</p>
+<dt>grad_kwargs<span class="classifier">dict[str, Any], optional</span></dt><dd><p>Key word arguments passed to the model.grad function</p>
 </dd>
 </dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="opendataval.dataval.influence.influence.InfluenceFunctionEval.evaluate_data_values">
-<span class="sig-name descname"><span class="pre">evaluate_data_values</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="headerlink" href="#opendataval.dataval.influence.influence.InfluenceFunctionEval.evaluate_data_values" title="Permalink to this definition">#</a></dt>
-<dd><p>Return data values for each training data point.</p>
-<p>Compute data values using the Influence Function data valuator. Finds
-the difference of average performance of all sets including data point minus
-not-including.</p>
+<dt class="sig sig-object py" id="opendataval.dataval.influence.influence.InfluenceFunction.evaluate_data_values">
+<span class="sig-name descname"><span class="pre">evaluate_data_values</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="headerlink" href="#opendataval.dataval.influence.influence.InfluenceFunction.evaluate_data_values" title="Link to this definition">#</a></dt>
+<dd><p>Return influence (data values) for each training data point.</p>
 <section id="returns">
-<h4>Returns<a class="headerlink" href="#returns" title="Permalink to this heading">#</a></h4>
+<h4>Returns<a class="headerlink" href="#returns" title="Link to this heading">#</a></h4>
 <dl class="simple">
-<dt>np.ndarray</dt><dd><p>Predicted data values/selection for every training data point</p>
+<dt>np.ndarray</dt><dd><p>Predicted data values for training input data point</p>
 </dd>
 </dl>
 </section>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="opendataval.dataval.influence.influence.InfluenceFunctionEval.input_data">
-<span class="sig-name descname"><span class="pre">input_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_train</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_train</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_valid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_valid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataval.influence.influence.InfluenceFunctionEval.input_data" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="opendataval.dataval.influence.influence.InfluenceFunction.input_data">
+<span class="sig-name descname"><span class="pre">input_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_train</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_train</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_valid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_valid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataval.influence.influence.InfluenceFunction.input_data" title="Link to this definition">#</a></dt>
 <dd><p>Store and transform input data for Influence Function Data Valuation.</p>
 <section id="id2">
-<h4>Parameters<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h4>
+<h4>Parameters<a class="headerlink" href="#id2" title="Link to this heading">#</a></h4>
 <dl class="simple">
 <dt>x_train<span class="classifier">torch.Tensor</span></dt><dd><p>Data covariates</p>
 </dd>
@@ -388,17 +399,126 @@ not-including.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="opendataval.dataval.influence.influence.InfluenceFunctionEval.train_data_values">
-<span class="sig-name descname"><span class="pre">train_data_values</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataval.influence.influence.InfluenceFunctionEval.train_data_values" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="opendataval.dataval.influence.influence.InfluenceFunction.input_model">
+<span class="sig-name descname"><span class="pre">input_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pred_model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="opendataval.model.html#opendataval.model.grad.GradientModel" title="opendataval.model.grad.GradientModel"><span class="pre">GradientModel</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataval.influence.influence.InfluenceFunction.input_model" title="Link to this definition">#</a></dt>
+<dd><p>Input the prediction model with gradient.</p>
+<section id="id3">
+<h4>Parameters<a class="headerlink" href="#id3" title="Link to this heading">#</a></h4>
+<dl class="simple">
+<dt>pred_model<span class="classifier">GradientModel</span></dt><dd><p>Prediction model with a gradient</p>
+</dd>
+</dl>
+</section>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="opendataval.dataval.influence.influence.InfluenceFunction.train_data_values">
+<span class="sig-name descname"><span class="pre">train_data_values</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataval.influence.influence.InfluenceFunction.train_data_values" title="Link to this definition">#</a></dt>
+<dd><p>Trains model to compute influence of each data point (data values).</p>
+<section id="id4">
+<h4>References<a class="headerlink" href="#id4" title="Link to this heading">#</a></h4>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id5" role="note">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<p>Implementation inspired by <a class="reference external" href="https://github.com/uvanlp/valda">valda</a>.
+&lt;<a class="reference external" href="https://github.com/uvanlp/valda/blob/main/src/valda/inf_func.py">https://github.com/uvanlp/valda/blob/main/src/valda/inf_func.py</a>&gt;</p>
+</aside>
+</aside>
+</section>
+<section id="id6">
+<h4>Parameters<a class="headerlink" href="#id6" title="Link to this heading">#</a></h4>
+<dl class="simple">
+<dt>args<span class="classifier">tuple[Any], optional</span></dt><dd><p>Training positional args</p>
+</dd>
+<dt>kwargs<span class="classifier">dict[str, Any], optional</span></dt><dd><p>Training key word arguments</p>
+</dd>
+</dl>
+</section>
+</dd></dl>
+
+</section>
+</dd></dl>
+
+</section>
+<section id="module-opendataval.dataval.influence.infsub">
+<span id="opendataval-dataval-influence-infsub-module"></span><h2>opendataval.dataval.influence.infsub module<a class="headerlink" href="#module-opendataval.dataval.influence.infsub" title="Link to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="opendataval.dataval.influence.infsub.InfluenceSubsample">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">opendataval.dataval.influence.infsub.</span></span><span class="sig-name descname"><span class="pre">InfluenceSubsample</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataval.influence.infsub.InfluenceSubsample" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="opendataval.dataval.html#opendataval.dataval.api.DataEvaluator" title="opendataval.dataval.api.DataEvaluator"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataEvaluator</span></code></a>, <a class="reference internal" href="opendataval.dataval.html#opendataval.dataval.api.ModelMixin" title="opendataval.dataval.api.ModelMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">ModelMixin</span></code></a></p>
+<p>Influence computed through subsamples implementation.</p>
+<p>Compute influence of each training example on for the validation dataset
+through closely-related subsampled influence.</p>
+<section id="id7">
+<h3>References<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id8" role="note">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<p>V. Feldman and C. Zhang,
+What Neural Networks Memorize and Why: Discovering the Long Tail via
+Influence Estimation,
+arXiv.org, 2020. Available: <a class="reference external" href="https://arxiv.org/abs/2008.03703">https://arxiv.org/abs/2008.03703</a>.</p>
+</aside>
+</aside>
+</section>
+<section id="id9">
+<h3>Parameters<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
+<dl class="simple">
+<dt>samples<span class="classifier">int, optional</span></dt><dd><p>Number of models to fit to take to find data values, by default 1000</p>
+</dd>
+<dt>proportion<span class="classifier">float, optional</span></dt><dd><p>Proportion of data points to be in each sample, cardinality of each subset is
+<span class="math notranslate nohighlight">\((p)(num_points)\)</span>, by default 0.7 as specified by V. Feldman and C. Zhang</p>
+</dd>
+<dt>random_state<span class="classifier">RandomState, optional</span></dt><dd><p>Random initial state, by default None</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="opendataval.dataval.influence.infsub.InfluenceSubsample.evaluate_data_values">
+<span class="sig-name descname"><span class="pre">evaluate_data_values</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="headerlink" href="#opendataval.dataval.influence.infsub.InfluenceSubsample.evaluate_data_values" title="Link to this definition">#</a></dt>
+<dd><p>Return data values for each training data point.</p>
+<p>Compute data values using the Influence Subsample data valuator. Finds
+the difference of average performance of all sets including data point minus
+not-including.</p>
+<section id="id10">
+<h4>Returns<a class="headerlink" href="#id10" title="Link to this heading">#</a></h4>
+<dl class="simple">
+<dt>np.ndarray</dt><dd><p>Predicted data values/selection for every training data point</p>
+</dd>
+</dl>
+</section>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="opendataval.dataval.influence.infsub.InfluenceSubsample.input_data">
+<span class="sig-name descname"><span class="pre">input_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_train</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_train</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_valid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_valid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataval.influence.infsub.InfluenceSubsample.input_data" title="Link to this definition">#</a></dt>
+<dd><p>Store and transform input data for Influence Subsample Data Valuation.</p>
+<section id="id11">
+<h4>Parameters<a class="headerlink" href="#id11" title="Link to this heading">#</a></h4>
+<dl class="simple">
+<dt>x_train<span class="classifier">torch.Tensor</span></dt><dd><p>Data covariates</p>
+</dd>
+<dt>y_train<span class="classifier">torch.Tensor</span></dt><dd><p>Data labels</p>
+</dd>
+<dt>x_valid<span class="classifier">torch.Tensor</span></dt><dd><p>Test+Held-out covariates</p>
+</dd>
+<dt>y_valid<span class="classifier">torch.Tensor</span></dt><dd><p>Test+Held-out labels</p>
+</dd>
+</dl>
+</section>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="opendataval.dataval.influence.infsub.InfluenceSubsample.train_data_values">
+<span class="sig-name descname"><span class="pre">train_data_values</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataval.influence.infsub.InfluenceSubsample.train_data_values" title="Link to this definition">#</a></dt>
 <dd><p>Trains model to predict data values.</p>
-<p>Trains the Influence Function Data Valuator by sampling from subsets of
+<p>Trains the Influence Subsample Data Valuator by sampling from subsets of
 <span class="math notranslate nohighlight">\((p)(num_points)\)</span> cardinality and computing the performance with the
 <span class="math notranslate nohighlight">\(i\)</span> data point and without the <span class="math notranslate nohighlight">\(i\)</span> data point. The form of sampling
-is similar to the shapely value when <span class="math notranslate nohighlight">\(p\)</span> is :math:<a href="#id3"><span class="problematic" id="id4">`</span></a>0.5: (V. Feldman).
+is similar to the shapely value when <span class="math notranslate nohighlight">\(p\)</span> is :math:<a href="#id12"><span class="problematic" id="id13">`</span></a>0.5: (V. Feldman).
 Likewise, if we sample not from the subsets of a specific cardinality but the
 uniform across all subsets, it is similar to the Banzhaf value.</p>
-<section id="id5">
-<h4>Parameters<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h4>
+<section id="id14">
+<h4>Parameters<a class="headerlink" href="#id14" title="Link to this heading">#</a></h4>
 <dl class="simple">
 <dt>args<span class="classifier">tuple[Any], optional</span></dt><dd><p>Training positional args</p>
 </dd>
@@ -413,7 +533,10 @@ uniform across all subsets, it is similar to the Banzhaf value.</p>
 
 </section>
 <section id="module-opendataval.dataval.influence">
-<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-opendataval.dataval.influence" title="Permalink to this heading">#</a></h2>
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-opendataval.dataval.influence" title="Link to this heading">#</a></h2>
+<p>NOTE <cite>InfluenceSubsample</cite> was previously named <cite>InfluenceFunctionEval</cite> and may be
+referred to as such in the demos. This docstring is here to clarify the confusion
+between the naming of <cite>InfluenceFunction</cite> and <cite>InfluenceSubsample</cite>.</p>
 </section>
 </section>
 
@@ -475,10 +598,20 @@ uniform across all subsets, it is similar to the Banzhaf value.</p>
 <li><a class="reference internal" href="#">opendataval.dataval.influence package</a><ul>
 <li><a class="reference internal" href="#submodules">Submodules</a></li>
 <li><a class="reference internal" href="#module-opendataval.dataval.influence.influence">opendataval.dataval.influence.influence module</a><ul>
-<li><a class="reference internal" href="#opendataval.dataval.influence.influence.InfluenceFunctionEval"><code class="docutils literal notranslate"><span class="pre">InfluenceFunctionEval</span></code></a><ul>
-<li><a class="reference internal" href="#opendataval.dataval.influence.influence.InfluenceFunctionEval.evaluate_data_values"><code class="docutils literal notranslate"><span class="pre">InfluenceFunctionEval.evaluate_data_values()</span></code></a></li>
-<li><a class="reference internal" href="#opendataval.dataval.influence.influence.InfluenceFunctionEval.input_data"><code class="docutils literal notranslate"><span class="pre">InfluenceFunctionEval.input_data()</span></code></a></li>
-<li><a class="reference internal" href="#opendataval.dataval.influence.influence.InfluenceFunctionEval.train_data_values"><code class="docutils literal notranslate"><span class="pre">InfluenceFunctionEval.train_data_values()</span></code></a></li>
+<li><a class="reference internal" href="#opendataval.dataval.influence.influence.InfluenceFunction"><code class="docutils literal notranslate"><span class="pre">InfluenceFunction</span></code></a><ul>
+<li><a class="reference internal" href="#opendataval.dataval.influence.influence.InfluenceFunction.evaluate_data_values"><code class="docutils literal notranslate"><span class="pre">InfluenceFunction.evaluate_data_values()</span></code></a></li>
+<li><a class="reference internal" href="#opendataval.dataval.influence.influence.InfluenceFunction.input_data"><code class="docutils literal notranslate"><span class="pre">InfluenceFunction.input_data()</span></code></a></li>
+<li><a class="reference internal" href="#opendataval.dataval.influence.influence.InfluenceFunction.input_model"><code class="docutils literal notranslate"><span class="pre">InfluenceFunction.input_model()</span></code></a></li>
+<li><a class="reference internal" href="#opendataval.dataval.influence.influence.InfluenceFunction.train_data_values"><code class="docutils literal notranslate"><span class="pre">InfluenceFunction.train_data_values()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-opendataval.dataval.influence.infsub">opendataval.dataval.influence.infsub module</a><ul>
+<li><a class="reference internal" href="#opendataval.dataval.influence.infsub.InfluenceSubsample"><code class="docutils literal notranslate"><span class="pre">InfluenceSubsample</span></code></a><ul>
+<li><a class="reference internal" href="#opendataval.dataval.influence.infsub.InfluenceSubsample.evaluate_data_values"><code class="docutils literal notranslate"><span class="pre">InfluenceSubsample.evaluate_data_values()</span></code></a></li>
+<li><a class="reference internal" href="#opendataval.dataval.influence.infsub.InfluenceSubsample.input_data"><code class="docutils literal notranslate"><span class="pre">InfluenceSubsample.input_data()</span></code></a></li>
+<li><a class="reference internal" href="#opendataval.dataval.influence.infsub.InfluenceSubsample.train_data_values"><code class="docutils literal notranslate"><span class="pre">InfluenceSubsample.train_data_values()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -495,9 +628,9 @@ uniform across all subsets, it is similar to the Banzhaf value.</p>
       
     </aside>
   </div>
-</div><script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=16ad857a"></script>
+</div><script src="_static/documentation_options.js?v=7f41d439"></script>
     <script src="_static/doctools.js?v=888ff710"></script>
-    <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/scripts/furo.js?v=32e29ea5"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     </body>
