@@ -193,7 +193,7 @@
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.volume.html">opendataval.dataval.volume package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.DataEvaluator.html">opendataval.dataval.DataEvaluator</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.ModelMixin.html">opendataval.dataval.ModelMixin</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.ModelLessMixin.html">opendataval.dataval.ModelLessMixin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.EmbeddingMixin.html">opendataval.dataval.EmbeddingMixin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.AME.html">opendataval.dataval.AME</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.DVRL.html">opendataval.dataval.DVRL</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.InfluenceFunction.html">opendataval.dataval.InfluenceFunction</a></li>
@@ -249,7 +249,7 @@
 <li class="toctree-l3 has-children"><a class="reference internal" href="generated/opendataval.dataval.html">opendataval.dataval</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle navigation of opendataval.dataval</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.DataEvaluator.html">opendataval.dataval.DataEvaluator</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.ModelMixin.html">opendataval.dataval.ModelMixin</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.ModelLessMixin.html">opendataval.dataval.ModelLessMixin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.EmbeddingMixin.html">opendataval.dataval.EmbeddingMixin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.AME.html">opendataval.dataval.AME</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.DVRL.html">opendataval.dataval.DVRL</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.InfluenceFunction.html">opendataval.dataval.InfluenceFunction</a></li>
@@ -359,6 +359,8 @@
 </li>
           <li><a href="generated/generated/opendataval.dataval.DVRL.html#opendataval.dataval.DVRL.__init__">(opendataval.dataval.DVRL method)</a>, <a href="generated/opendataval.dataval.DVRL.html#opendataval.dataval.DVRL.__init__">[1]</a>
 </li>
+          <li><a href="generated/generated/opendataval.dataval.EmbeddingMixin.html#opendataval.dataval.EmbeddingMixin.__init__">(opendataval.dataval.EmbeddingMixin method)</a>, <a href="generated/opendataval.dataval.EmbeddingMixin.html#opendataval.dataval.EmbeddingMixin.__init__">[1]</a>
+</li>
           <li><a href="generated/generated/opendataval.dataval.GrTMCSampler.html#opendataval.dataval.GrTMCSampler.__init__">(opendataval.dataval.GrTMCSampler method)</a>, <a href="generated/opendataval.dataval.GrTMCSampler.html#opendataval.dataval.GrTMCSampler.__init__">[1]</a>
 </li>
           <li><a href="generated/generated/opendataval.dataval.InfluenceFunction.html#opendataval.dataval.InfluenceFunction.__init__">(opendataval.dataval.InfluenceFunction method)</a>, <a href="generated/opendataval.dataval.InfluenceFunction.html#opendataval.dataval.InfluenceFunction.__init__">[1]</a>
@@ -370,8 +372,6 @@
           <li><a href="generated/generated/opendataval.dataval.LavaEvaluator.html#opendataval.dataval.LavaEvaluator.__init__">(opendataval.dataval.LavaEvaluator method)</a>, <a href="generated/opendataval.dataval.LavaEvaluator.html#opendataval.dataval.LavaEvaluator.__init__">[1]</a>
 </li>
           <li><a href="generated/generated/opendataval.dataval.LeaveOneOut.html#opendataval.dataval.LeaveOneOut.__init__">(opendataval.dataval.LeaveOneOut method)</a>, <a href="generated/opendataval.dataval.LeaveOneOut.html#opendataval.dataval.LeaveOneOut.__init__">[1]</a>
-</li>
-          <li><a href="generated/generated/opendataval.dataval.ModelLessMixin.html#opendataval.dataval.ModelLessMixin.__init__">(opendataval.dataval.ModelLessMixin method)</a>, <a href="generated/opendataval.dataval.ModelLessMixin.html#opendataval.dataval.ModelLessMixin.__init__">[1]</a>
 </li>
           <li><a href="generated/generated/opendataval.dataval.ModelMixin.html#opendataval.dataval.ModelMixin.__init__">(opendataval.dataval.ModelMixin method)</a>, <a href="generated/opendataval.dataval.ModelMixin.html#opendataval.dataval.ModelMixin.__init__">[1]</a>
 </li>
@@ -694,7 +694,13 @@
   <h2>E</h2>
   <table style="width: 100%" class="indextable genindextable"><tr>
     <td style="width: 33%; vertical-align: top;"><ul>
-        <li><a href="opendataval.dataval.html#opendataval.dataval.api.ModelLessMixin.embeddings">embeddings() (opendataval.dataval.api.ModelLessMixin method)</a>
+        <li><a href="generated/generated/opendataval.dataval.EmbeddingMixin.html#opendataval.dataval.EmbeddingMixin">EmbeddingMixin (class in opendataval.dataval)</a>, <a href="generated/opendataval.dataval.EmbeddingMixin.html#opendataval.dataval.EmbeddingMixin">[1]</a>
+
+        <ul>
+          <li><a href="opendataval.dataval.html#opendataval.dataval.api.EmbeddingMixin">(class in opendataval.dataval.api)</a>
+</li>
+        </ul></li>
+        <li><a href="opendataval.dataval.html#opendataval.dataval.api.EmbeddingMixin.embeddings">embeddings() (opendataval.dataval.api.EmbeddingMixin method)</a>
 </li>
         <li><a href="opendataval.dataval.html#opendataval.dataval.api.ModelMixin.evaluate">evaluate() (opendataval.dataval.api.ModelMixin method)</a>
 
@@ -1020,12 +1026,6 @@
 </li>
         <li><a href="generated/generated/opendataval.model.ModelFactory.html#opendataval.model.ModelFactory">ModelFactory() (in module opendataval.model)</a>, <a href="generated/opendataval.model.ModelFactory.html#opendataval.model.ModelFactory">[1]</a>, <a href="opendataval.model.html#opendataval.model.ModelFactory">[2]</a>
 </li>
-        <li><a href="generated/generated/opendataval.dataval.ModelLessMixin.html#opendataval.dataval.ModelLessMixin">ModelLessMixin (class in opendataval.dataval)</a>, <a href="generated/opendataval.dataval.ModelLessMixin.html#opendataval.dataval.ModelLessMixin">[1]</a>
-
-        <ul>
-          <li><a href="opendataval.dataval.html#opendataval.dataval.api.ModelLessMixin">(class in opendataval.dataval.api)</a>
-</li>
-        </ul></li>
         <li><a href="generated/generated/opendataval.dataval.ModelMixin.html#opendataval.dataval.ModelMixin">ModelMixin (class in opendataval.dataval)</a>, <a href="generated/opendataval.dataval.ModelMixin.html#opendataval.dataval.ModelMixin">[1]</a>
 
         <ul>

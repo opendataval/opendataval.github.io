@@ -195,7 +195,7 @@
 <li class="toctree-l4 current current-page"><a class="current reference internal" href="#">opendataval.dataval.volume package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.DataEvaluator.html">opendataval.dataval.DataEvaluator</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.ModelMixin.html">opendataval.dataval.ModelMixin</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.ModelLessMixin.html">opendataval.dataval.ModelLessMixin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.EmbeddingMixin.html">opendataval.dataval.EmbeddingMixin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.AME.html">opendataval.dataval.AME</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.DVRL.html">opendataval.dataval.DVRL</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.InfluenceFunction.html">opendataval.dataval.InfluenceFunction</a></li>
@@ -251,7 +251,7 @@
 <li class="toctree-l3 has-children"><a class="reference internal" href="generated/opendataval.dataval.html">opendataval.dataval</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle navigation of opendataval.dataval</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.DataEvaluator.html">opendataval.dataval.DataEvaluator</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.ModelMixin.html">opendataval.dataval.ModelMixin</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.ModelLessMixin.html">opendataval.dataval.ModelLessMixin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.EmbeddingMixin.html">opendataval.dataval.EmbeddingMixin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.AME.html">opendataval.dataval.AME</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.DVRL.html">opendataval.dataval.DVRL</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.InfluenceFunction.html">opendataval.dataval.InfluenceFunction</a></li>
@@ -342,7 +342,7 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="opendataval.dataval.volume.rvs.RobustVolumeShapley">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">opendataval.dataval.volume.rvs.</span></span><span class="sig-name descname"><span class="pre">RobustVolumeShapley</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataval.volume.rvs.RobustVolumeShapley" title="Link to this definition">#</a></dt>
-<dd><p>Bases: <a class="reference internal" href="opendataval.dataval.html#opendataval.dataval.api.DataEvaluator" title="opendataval.dataval.api.DataEvaluator"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataEvaluator</span></code></a>, <a class="reference internal" href="opendataval.dataval.html#opendataval.dataval.api.ModelLessMixin" title="opendataval.dataval.api.ModelLessMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">ModelLessMixin</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="opendataval.dataval.html#opendataval.dataval.api.DataEvaluator" title="opendataval.dataval.api.DataEvaluator"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataEvaluator</span></code></a>, <a class="reference internal" href="opendataval.dataval.html#opendataval.dataval.api.EmbeddingMixin" title="opendataval.dataval.api.EmbeddingMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">EmbeddingMixin</span></code></a></p>
 <p>Robust Volume Shapley and Volume Shapley data valuation implementation.</p>
 <p>While the following DataEvaluator uses the same TMC-Shapley algorithm used by
 semivalue evaluators, the following implementation defaults to the non-GR statistic
@@ -380,7 +380,7 @@ required if <cite>robust</cite> is True, by default 0.05</p>
 <section id="mixins">
 <h3>Mixins<a class="headerlink" href="#mixins" title="Link to this heading">#</a></h3>
 <dl class="simple">
-<dt>ModelLessMixin</dt><dd><p>Mixin for a data evaluator that doesn’t require a model or evaluation metric.</p>
+<dt>EmbeddingMixin</dt><dd><p>Mixin for a data evaluator to use an embedding model.</p>
 </dd>
 </dl>
 <dl class="py method">
