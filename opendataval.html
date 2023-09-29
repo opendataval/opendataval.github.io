@@ -5,7 +5,7 @@
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="opendataval.dataloader package" href="opendataval.dataloader.html" /><link rel="prev" title="opendataval" href="modules.html" />
 
-    <link rel="shortcut icon" href="_static/favicon.ico"/><!-- Generated with Sphinx 7.2.4 and Furo 2023.08.19 -->
+    <link rel="shortcut icon" href="_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
         <title>opendataval package - OpenDataVal documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=135e06be" />
@@ -195,7 +195,7 @@
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.volume.html">opendataval.dataval.volume package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.DataEvaluator.html">opendataval.dataval.DataEvaluator</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.ModelMixin.html">opendataval.dataval.ModelMixin</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.EmbeddingMixin.html">opendataval.dataval.EmbeddingMixin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.ModelLessMixin.html">opendataval.dataval.ModelLessMixin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.AME.html">opendataval.dataval.AME</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.DVRL.html">opendataval.dataval.DVRL</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.InfluenceFunction.html">opendataval.dataval.InfluenceFunction</a></li>
@@ -251,7 +251,7 @@
 <li class="toctree-l3 has-children"><a class="reference internal" href="generated/opendataval.dataval.html">opendataval.dataval</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle navigation of opendataval.dataval</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.DataEvaluator.html">opendataval.dataval.DataEvaluator</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.ModelMixin.html">opendataval.dataval.ModelMixin</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.EmbeddingMixin.html">opendataval.dataval.EmbeddingMixin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.ModelLessMixin.html">opendataval.dataval.ModelLessMixin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.AME.html">opendataval.dataval.AME</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.DVRL.html">opendataval.dataval.DVRL</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.InfluenceFunction.html">opendataval.dataval.InfluenceFunction</a></li>
@@ -392,21 +392,6 @@
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="opendataval.metrics.Metrics.AUC">
-<span class="sig-name descname"><span class="pre">AUC</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">auc</span></em><a class="headerlink" href="#opendataval.metrics.Metrics.AUC" title="Link to this definition">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="opendataval.metrics.Metrics.F1_SCORE">
-<span class="sig-name descname"><span class="pre">F1_SCORE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">f1_score</span></em><a class="headerlink" href="#opendataval.metrics.Metrics.F1_SCORE" title="Link to this definition">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="opendataval.metrics.Metrics.NEG_L1_LOSS">
-<span class="sig-name descname"><span class="pre">NEG_L1_LOSS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">neg_l1_loss</span></em><a class="headerlink" href="#opendataval.metrics.Metrics.NEG_L1_LOSS" title="Link to this definition">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
 <dt class="sig sig-object py" id="opendataval.metrics.Metrics.NEG_L2">
 <span class="sig-name descname"><span class="pre">NEG_L2</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">neg_l2</span></em><a class="headerlink" href="#opendataval.metrics.Metrics.NEG_L2" title="Link to this definition">#</a></dt>
 <dd></dd></dl>
@@ -423,23 +408,6 @@
 <span class="sig-prename descclassname"><span class="pre">opendataval.metrics.</span></span><span class="sig-name descname"><span class="pre">accuracy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#opendataval.metrics.accuracy" title="Link to this definition">#</a></dt>
 <dd><p>Compute accuracy of two one-hot encoding tensors.</p>
 </dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="opendataval.metrics.auc">
-<span class="sig-prename descclassname"><span class="pre">opendataval.metrics.</span></span><span class="sig-name descname"><span class="pre">auc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#opendataval.metrics.auc" title="Link to this definition">#</a></dt>
-<dd><p>Compute AUC of two one-hot encoding tensors.</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="opendataval.metrics.f1_score">
-<span class="sig-prename descclassname"><span class="pre">opendataval.metrics.</span></span><span class="sig-name descname"><span class="pre">f1_score</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#opendataval.metrics.f1_score" title="Link to this definition">#</a></dt>
-<dd><p>Compute f1-score of two one-hot encoding tensors.</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="opendataval.metrics.neg_l1_loss">
-<span class="sig-prename descclassname"><span class="pre">opendataval.metrics.</span></span><span class="sig-name descname"><span class="pre">neg_l1_loss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.metrics.neg_l1_loss" title="Link to this definition">#</a></dt>
-<dd></dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="opendataval.metrics.neg_l2">
@@ -642,17 +610,11 @@ on all of them.</p>
 <li><a class="reference internal" href="#module-opendataval.metrics">opendataval.metrics module</a><ul>
 <li><a class="reference internal" href="#opendataval.metrics.Metrics"><code class="docutils literal notranslate"><span class="pre">Metrics</span></code></a><ul>
 <li><a class="reference internal" href="#opendataval.metrics.Metrics.ACCURACY"><code class="docutils literal notranslate"><span class="pre">Metrics.ACCURACY</span></code></a></li>
-<li><a class="reference internal" href="#opendataval.metrics.Metrics.AUC"><code class="docutils literal notranslate"><span class="pre">Metrics.AUC</span></code></a></li>
-<li><a class="reference internal" href="#opendataval.metrics.Metrics.F1_SCORE"><code class="docutils literal notranslate"><span class="pre">Metrics.F1_SCORE</span></code></a></li>
-<li><a class="reference internal" href="#opendataval.metrics.Metrics.NEG_L1_LOSS"><code class="docutils literal notranslate"><span class="pre">Metrics.NEG_L1_LOSS</span></code></a></li>
 <li><a class="reference internal" href="#opendataval.metrics.Metrics.NEG_L2"><code class="docutils literal notranslate"><span class="pre">Metrics.NEG_L2</span></code></a></li>
 <li><a class="reference internal" href="#opendataval.metrics.Metrics.NEG_MSE"><code class="docutils literal notranslate"><span class="pre">Metrics.NEG_MSE</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#opendataval.metrics.accuracy"><code class="docutils literal notranslate"><span class="pre">accuracy()</span></code></a></li>
-<li><a class="reference internal" href="#opendataval.metrics.auc"><code class="docutils literal notranslate"><span class="pre">auc()</span></code></a></li>
-<li><a class="reference internal" href="#opendataval.metrics.f1_score"><code class="docutils literal notranslate"><span class="pre">f1_score()</span></code></a></li>
-<li><a class="reference internal" href="#opendataval.metrics.neg_l1_loss"><code class="docutils literal notranslate"><span class="pre">neg_l1_loss()</span></code></a></li>
 <li><a class="reference internal" href="#opendataval.metrics.neg_l2"><code class="docutils literal notranslate"><span class="pre">neg_l2()</span></code></a></li>
 <li><a class="reference internal" href="#opendataval.metrics.neg_mse"><code class="docutils literal notranslate"><span class="pre">neg_mse()</span></code></a></li>
 </ul>

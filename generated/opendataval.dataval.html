@@ -5,7 +5,7 @@
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 <link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="opendataval.dataval.DataEvaluator" href="generated/opendataval.dataval.DataEvaluator.html" /><link rel="prev" title="opendataval.dataloader.CatDataset" href="generated/opendataval.dataloader.CatDataset.html" />
 
-    <link rel="shortcut icon" href="../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.4 and Furo 2023.08.19 -->
+    <link rel="shortcut icon" href="../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
         <title>opendataval.dataval - OpenDataVal documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=135e06be" />
@@ -195,7 +195,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../opendataval.dataval.volume.html">opendataval.dataval.volume package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.DataEvaluator.html">opendataval.dataval.DataEvaluator</a></li>
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.ModelMixin.html">opendataval.dataval.ModelMixin</a></li>
-<li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.EmbeddingMixin.html">opendataval.dataval.EmbeddingMixin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.ModelLessMixin.html">opendataval.dataval.ModelLessMixin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.AME.html">opendataval.dataval.AME</a></li>
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.DVRL.html">opendataval.dataval.DVRL</a></li>
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.InfluenceFunction.html">opendataval.dataval.InfluenceFunction</a></li>
@@ -251,7 +251,7 @@
 <li class="toctree-l3 current has-children current-page"><a class="current reference internal" href="#">opendataval.dataval</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle navigation of opendataval.dataval</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.DataEvaluator.html">opendataval.dataval.DataEvaluator</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.ModelMixin.html">opendataval.dataval.ModelMixin</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.EmbeddingMixin.html">opendataval.dataval.EmbeddingMixin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.ModelLessMixin.html">opendataval.dataval.ModelLessMixin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.AME.html">opendataval.dataval.AME</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.DVRL.html">opendataval.dataval.DVRL</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.InfluenceFunction.html">opendataval.dataval.InfluenceFunction</a></li>
@@ -351,10 +351,10 @@
 <td><p>Abstract class of Data Evaluators.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="opendataval.dataval.ModelMixin.html#opendataval.dataval.ModelMixin" title="opendataval.dataval.ModelMixin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelMixin</span></code></a>()</p></td>
-<td><p>Mixin for data evaluators that require a model</p></td>
+<td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="opendataval.dataval.EmbeddingMixin.html#opendataval.dataval.EmbeddingMixin" title="opendataval.dataval.EmbeddingMixin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EmbeddingMixin</span></code></a>()</p></td>
-<td><p>Mixin for DataEvaluators with embeddings.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="opendataval.dataval.ModelLessMixin.html#opendataval.dataval.ModelLessMixin" title="opendataval.dataval.ModelLessMixin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelLessMixin</span></code></a>()</p></td>
+<td><p>Mixin for DataEvaluators without a prediction model and use embeddings.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="opendataval.dataval.AME.html#opendataval.dataval.AME" title="opendataval.dataval.AME"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AME</span></code></a>(*args, **kwargs)</p></td>
 <td><p>Implementation of Average Marginal Effect Data Valuation.</p></td>

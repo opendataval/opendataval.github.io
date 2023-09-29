@@ -5,7 +5,7 @@
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="opendataval.dataval.ame package" href="opendataval.dataval.ame.html" /><link rel="prev" title="opendataval.dataloader.CatDataset" href="generated/opendataval.dataloader.CatDataset.html" />
 
-    <link rel="shortcut icon" href="_static/favicon.ico"/><!-- Generated with Sphinx 7.2.4 and Furo 2023.08.19 -->
+    <link rel="shortcut icon" href="_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
         <title>opendataval.dataval package - OpenDataVal documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=135e06be" />
@@ -195,7 +195,7 @@
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.volume.html">opendataval.dataval.volume package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.DataEvaluator.html">opendataval.dataval.DataEvaluator</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.ModelMixin.html">opendataval.dataval.ModelMixin</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.EmbeddingMixin.html">opendataval.dataval.EmbeddingMixin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.ModelLessMixin.html">opendataval.dataval.ModelLessMixin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.AME.html">opendataval.dataval.AME</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.DVRL.html">opendataval.dataval.DVRL</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.InfluenceFunction.html">opendataval.dataval.InfluenceFunction</a></li>
@@ -251,7 +251,7 @@
 <li class="toctree-l3 has-children"><a class="reference internal" href="generated/opendataval.dataval.html">opendataval.dataval</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle navigation of opendataval.dataval</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.DataEvaluator.html">opendataval.dataval.DataEvaluator</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.ModelMixin.html">opendataval.dataval.ModelMixin</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.EmbeddingMixin.html">opendataval.dataval.EmbeddingMixin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.ModelLessMixin.html">opendataval.dataval.ModelLessMixin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.AME.html">opendataval.dataval.AME</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.DVRL.html">opendataval.dataval.DVRL</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.InfluenceFunction.html">opendataval.dataval.InfluenceFunction</a></li>
@@ -511,7 +511,7 @@
 <dl class="simple">
 <dt>fetcher<span class="classifier">DataFetcher</span></dt><dd><p>DataFetcher containing the training and validation data set.</p>
 </dd>
-<dt>pred_model<span class="classifier">Model, optional</span></dt><dd><p>Prediction model, not required if the DataFetcher is Model Less</p>
+<dt>pred_model<span class="classifier">Model, optional</span></dt><dd><p>Prediction model, not required if the DataFetcher is Model less</p>
 </dd>
 <dt>metric<span class="classifier">Callable[[torch.Tensor, torch.Tensor], float]</span></dt><dd><p>Evaluation function to determine prediction model performance,
 by default None and assigns either -MSE or ACC depending if categorical</p>
@@ -533,7 +533,7 @@ by default None and assigns either -MSE or ACC depending if categorical</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="opendataval.dataval.api.DataEvaluator.train">
-<span class="sig-name descname"><span class="pre">train</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fetcher</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="opendataval.dataloader.html#opendataval.dataloader.fetcher.DataFetcher" title="opendataval.dataloader.fetcher.DataFetcher"><span class="pre">DataFetcher</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">pred_model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="opendataval.model.html#opendataval.model.api.Model" title="opendataval.model.api.Model"><span class="pre">Model</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">metric</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">Tensor</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Tensor</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataval.api.DataEvaluator.train" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">train</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fetcher</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="opendataval.dataloader.html#opendataval.dataloader.fetcher.DataFetcher" title="opendataval.dataloader.fetcher.DataFetcher"><span class="pre">DataFetcher</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">pred_model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="opendataval.model.html#opendataval.model.api.Model" title="opendataval.model.api.Model"><span class="pre">Model</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">metric</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">Tensor</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Tensor</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataval.api.DataEvaluator.train" title="Link to this definition">#</a></dt>
 <dd><p>Store and transform data, then train model to predict data values.</p>
 <p>Trains the Data Evaluator and the underlying prediction model. Wrapper for
 <code class="docutils literal notranslate"><span class="pre">self.input_data</span></code> and <code class="docutils literal notranslate"><span class="pre">self.train_data_values</span></code> under one method.</p>
@@ -542,7 +542,7 @@ by default None and assigns either -MSE or ACC depending if categorical</p>
 <dl class="simple">
 <dt>fetcher<span class="classifier">DataFetcher</span></dt><dd><p>DataFetcher containing the training and validation data set.</p>
 </dd>
-<dt>pred_model<span class="classifier">Model</span></dt><dd><p>Prediction model</p>
+<dt>pred_model<span class="classifier">Model, optional</span></dt><dd><p>Prediction model, not required if the DataFetcher is Model less</p>
 </dd>
 <dt>metric<span class="classifier">Callable[[torch.Tensor, torch.Tensor], float]</span></dt><dd><p>Evaluation function to determine prediction model performance,
 by default None and assigns either -MSE or ACC depending if categorical</p>
@@ -588,29 +588,39 @@ by default None and assigns either -MSE or ACC depending if categorical</p>
 </dd></dl>
 
 <dl class="py class">
-<dt class="sig sig-object py" id="opendataval.dataval.api.EmbeddingMixin">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">opendataval.dataval.api.</span></span><span class="sig-name descname"><span class="pre">EmbeddingMixin</span></span><a class="headerlink" href="#opendataval.dataval.api.EmbeddingMixin" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object py" id="opendataval.dataval.api.ModelLessMixin">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">opendataval.dataval.api.</span></span><span class="sig-name descname"><span class="pre">ModelLessMixin</span></span><a class="headerlink" href="#opendataval.dataval.api.ModelLessMixin" title="Link to this definition">#</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<p>Mixin for DataEvaluators with embeddings.</p>
-<p>Using embeddings is most frequently used on model-less DataEvaluators. When
-comparing performance for a specific model, if we want to use an embedding, we’d
-either want the Model itself to apply the transformation or the data to already
-be transformed. For model-less data evaluators, the <code class="docutils literal notranslate"><span class="pre">embedding_model</span></code> allows us
-to still use those embeddings.
-The Ruoxi Jia Group with their KNN Shapley and LAVA data evaluators use embeddings.</p>
-<section id="id9">
-<h3>Attributes<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
+<p>Mixin for DataEvaluators without a prediction model and use embeddings.</p>
+<p>Using embeddings and then predictiong the data values has been used by
+Ruoxi Jia Group with their KNN Shapley and LAVA data evaluators.</p>
+<section id="references">
+<h3>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h3>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id9" role="note">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<p>R. Jia et al.,
+Efficient Task-Specific Data Valuation for Nearest Neighbor Algorithms,
+arXiv.org, 2019. Available: <a class="reference external" href="https://arxiv.org/abs/1908.08619">https://arxiv.org/abs/1908.08619</a>.</p>
+</aside>
+</aside>
+</section>
+<section id="id10">
+<h3>Attributes<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
 <dl class="simple">
 <dt>embedding_model<span class="classifier">Model</span></dt><dd><p>Embedding model used by model-less DataEvaluator to compute the data values for
 the embeddings and not the raw input.</p>
 </dd>
+<dt>pred_model<span class="classifier">Model</span></dt><dd><p>The pred_model is unused for training, but to compare a series of models on
+the same algorithim, we compare against a shared prediction algorithim.</p>
+</dd>
 </dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="opendataval.dataval.api.EmbeddingMixin.embeddings">
-<span class="sig-name descname"><span class="pre">embeddings</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">tensors</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Dataset</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Tensor</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Tensor</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#opendataval.dataval.api.EmbeddingMixin.embeddings" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object py" id="opendataval.dataval.api.ModelLessMixin.embeddings">
+<span class="sig-name descname"><span class="pre">embeddings</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">tensors</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Dataset</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Tensor</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Tensor</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#opendataval.dataval.api.ModelLessMixin.embeddings" title="Link to this definition">#</a></dt>
 <dd><p>Returns Embeddings for the input tensors</p>
-<section id="id10">
-<h4>Returns<a class="headerlink" href="#id10" title="Link to this heading">#</a></h4>
+<section id="id11">
+<h4>Returns<a class="headerlink" href="#id11" title="Link to this heading">#</a></h4>
 <dl class="simple">
 <dt>tuple[torch.Tensor, …]</dt><dd><p>Returns tupple of tensors equal to the number of tensors input</p>
 </dd>
@@ -625,15 +635,14 @@ the embeddings and not the raw input.</p>
 <dt class="sig sig-object py" id="opendataval.dataval.api.ModelMixin">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">opendataval.dataval.api.</span></span><span class="sig-name descname"><span class="pre">ModelMixin</span></span><a class="headerlink" href="#opendataval.dataval.api.ModelMixin" title="Link to this definition">#</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<p>Mixin for data evaluators that require a model</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="opendataval.dataval.api.ModelMixin.evaluate">
 <span class="sig-name descname"><span class="pre">evaluate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_hat</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataval.api.ModelMixin.evaluate" title="Link to this definition">#</a></dt>
 <dd><p>Evaluate performance of the specified metric between label and predictions.</p>
 <p>Moves input tensors to cpu because of certain bugs/errors that arise when the
 tensors are not on the same device</p>
-<section id="id11">
-<h3>Parameters<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
+<section id="id12">
+<h3>Parameters<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
 <dl class="simple">
 <dt>y<span class="classifier">torch.Tensor</span></dt><dd><p>Labels to be evaluate performance of predictions</p>
 </dd>
@@ -641,8 +650,8 @@ tensors are not on the same device</p>
 </dd>
 </dl>
 </section>
-<section id="id12">
-<h3>Returns<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
+<section id="id13">
+<h3>Returns<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
 <dl class="simple">
 <dt>float</dt><dd><p>Performance metric</p>
 </dd>
@@ -654,8 +663,8 @@ tensors are not on the same device</p>
 <dt class="sig sig-object py" id="opendataval.dataval.api.ModelMixin.input_metric">
 <span class="sig-name descname"><span class="pre">input_metric</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">metric</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">Tensor</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Tensor</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataval.api.ModelMixin.input_metric" title="Link to this definition">#</a></dt>
 <dd><p>Input the evaluation metric.</p>
-<section id="id13">
-<h3>Parameters<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
+<section id="id14">
+<h3>Parameters<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
 <dl class="simple">
 <dt>metric<span class="classifier">Callable[[torch.Tensor, torch.Tensor], float]</span></dt><dd><p>Evaluation function to determine prediction model performance</p>
 </dd>
@@ -667,8 +676,8 @@ tensors are not on the same device</p>
 <dt class="sig sig-object py" id="opendataval.dataval.api.ModelMixin.input_model">
 <span class="sig-name descname"><span class="pre">input_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pred_model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="opendataval.model.html#opendataval.model.api.Model" title="opendataval.model.api.Model"><span class="pre">Model</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataval.api.ModelMixin.input_model" title="Link to this definition">#</a></dt>
 <dd><p>Input the prediction model.</p>
-<section id="id14">
-<h3>Parameters<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
+<section id="id15">
+<h3>Parameters<a class="headerlink" href="#id15" title="Link to this heading">#</a></h3>
 <dl class="simple">
 <dt>pred_model<span class="classifier">Model</span></dt><dd><p>Prediction model</p>
 </dd>
@@ -680,8 +689,8 @@ tensors are not on the same device</p>
 <dt class="sig sig-object py" id="opendataval.dataval.api.ModelMixin.input_model_metric">
 <span class="sig-name descname"><span class="pre">input_model_metric</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pred_model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="opendataval.model.html#opendataval.model.api.Model" title="opendataval.model.api.Model"><span class="pre">Model</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">metric</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">Tensor</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Tensor</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataval.api.ModelMixin.input_model_metric" title="Link to this definition">#</a></dt>
 <dd><p>Input the prediction model and the evaluation metric.</p>
-<section id="id15">
-<h3>Parameters<a class="headerlink" href="#id15" title="Link to this heading">#</a></h3>
+<section id="id16">
+<h3>Parameters<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
 <dl class="simple">
 <dt>pred_model<span class="classifier">Model</span></dt><dd><p>Prediction model</p>
 </dd>
@@ -689,8 +698,8 @@ tensors are not on the same device</p>
 </dd>
 </dl>
 </section>
-<section id="id16">
-<h3>Returns<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
+<section id="id17">
+<h3>Returns<a class="headerlink" href="#id17" title="Link to this heading">#</a></h3>
 <dl class="simple">
 <dt>self<span class="classifier">object</span></dt><dd><p>Returns a Data Evaluator.</p>
 </dd>
@@ -720,10 +729,10 @@ tensors are not on the same device</p>
 <td><p>Abstract class of Data Evaluators.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="generated/opendataval.dataval.ModelMixin.html#opendataval.dataval.ModelMixin" title="opendataval.dataval.ModelMixin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelMixin</span></code></a>()</p></td>
-<td><p>Mixin for data evaluators that require a model</p></td>
+<td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/opendataval.dataval.EmbeddingMixin.html#opendataval.dataval.EmbeddingMixin" title="opendataval.dataval.EmbeddingMixin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EmbeddingMixin</span></code></a>()</p></td>
-<td><p>Mixin for DataEvaluators with embeddings.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/opendataval.dataval.ModelLessMixin.html#opendataval.dataval.ModelLessMixin" title="opendataval.dataval.ModelLessMixin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelLessMixin</span></code></a>()</p></td>
+<td><p>Mixin for DataEvaluators without a prediction model and use embeddings.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="generated/opendataval.dataval.AME.html#opendataval.dataval.AME" title="opendataval.dataval.AME"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AME</span></code></a>(*args, **kwargs)</p></td>
 <td><p>Implementation of Average Marginal Effect Data Valuation.</p></td>
@@ -854,8 +863,8 @@ tensors are not on the same device</p>
 <li><a class="reference internal" href="#opendataval.dataval.api.DataEvaluator.train_data_values"><code class="docutils literal notranslate"><span class="pre">DataEvaluator.train_data_values()</span></code></a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#opendataval.dataval.api.EmbeddingMixin"><code class="docutils literal notranslate"><span class="pre">EmbeddingMixin</span></code></a><ul>
-<li><a class="reference internal" href="#opendataval.dataval.api.EmbeddingMixin.embeddings"><code class="docutils literal notranslate"><span class="pre">EmbeddingMixin.embeddings()</span></code></a></li>
+<li><a class="reference internal" href="#opendataval.dataval.api.ModelLessMixin"><code class="docutils literal notranslate"><span class="pre">ModelLessMixin</span></code></a><ul>
+<li><a class="reference internal" href="#opendataval.dataval.api.ModelLessMixin.embeddings"><code class="docutils literal notranslate"><span class="pre">ModelLessMixin.embeddings()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#opendataval.dataval.api.ModelMixin"><code class="docutils literal notranslate"><span class="pre">ModelMixin</span></code></a><ul>

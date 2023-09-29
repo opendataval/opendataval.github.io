@@ -5,7 +5,7 @@
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="opendataval.dataloader.datasets.datasets" href="generated/opendataval.dataloader.datasets.datasets.html" /><link rel="prev" title="opendataval.dataloader package" href="opendataval.dataloader.html" />
 
-    <link rel="shortcut icon" href="_static/favicon.ico"/><!-- Generated with Sphinx 7.2.4 and Furo 2023.08.19 -->
+    <link rel="shortcut icon" href="_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
         <title>opendataval.dataloader.datasets package - OpenDataVal documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=135e06be" />
@@ -195,7 +195,7 @@
 <li class="toctree-l4"><a class="reference internal" href="opendataval.dataval.volume.html">opendataval.dataval.volume package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.DataEvaluator.html">opendataval.dataval.DataEvaluator</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.ModelMixin.html">opendataval.dataval.ModelMixin</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.EmbeddingMixin.html">opendataval.dataval.EmbeddingMixin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.ModelLessMixin.html">opendataval.dataval.ModelLessMixin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.AME.html">opendataval.dataval.AME</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.DVRL.html">opendataval.dataval.DVRL</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/opendataval.dataval.InfluenceFunction.html">opendataval.dataval.InfluenceFunction</a></li>
@@ -251,7 +251,7 @@
 <li class="toctree-l3 has-children"><a class="reference internal" href="generated/opendataval.dataval.html">opendataval.dataval</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle navigation of opendataval.dataval</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.DataEvaluator.html">opendataval.dataval.DataEvaluator</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.ModelMixin.html">opendataval.dataval.ModelMixin</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.EmbeddingMixin.html">opendataval.dataval.EmbeddingMixin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.ModelLessMixin.html">opendataval.dataval.ModelLessMixin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.AME.html">opendataval.dataval.AME</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.DVRL.html">opendataval.dataval.DVRL</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/generated/opendataval.dataval.InfluenceFunction.html">opendataval.dataval.InfluenceFunction</a></li>
@@ -363,98 +363,8 @@
 <dd></dd></dl>
 
 </section>
-<section id="module-opendataval.dataloader.datasets.cleanlab">
-<span id="opendataval-dataloader-datasets-cleanlab-module"></span><h2>opendataval.dataloader.datasets.cleanlab module<a class="headerlink" href="#module-opendataval.dataloader.datasets.cleanlab" title="Link to this heading">#</a></h2>
-<p>Clean Lab data sets</p>
-<p>Provides corrected test sets most common ML benchmark test sets: ImageNet, MNIST,
-CIFAR-10, CIFAR-100, Caltech-256, QuickDraw, IMDB, Amazon Reviews, 20News, and AudioSet.
-These data sets are NOT 100% perfect, nor are they intended to be.</p>
-<section id="references">
-<h3>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h3>
-<aside class="footnote-list brackets">
-<aside class="footnote brackets" id="id1" role="note">
-<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
-<p>C. G. Northcutt, A. Athalye, and J. Mueller,
-Pervasive Label Errors in Test Sets Destabilize Machine Learning Benchmarks
-arXiv.org, 2021. [Online]. Available: <a class="reference external" href="https://arxiv.org/abs/2103.14749">https://arxiv.org/abs/2103.14749</a>.</p>
-</aside>
-</aside>
-<p>UNDER CONSTRUCTION</p>
-</section>
-<dl class="py function">
-<dt class="sig sig-object py" id="opendataval.dataloader.datasets.cleanlab.CleanLabImagenet">
-<span class="sig-prename descclassname"><span class="pre">opendataval.dataloader.datasets.cleanlab.</span></span><span class="sig-name descname"><span class="pre">CleanLabImagenet</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">root</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">download</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ImageNet</span></span></span><a class="headerlink" href="#opendataval.dataloader.datasets.cleanlab.CleanLabImagenet" title="Link to this definition">#</a></dt>
-<dd><p>ImageNet constructor that downloads the CleanLab cleaned validation set.</p>
-<blockquote>
-<div></div></blockquote>
-<dl>
-<dt>cache_dir<span class="classifier">str</span></dt><dd><blockquote>
-<div><blockquote>
-<div><p>Directory to download cached files to.</p>
-</div></blockquote>
-<dl class="simple">
-<dt>force_download<span class="classifier">bool</span></dt><dd><p>Whether to force a download of the data files.</p>
-</dd>
-</dl>
-</div></blockquote>
-<aside class="footnote-list brackets">
-<aside class="footnote brackets" id="id2" role="note">
-<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
-<p>C. G. Northcutt, A. Athalye, and J. Mueller,
-Pervasive Label Errors in Test Sets Destabilize Machine Learning Benchmarks
-arXiv.org, 2021. Available: <a class="reference external" href="https://arxiv.org/abs/2103.14749">https://arxiv.org/abs/2103.14749</a>.</p>
-</aside>
-<aside class="footnote brackets" id="id3" role="note">
-<span class="label"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></span>
-<p>J. Deng, W. Dong, R. Socher, LJ Li, K. Li, and L. Fei-Fei,
-ImageNet: A large-scale hierarchical image database,
-Jun. 2009, doi: <a class="reference external" href="https://doi.org/10.1109/cvpr.2009.5206848">https://doi.org/10.1109/cvpr.2009.5206848</a>.</p>
-</aside>
-</aside>
-<dl class="simple">
-<dt>ImageNet</dt><dd><p>ImageNet validation data set with corrected labels by CleanLab</p>
-</dd>
-</dl>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py data">
-<dt class="sig sig-object py" id="opendataval.dataloader.datasets.cleanlab.cifar10">
-<span class="sig-prename descclassname"><span class="pre">opendataval.dataloader.datasets.cleanlab.</span></span><span class="sig-name descname"><span class="pre">cifar10</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;opendataval.dataloader.datasets.imagesets.VisionAdapter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#opendataval.dataloader.datasets.cleanlab.cifar10" title="Link to this definition">#</a></dt>
-<dd><p>Vision Classification registered as <code class="docutils literal notranslate"><span class="pre">&quot;cifar10-val&quot;</span></code>, from TorchVision.</p>
-</dd></dl>
-
-<dl class="py data">
-<dt class="sig sig-object py" id="opendataval.dataloader.datasets.cleanlab.cifar100">
-<span class="sig-prename descclassname"><span class="pre">opendataval.dataloader.datasets.cleanlab.</span></span><span class="sig-name descname"><span class="pre">cifar100</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;opendataval.dataloader.datasets.imagesets.VisionAdapter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#opendataval.dataloader.datasets.cleanlab.cifar100" title="Link to this definition">#</a></dt>
-<dd><p>Vision Classification registered as <code class="docutils literal notranslate"><span class="pre">&quot;cifar100-val&quot;</span></code>, from TorchVision.</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="opendataval.dataloader.datasets.cleanlab.cifar100_embed">
-<span class="sig-prename descclassname"><span class="pre">opendataval.dataloader.datasets.cleanlab.</span></span><span class="sig-name descname"><span class="pre">cifar100_embed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cache_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force_download</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Tensor</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">ndarray</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#opendataval.dataloader.datasets.cleanlab.cifar100_embed" title="Link to this definition">#</a></dt>
-<dd><p>Vision Classification registered as <code class="docutils literal notranslate"><span class="pre">&quot;cifar100-val-embeddings&quot;</span></code> ResNet50 embeddings</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="opendataval.dataloader.datasets.cleanlab.cifar10_embed">
-<span class="sig-prename descclassname"><span class="pre">opendataval.dataloader.datasets.cleanlab.</span></span><span class="sig-name descname"><span class="pre">cifar10_embed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cache_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force_download</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Tensor</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">ndarray</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#opendataval.dataloader.datasets.cleanlab.cifar10_embed" title="Link to this definition">#</a></dt>
-<dd><p>Vision Classification registered as <code class="docutils literal notranslate"><span class="pre">&quot;cifar10-val-embeddings&quot;</span></code> ResNet50 embeddings</p>
-</dd></dl>
-
-<dl class="py data">
-<dt class="sig sig-object py" id="opendataval.dataloader.datasets.cleanlab.imagenet">
-<span class="sig-prename descclassname"><span class="pre">opendataval.dataloader.datasets.cleanlab.</span></span><span class="sig-name descname"><span class="pre">imagenet</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;opendataval.dataloader.datasets.imagesets.VisionAdapter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#opendataval.dataloader.datasets.cleanlab.imagenet" title="Link to this definition">#</a></dt>
-<dd><p>Vision Classification registered as <code class="docutils literal notranslate"><span class="pre">&quot;imagenet-val&quot;</span></code>, from TorchVision.</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="opendataval.dataloader.datasets.cleanlab.imagenet_embed">
-<span class="sig-prename descclassname"><span class="pre">opendataval.dataloader.datasets.cleanlab.</span></span><span class="sig-name descname"><span class="pre">imagenet_embed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cache_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force_download</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Tensor</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">ndarray</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#opendataval.dataloader.datasets.cleanlab.imagenet_embed" title="Link to this definition">#</a></dt>
-<dd><p>Vision Classification registered as <code class="docutils literal notranslate"><span class="pre">&quot;imagenet-val-embeddings&quot;</span></code> ResNet50 embeddings</p>
-</dd></dl>
-
+<section id="opendataval-dataloader-datasets-cleanlab-module">
+<h2>opendataval.dataloader.datasets.cleanlab module<a class="headerlink" href="#opendataval-dataloader-datasets-cleanlab-module" title="Link to this heading">#</a></h2>
 </section>
 <section id="module-opendataval.dataloader.datasets.datasets">
 <span id="opendataval-dataloader-datasets-datasets-module"></span><h2>opendataval.dataloader.datasets.datasets module<a class="headerlink" href="#module-opendataval.dataloader.datasets.datasets" title="Link to this heading">#</a></h2>
@@ -476,17 +386,17 @@ Jun. 2009, doi: <a class="reference external" href="https://doi.org/10.1109/cvpr
 <span class="sig-prename descclassname"><span class="pre">opendataval.dataloader.datasets.datasets.</span></span><span class="sig-name descname"><span class="pre">download_adult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cache_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force_download</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataloader.datasets.datasets.download_adult" title="Link to this definition">#</a></dt>
 <dd><p>Binary category data set registered as <code class="docutils literal notranslate"><span class="pre">&quot;adult&quot;</span></code>. Adult Income data set.</p>
 <p>Implementation from DVRL repository.</p>
-<section id="id4">
-<h3>References<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<section id="references">
+<h3>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h3>
 <aside class="footnote-list brackets">
-<aside class="footnote brackets" id="id5" role="note">
+<aside class="footnote brackets" id="id1" role="note">
 <span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
 <p>R. Kohavi, Scaling Up the Accuracy of
 Naive-Bayes Classifiers: a Decision-Tree Hybrid,
 Proceedings of the Second International Conference on Knowledge Discovery
 and Data Mining, 1996</p>
 </aside>
-<aside class="footnote brackets" id="id6" role="note">
+<aside class="footnote brackets" id="id2" role="note">
 <span class="label"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></span>
 <p>J. Yoon, Arik, Sercan O, and T. Pfister,
 Data Valuation using Reinforcement Learning,
@@ -531,10 +441,10 @@ arXiv.org, 2019. Available: <a class="reference external" href="https://arxiv.or
 <span class="sig-prename descclassname"><span class="pre">opendataval.dataloader.datasets.datasets.</span></span><span class="sig-name descname"><span class="pre">download_election</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cache_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force_download</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataloader.datasets.datasets.download_election" title="Link to this definition">#</a></dt>
 <dd><p>Categorical data set registered as <code class="docutils literal notranslate"><span class="pre">&quot;election&quot;</span></code>.</p>
 <p>Presidential election results by MIT Election Data and Science Lab.</p>
-<section id="id7">
-<h3>References<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<section id="id3">
+<h3>References<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
 <aside class="footnote-list brackets">
-<aside class="footnote brackets" id="id8" role="note">
+<aside class="footnote brackets" id="id4" role="note">
 <span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
 <p>M. E. Data and S. Lab,
 U.S. President 1976-2020.
@@ -630,17 +540,17 @@ Harvard Dataverse, 2017. doi: 10.7910/DVN/42MVDX.</p>
 <p>Given a PIL Images, passes through ResNet50 (as done by prior Data Valuation papers)
 and saves the vector embeddings. The embeddings are extracted from the <code class="docutils literal notranslate"><span class="pre">avgpool</span></code>
 layer of ResNet50. The extraction is through the PyTorch forward hook feature.</p>
-<section id="id9">
-<h3>References<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
+<section id="id5">
+<h3>References<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
 <aside class="footnote-list brackets">
-<aside class="footnote brackets" id="id10" role="note">
+<aside class="footnote brackets" id="id6" role="note">
 <span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
 <p>K. He, X. Zhang, S. Ren, and J. Sun,
 Deep Residual Learning for Image Recognition,
 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR),
 Jun. 2016, doi: <a class="reference external" href="https://doi.org/10.1109/cvpr.2016.90">https://doi.org/10.1109/cvpr.2016.90</a>.</p>
 </aside>
-<aside class="footnote brackets" id="id11" role="note">
+<aside class="footnote brackets" id="id7" role="note">
 <span class="label"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></span>
 <p>A. Ghorbani and J. Zou,
 Data Shapley: Equitable Valuation of Data for Machine Learning
@@ -674,8 +584,8 @@ arXiv.org, 2019. Available: <a class="reference external" href="https://arxiv.or
 <p>Adapter for MNIST data sets. __init__ inputs the class and __call__ initializes the
 Dataset and extracts labels. __call__ returns tuple[Self, np.array] where Self is
 a Dataset of covariates and np.array is an array of labels.</p>
-<section id="id12">
-<h3>Parameters<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
+<section id="id8">
+<h3>Parameters<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
 <dl class="simple">
 <dt>dataset_class<span class="classifier">type[VisionDataset]</span></dt><dd><p>Torchvision data set class provided.</p>
 </dd>
@@ -746,16 +656,16 @@ converts the sentences into strings. It is the equivalent of training a downstre
 task with bert but all the BERT layers are frozen. It is advised to just
 train with the raw strings with a BERT model located in models/bert.py or defining
 your own model. DistilBERT is just a faster version of BERT</p>
-<section id="id13">
-<h3>References<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
+<section id="id9">
+<h3>References<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
 <aside class="footnote-list brackets">
-<aside class="footnote brackets" id="id14" role="note">
+<aside class="footnote brackets" id="id10" role="note">
 <span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
 <p>J. Devlin, M.W. Chang, K. Lee, and K. Toutanova,
 BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
 arXiv.org, 2018. Available: <a class="reference external" href="https://arxiv.org/abs/1810.04805">https://arxiv.org/abs/1810.04805</a>.</p>
 </aside>
-<aside class="footnote brackets" id="id15" role="note">
+<aside class="footnote brackets" id="id11" role="note">
 <span class="label"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></span>
 <p>V. Sanh, L. Debut, J. Chaumond, and T. Wolf,
 DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter
@@ -782,10 +692,10 @@ arXiv.org, 2019. Available: <a class="reference external" href="https://arxiv.or
 <span class="sig-prename descclassname"><span class="pre">opendataval.dataloader.datasets.nlpsets.</span></span><span class="sig-name descname"><span class="pre">download_bbc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cache_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force_download</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataloader.datasets.nlpsets.download_bbc" title="Link to this definition">#</a></dt>
 <dd><p>Classification data set registered as <code class="docutils literal notranslate"><span class="pre">&quot;bbc&quot;</span></code>.</p>
 <p>Predicts type of article from the article. Used in NLP data valuation tasks.</p>
-<section id="id16">
-<h3>References<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
+<section id="id12">
+<h3>References<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
 <aside class="footnote-list brackets">
-<aside class="footnote brackets" id="id17" role="note">
+<aside class="footnote brackets" id="id13" role="note">
 <span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
 <p>D. Greene and P. Cunningham,
 Practical Solutions to the Problem of Diagonal Dominance in
@@ -801,10 +711,10 @@ Kernel Document Clustering, Proc. ICML 2006.</p>
 <dd><p>Binary category sentiment analysis data set registered as <code class="docutils literal notranslate"><span class="pre">&quot;imdb&quot;</span></code>.</p>
 <p>Predicts sentiment analysis of the review as either positive (1) or negative (0).
 Used in NLP data valuation tasks.</p>
-<section id="id18">
-<h3>References<a class="headerlink" href="#id18" title="Link to this heading">#</a></h3>
+<section id="id14">
+<h3>References<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
 <aside class="footnote-list brackets">
-<aside class="footnote brackets" id="id19" role="note">
+<aside class="footnote brackets" id="id15" role="note">
 <span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
 <p>A. Maas, R. Daly, P. Pham, D. Huang, A. Ng, and C. Potts.
 Learning Word Vectors for Sentiment Analysis.
@@ -913,17 +823,7 @@ registering the data set to load the data set as needed.
 <li><a class="reference internal" href="#opendataval.dataloader.datasets.challenge.iris_challenge"><code class="docutils literal notranslate"><span class="pre">iris_challenge()</span></code></a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#module-opendataval.dataloader.datasets.cleanlab">opendataval.dataloader.datasets.cleanlab module</a><ul>
-<li><a class="reference internal" href="#references">References</a></li>
-<li><a class="reference internal" href="#opendataval.dataloader.datasets.cleanlab.CleanLabImagenet"><code class="docutils literal notranslate"><span class="pre">CleanLabImagenet()</span></code></a></li>
-<li><a class="reference internal" href="#opendataval.dataloader.datasets.cleanlab.cifar10"><code class="docutils literal notranslate"><span class="pre">cifar10</span></code></a></li>
-<li><a class="reference internal" href="#opendataval.dataloader.datasets.cleanlab.cifar100"><code class="docutils literal notranslate"><span class="pre">cifar100</span></code></a></li>
-<li><a class="reference internal" href="#opendataval.dataloader.datasets.cleanlab.cifar100_embed"><code class="docutils literal notranslate"><span class="pre">cifar100_embed()</span></code></a></li>
-<li><a class="reference internal" href="#opendataval.dataloader.datasets.cleanlab.cifar10_embed"><code class="docutils literal notranslate"><span class="pre">cifar10_embed()</span></code></a></li>
-<li><a class="reference internal" href="#opendataval.dataloader.datasets.cleanlab.imagenet"><code class="docutils literal notranslate"><span class="pre">imagenet</span></code></a></li>
-<li><a class="reference internal" href="#opendataval.dataloader.datasets.cleanlab.imagenet_embed"><code class="docutils literal notranslate"><span class="pre">imagenet_embed()</span></code></a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#opendataval-dataloader-datasets-cleanlab-module">opendataval.dataloader.datasets.cleanlab module</a></li>
 <li><a class="reference internal" href="#module-opendataval.dataloader.datasets.datasets">opendataval.dataloader.datasets.datasets module</a><ul>
 <li><a class="reference internal" href="#opendataval.dataloader.datasets.datasets.download_2dplanes"><code class="docutils literal notranslate"><span class="pre">download_2dplanes()</span></code></a></li>
 <li><a class="reference internal" href="#opendataval.dataloader.datasets.datasets.download_MiniBooNE"><code class="docutils literal notranslate"><span class="pre">download_MiniBooNE()</span></code></a></li>
