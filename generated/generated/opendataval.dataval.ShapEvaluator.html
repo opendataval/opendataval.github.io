@@ -378,14 +378,15 @@ Shapley values are NP-hard so we resort to MCMC sampling, by default 1.05</p>
 </dd>
 <dt>max_mc_epochs<span class="classifier">int, optional</span></dt><dd><p>Max number of outer epochs of MCMC sampling, by default 100</p>
 </dd>
-<dt>models_per_iteration<span class="classifier">int, optional</span></dt><dd><p>Number of model fittings to take per iteration prior to checking GR convergence,
+<dt>models_per_epoch<span class="classifier">int, optional</span></dt><dd><p>Number of model fittings to take per epoch prior to checking GR convergence,
 by default 100</p>
 </dd>
-<dt>mc_epochs<span class="classifier">int, optional</span></dt><dd><p>Minimum samples before checking MCMC convergence, by default 1000</p>
+<dt>min_models<span class="classifier">int, optional</span></dt><dd><p>Minimum samples before checking MCMC convergence, by default 1000</p>
 </dd>
 <dt>min_cardinality<span class="classifier">int, optional</span></dt><dd><p>Minimum cardinality of a training set, must be passed as kwarg, by default 5</p>
 </dd>
-<dt>cache_name<span class="classifier">str, optional</span></dt><dd><p>Unique cache_name of the model, caches marginal contributions, by default None</p>
+<dt>cache_name<span class="classifier">str, optional</span></dt><dd><p>Unique cache_name of the model to  cache marginal contributions, set to None to
+disable caching, by default “” which is set to a unique value for a object</p>
 </dd>
 <dt>random_state<span class="classifier">RandomState, optional</span></dt><dd><p>Random initial state, by default None</p>
 </dd>
