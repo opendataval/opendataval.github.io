@@ -2,7 +2,7 @@
 <html class="no-js" lang="en" data-content_root="./">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="opendataval.dataloader.datasets.datasets" href="generated/opendataval.dataloader.datasets.datasets.html" /><link rel="prev" title="opendataval.dataloader package" href="opendataval.dataloader.html" />
 
     <link rel="shortcut icon" href="_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
@@ -387,14 +387,14 @@
 <section id="references">
 <h3>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h3>
 <aside class="footnote-list brackets">
-<aside class="footnote brackets" id="id1" role="note">
+<aside class="footnote brackets" id="id1" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
 <p>R. Kohavi, Scaling Up the Accuracy of
 Naive-Bayes Classifiers: a Decision-Tree Hybrid,
 Proceedings of the Second International Conference on Knowledge Discovery
 and Data Mining, 1996</p>
 </aside>
-<aside class="footnote brackets" id="id2" role="note">
+<aside class="footnote brackets" id="id2" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></span>
 <p>J. Yoon, Arik, Sercan O, and T. Pfister,
 Data Valuation using Reinforcement Learning,
@@ -442,7 +442,7 @@ arXiv.org, 2019. Available: <a class="reference external" href="https://arxiv.or
 <section id="id3">
 <h3>References<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
 <aside class="footnote-list brackets">
-<aside class="footnote brackets" id="id4" role="note">
+<aside class="footnote brackets" id="id4" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
 <p>M. E. Data and S. Lab,
 U.S. President 1976-2020.
@@ -533,7 +533,7 @@ Harvard Dataverse, 2017. doi: 10.7910/DVN/42MVDX.</p>
 <p>Uses <a class="reference external" href="https://github.com/pytorch/vision">torchvision</a>. as a dependency.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="opendataval.dataloader.datasets.imagesets.ResnetEmbeding">
-<span class="sig-prename descclassname"><span class="pre">opendataval.dataloader.datasets.imagesets.</span></span><span class="sig-name descname"><span class="pre">ResnetEmbeding</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset_class</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">type</span><span class="p"><span class="pre">[</span></span><span class="pre">VisionDataset</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">(224,</span> <span class="pre">224)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataloader.datasets.imagesets.ResnetEmbeding" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">opendataval.dataloader.datasets.imagesets.</span></span><span class="sig-name descname"><span class="pre">ResnetEmbeding</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset_class</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">type</span><span class="p"><span class="pre">[</span></span><span class="pre">VisionDataset</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">(224,</span> <span class="pre">224)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">128</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataloader.datasets.imagesets.ResnetEmbeding" title="Link to this definition">#</a></dt>
 <dd><p>Convert PIL color Images into embeddings with ResNet50 model.</p>
 <p>Given a PIL Images, passes through ResNet50 (as done by prior Data Valuation papers)
 and saves the vector embeddings. The embeddings are extracted from the <code class="docutils literal notranslate"><span class="pre">avgpool</span></code>
@@ -541,14 +541,14 @@ layer of ResNet50. The extraction is through the PyTorch forward hook feature.</
 <section id="id5">
 <h3>References<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
 <aside class="footnote-list brackets">
-<aside class="footnote brackets" id="id6" role="note">
+<aside class="footnote brackets" id="id6" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
 <p>K. He, X. Zhang, S. Ren, and J. Sun,
 Deep Residual Learning for Image Recognition,
 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR),
 Jun. 2016, doi: <a class="reference external" href="https://doi.org/10.1109/cvpr.2016.90">https://doi.org/10.1109/cvpr.2016.90</a>.</p>
 </aside>
-<aside class="footnote brackets" id="id7" role="note">
+<aside class="footnote brackets" id="id7" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></span>
 <p>A. Ghorbani and J. Zou,
 Data Shapley: Equitable Valuation of Data for Machine Learning
@@ -647,7 +647,7 @@ a Dataset of covariates and np.array is an array of labels.</p>
 <a class="reference external" href="https://huggingface.co/docs/transformers/index">transformers</a>. as dependency.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="opendataval.dataloader.datasets.nlpsets.BertEmbeddings">
-<span class="sig-prename descclassname"><span class="pre">opendataval.dataloader.datasets.nlpsets.</span></span><span class="sig-name descname"><span class="pre">BertEmbeddings</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="opendataval.dataloader.html#opendataval.dataloader.util.ListDataset" title="opendataval.dataloader.util.ListDataset"><span class="pre">ListDataset</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">ndarray</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataloader.datasets.nlpsets.BertEmbeddings" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">opendataval.dataloader.datasets.nlpsets.</span></span><span class="sig-name descname"><span class="pre">BertEmbeddings</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">ndarray</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">128</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataloader.datasets.nlpsets.BertEmbeddings" title="Link to this definition">#</a></dt>
 <dd><p>Convert text data into pooled embeddings with DistilBERT model.</p>
 <p>Given a data set with a list of string, such as NLP data set function (see below),
 converts the sentences into strings. It is the equivalent of training a downstream
@@ -657,13 +657,13 @@ your own model. DistilBERT is just a faster version of BERT</p>
 <section id="id9">
 <h3>References<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
 <aside class="footnote-list brackets">
-<aside class="footnote brackets" id="id10" role="note">
+<aside class="footnote brackets" id="id10" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
 <p>J. Devlin, M.W. Chang, K. Lee, and K. Toutanova,
 BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
 arXiv.org, 2018. Available: <a class="reference external" href="https://arxiv.org/abs/1810.04805">https://arxiv.org/abs/1810.04805</a>.</p>
 </aside>
-<aside class="footnote brackets" id="id11" role="note">
+<aside class="footnote brackets" id="id11" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></span>
 <p>V. Sanh, L. Debut, J. Chaumond, and T. Wolf,
 DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter
@@ -671,12 +671,6 @@ arXiv.org, 2019. Available: <a class="reference external" href="https://arxiv.or
 </aside>
 </aside>
 </section>
-</dd></dl>
-
-<dl class="py data">
-<dt class="sig sig-object py" id="opendataval.dataloader.datasets.nlpsets.MAX_DATASET_SIZE">
-<span class="sig-prename descclassname"><span class="pre">opendataval.dataloader.datasets.nlpsets.</span></span><span class="sig-name descname"><span class="pre">MAX_DATASET_SIZE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2000</span></em><a class="headerlink" href="#opendataval.dataloader.datasets.nlpsets.MAX_DATASET_SIZE" title="Link to this definition">#</a></dt>
-<dd><p>Data Valuation algorithms can take a long time for large data sets, thus cap size.</p>
 </dd></dl>
 
 <dl class="py function">
@@ -693,7 +687,7 @@ arXiv.org, 2019. Available: <a class="reference external" href="https://arxiv.or
 <section id="id12">
 <h3>References<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
 <aside class="footnote-list brackets">
-<aside class="footnote brackets" id="id13" role="note">
+<aside class="footnote brackets" id="id13" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
 <p>D. Greene and P. Cunningham,
 Practical Solutions to the Problem of Diagonal Dominance in
@@ -712,7 +706,7 @@ Used in NLP data valuation tasks.</p>
 <section id="id14">
 <h3>References<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
 <aside class="footnote-list brackets">
-<aside class="footnote brackets" id="id15" role="note">
+<aside class="footnote brackets" id="id15" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
 <p>A. Maas, R. Daly, P. Pham, D. Huang, A. Ng, and C. Potts.
 Learning Word Vectors for Sentiment Analysis.
@@ -860,7 +854,6 @@ registering the data set to load the data set as needed.
 </li>
 <li><a class="reference internal" href="#module-opendataval.dataloader.datasets.nlpsets">opendataval.dataloader.datasets.nlpsets module</a><ul>
 <li><a class="reference internal" href="#opendataval.dataloader.datasets.nlpsets.BertEmbeddings"><code class="docutils literal notranslate"><span class="pre">BertEmbeddings()</span></code></a></li>
-<li><a class="reference internal" href="#opendataval.dataloader.datasets.nlpsets.MAX_DATASET_SIZE"><code class="docutils literal notranslate"><span class="pre">MAX_DATASET_SIZE</span></code></a></li>
 <li><a class="reference internal" href="#opendataval.dataloader.datasets.nlpsets.bbc_embedding"><code class="docutils literal notranslate"><span class="pre">bbc_embedding()</span></code></a></li>
 <li><a class="reference internal" href="#opendataval.dataloader.datasets.nlpsets.download_bbc"><code class="docutils literal notranslate"><span class="pre">download_bbc()</span></code></a></li>
 <li><a class="reference internal" href="#opendataval.dataloader.datasets.nlpsets.download_imdb"><code class="docutils literal notranslate"><span class="pre">download_imdb()</span></code></a></li>

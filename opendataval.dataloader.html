@@ -2,7 +2,7 @@
 <html class="no-js" lang="en" data-content_root="./">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="opendataval.dataloader.datasets package" href="opendataval.dataloader.datasets.html" /><link rel="prev" title="opendataval package" href="opendataval.html" />
 
     <link rel="shortcut icon" href="_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
@@ -393,6 +393,10 @@ subsequent splitting, adding noise, and transforming into a tensor.</p>
 <dt>[train/valid/test]_indices<span class="classifier">np.ndarray[int]</span></dt><dd><p>The indices of the original data set used to make the training data set.</p>
 </dd>
 <dt>noisy_train_indices<span class="classifier">np.ndarray[int]</span></dt><dd><p>The indices of training data points with noise added to them.</p>
+</dd>
+<dt>covar<span class="classifier">Dataset | np.ndarray</span></dt><dd><p>Covariate dataset a dataset function</p>
+</dd>
+<dt>lables<span class="classifier">np.ndarray</span></dt><dd><p>Corresponding labels for covariates from a dataset function</p>
 </dd>
 <dt>[x/y]_[train/valid/test]<span class="classifier">np.ndarray</span></dt><dd><p>Access to the raw split of the [covariate/label] [train/valid/test] data set
 prior being transformed into a tensor. Useful for adding noise to functions.</p>
@@ -921,6 +925,61 @@ transformations, and returns the covariates and labels.</p>
 </dd></dl>
 
 <dl class="py class">
+<dt class="sig sig-object py" id="opendataval.dataloader.util.FolderDataset">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">opendataval.dataloader.util.</span></span><span class="sig-name descname"><span class="pre">FolderDataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folder_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sizes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataloader.util.FolderDataset" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Dataset</span></code></p>
+<p>Dataset for tensors within a folder.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="opendataval.dataloader.util.FolderDataset.BATCH_CACHE">
+<span class="sig-name descname"><span class="pre">BATCH_CACHE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5</span></em><a class="headerlink" href="#opendataval.dataloader.util.FolderDataset.BATCH_CACHE" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="opendataval.dataloader.util.FolderDataset.exists">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">exists</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataloader.util.FolderDataset.exists" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="opendataval.dataloader.util.FolderDataset.format_batch_path">
+<span class="sig-name descname"><span class="pre">format_batch_path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">batch_index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#opendataval.dataloader.util.FolderDataset.format_batch_path" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="opendataval.dataloader.util.FolderDataset.get_batch">
+<span class="sig-name descname"><span class="pre">get_batch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">batch_index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tensor</span></span></span><a class="headerlink" href="#opendataval.dataloader.util.FolderDataset.get_batch" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="opendataval.dataloader.util.FolderDataset.load">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">load</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataloader.util.FolderDataset.load" title="Link to this definition">#</a></dt>
+<dd><p>Loads existing gradient dataset metadata from path/.metadata.pkl</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="opendataval.dataloader.util.FolderDataset.metadata">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">metadata</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#opendataval.dataloader.util.FolderDataset.metadata" title="Link to this definition">#</a></dt>
+<dd><p>Important metadata defining a GradientDataset, used for loading.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="opendataval.dataloader.util.FolderDataset.save">
+<span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataloader.util.FolderDataset.save" title="Link to this definition">#</a></dt>
+<dd><p>Saves metadata to disk, allows us to load GradientDataset as needed.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="opendataval.dataloader.util.FolderDataset.shape">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">shape</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#opendataval.dataloader.util.FolderDataset.shape" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="opendataval.dataloader.util.FolderDataset.write">
+<span class="sig-name descname"><span class="pre">write</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">batch_number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tensor</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataloader.util.FolderDataset.write" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
 <dt class="sig sig-object py" id="opendataval.dataloader.util.IndexTransformDataset">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">opendataval.dataloader.util.</span></span><span class="sig-name descname"><span class="pre">IndexTransformDataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dataset</span><span class="p"><span class="pre">[</span></span><span class="pre">T_co</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index_transformation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">T_co</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">T_co</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#opendataval.dataloader.util.IndexTransformDataset" title="Link to this definition">#</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Dataset</span></code>[<code class="xref py py-obj docutils literal notranslate"><span class="pre">T_co</span></code>]</p>
@@ -963,6 +1022,11 @@ inputs as only lists.</p>
 </dl>
 </section>
 </dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="opendataval.dataloader.util.load_tensor">
+<span class="sig-prename descclassname"><span class="pre">opendataval.dataloader.util.</span></span><span class="sig-name descname"><span class="pre">load_tensor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tensor_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Path</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tensor</span></span></span><a class="headerlink" href="#opendataval.dataloader.util.load_tensor" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
 
 </section>
 <section id="module-opendataval.dataloader">
@@ -1127,11 +1191,24 @@ for the covariates and labels of a data set</p>
 </li>
 <li><a class="reference internal" href="#module-opendataval.dataloader.util">opendataval.dataloader.util module</a><ul>
 <li><a class="reference internal" href="#opendataval.dataloader.util.CatDataset"><code class="docutils literal notranslate"><span class="pre">CatDataset</span></code></a></li>
+<li><a class="reference internal" href="#opendataval.dataloader.util.FolderDataset"><code class="docutils literal notranslate"><span class="pre">FolderDataset</span></code></a><ul>
+<li><a class="reference internal" href="#opendataval.dataloader.util.FolderDataset.BATCH_CACHE"><code class="docutils literal notranslate"><span class="pre">FolderDataset.BATCH_CACHE</span></code></a></li>
+<li><a class="reference internal" href="#opendataval.dataloader.util.FolderDataset.exists"><code class="docutils literal notranslate"><span class="pre">FolderDataset.exists()</span></code></a></li>
+<li><a class="reference internal" href="#opendataval.dataloader.util.FolderDataset.format_batch_path"><code class="docutils literal notranslate"><span class="pre">FolderDataset.format_batch_path()</span></code></a></li>
+<li><a class="reference internal" href="#opendataval.dataloader.util.FolderDataset.get_batch"><code class="docutils literal notranslate"><span class="pre">FolderDataset.get_batch()</span></code></a></li>
+<li><a class="reference internal" href="#opendataval.dataloader.util.FolderDataset.load"><code class="docutils literal notranslate"><span class="pre">FolderDataset.load()</span></code></a></li>
+<li><a class="reference internal" href="#opendataval.dataloader.util.FolderDataset.metadata"><code class="docutils literal notranslate"><span class="pre">FolderDataset.metadata</span></code></a></li>
+<li><a class="reference internal" href="#opendataval.dataloader.util.FolderDataset.save"><code class="docutils literal notranslate"><span class="pre">FolderDataset.save()</span></code></a></li>
+<li><a class="reference internal" href="#opendataval.dataloader.util.FolderDataset.shape"><code class="docutils literal notranslate"><span class="pre">FolderDataset.shape</span></code></a></li>
+<li><a class="reference internal" href="#opendataval.dataloader.util.FolderDataset.write"><code class="docutils literal notranslate"><span class="pre">FolderDataset.write()</span></code></a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#opendataval.dataloader.util.IndexTransformDataset"><code class="docutils literal notranslate"><span class="pre">IndexTransformDataset</span></code></a><ul>
 <li><a class="reference internal" href="#opendataval.dataloader.util.IndexTransformDataset.transform"><code class="docutils literal notranslate"><span class="pre">IndexTransformDataset.transform</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#opendataval.dataloader.util.ListDataset"><code class="docutils literal notranslate"><span class="pre">ListDataset</span></code></a></li>
+<li><a class="reference internal" href="#opendataval.dataloader.util.load_tensor"><code class="docutils literal notranslate"><span class="pre">load_tensor()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#module-opendataval.dataloader">Module contents</a><ul>

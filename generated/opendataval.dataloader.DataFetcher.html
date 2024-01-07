@@ -2,7 +2,7 @@
 <html class="no-js" lang="en" data-content_root="../">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="opendataval.dataloader.datasets" href="opendataval.dataloader.datasets.html" /><link rel="prev" title="opendataval.dataloader.Register" href="opendataval.dataloader.Register.html" />
 
     <link rel="shortcut icon" href="../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
@@ -371,6 +371,10 @@ subsequent splitting, adding noise, and transforming into a tensor.</p>
 <dt>[train/valid/test]_indices<span class="classifier">np.ndarray[int]</span></dt><dd><p>The indices of the original data set used to make the training data set.</p>
 </dd>
 <dt>noisy_train_indices<span class="classifier">np.ndarray[int]</span></dt><dd><p>The indices of training data points with noise added to them.</p>
+</dd>
+<dt>covar<span class="classifier">Dataset | np.ndarray</span></dt><dd><p>Covariate dataset a dataset function</p>
+</dd>
+<dt>lables<span class="classifier">np.ndarray</span></dt><dd><p>Corresponding labels for covariates from a dataset function</p>
 </dd>
 <dt>[x/y]_[train/valid/test]<span class="classifier">np.ndarray</span></dt><dd><p>Access to the raw split of the [covariate/label] [train/valid/test] data set
 prior being transformed into a tensor. Useful for adding noise to functions.</p>
